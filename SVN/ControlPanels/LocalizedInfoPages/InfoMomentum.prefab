@@ -1,0 +1,408 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &267154821777389236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7570249930239799679}
+  - component: {fileID: 5422070853469988915}
+  - component: {fileID: 6841805061844381276}
+  m_Layer: 17
+  m_Name: Checkmark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7570249930239799679
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267154821777389236}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4577629359216694944}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5422070853469988915
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267154821777389236}
+  m_CullTransparentMesh: 0
+--- !u!114 &6841805061844381276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267154821777389236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 35630e38b4e5ffb40b44ec5348b4333f, type: 2}
+  m_Color: {r: 1, g: 0.7817019, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fc08e8838b0300145a0062b8431e0c29, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7708439659514738356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4577629359216694944}
+  - component: {fileID: 4095669605760229750}
+  - component: {fileID: 557965828801227574}
+  m_Layer: 17
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4577629359216694944
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708439659514738356}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7570249930239799679}
+  m_Father: {fileID: 3488930124093006534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4095669605760229750
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708439659514738356}
+  m_CullTransparentMesh: 0
+--- !u!114 &557965828801227574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708439659514738356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 35630e38b4e5ffb40b44ec5348b4333f, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 84d3838ecee5201468330e78cbe403e7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7833228059436464743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3488930124093006534}
+  - component: {fileID: 3599015315526829831}
+  - component: {fileID: 464821906745449493}
+  - component: {fileID: 1736901267733698683}
+  - component: {fileID: 4384041254277864624}
+  - component: {fileID: 4936162596129189841}
+  m_Layer: 17
+  m_Name: InfoMomentum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3488930124093006534
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00028312206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4577629359216694944}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -30.00015, y: -30.000162}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3599015315526829831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0, g: 0.8784314, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.73333335, b: 0, a: 1}
+    m_PressedColor: {r: 0.9433962, g: 0.16464934, b: 0.90585643, a: 1}
+    m_SelectedColor: {r: 1, g: 0.7337059, b: 0, a: 1}
+    m_DisabledColor: {r: 0.6886792, g: 0.24363652, b: 0.48558554, a: 1}
+    m_ColorMultiplier: 1.27
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 557965828801227574}
+  toggleTransition: 1
+  graphic: {fileID: 6841805061844381276}
+  m_Group: {fileID: 0}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SendCustomEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onToggle
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!114 &464821906745449493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a0125298b98834fadb6477d8360741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 1736901267733698683}
+  pageTitles:
+  - <b>Momentum in Diffraction</b>
+  - "<b>\u56DE\u6298\u306B\u304A\u3051\u308B\u904B\u52D5\u91CF</b>"
+  - "<b>\u7E5E\u5C04\u52D5\u91CF</b>"
+  - "<b>\u884D\u5C04\u4E2D\u7684\u52A8\u91CF</b>"
+  - "<b>\uD68C\uC808\uC758 \uC6B4\uB3D9\uB7C9</b>"
+  - "<b>Momentum na Difra\xE7\xE3o</b>"
+  pageBodies:
+  - 'In wave propagation analysis, the principles of interference can be applied
+    in two different ways.
+
+
+
+    Huygens'' principle treats a wavefront as multiple
+    point sources emitting circular wavelets. The resulting pattern is calculated
+    by summing the contributions from the overlapping wavelets.
+
+
+
+    Alternatively,
+    the k-vector approach views the initial wave as a linear combination of superimposed
+    plane waves. This method demonstrates how the momentum distribution within the
+    wave pattern remains constant as the diffraction pattern develops. '
+  - "\u6CE2\u52D5\u4F1D\u64AD\u89E3\u6790\u3067\u306F\u3001\u5E72\u6E09\u306E\u539F\u7406\u3092
+    2 \u3064\u306E\u7570\u306A\u308B\u65B9\u6CD5\u3067\u9069\u7528\u3067\u304D\u307E\u3059\u3002\r\n\r\n\u30DB\u30A4\u30D8\u30F3\u30B9\u306E\u539F\u7406\u3067\u306F\u3001\u6CE2\u9762\u3092\u5186\u5F62\u306E\u30A6\u30A7\u30FC\u30D6\u30EC\u30C3\u30C8\u3092\u653E\u51FA\u3059\u308B\u8907\u6570\u306E\u70B9\u5149\u6E90\u3068\u3057\u3066\u6271\u3044\u307E\u3059\u3002\u7D50\u679C\u3068\u3057\u3066\u5F97\u3089\u308C\u308B\u30D1\u30BF\u30FC\u30F3\u306F\u3001\u91CD\u306A\u308A\u5408\u3046\u30A6\u30A7\u30FC\u30D6\u30EC\u30C3\u30C8\u304B\u3089\u306E\u5BC4\u4E0E\u3092\u5408\u8A08\u3057\u3066\u8A08\u7B97\u3055\u308C\u307E\u3059\u3002\r\n\r\n\u307E\u305F\u3001k
+    \u30D9\u30AF\u30C8\u30EB \u30A2\u30D7\u30ED\u30FC\u30C1\u3067\u306F\u3001\u6700\u521D\u306E\u6CE2\u3092\u3001\u91CD\u306D\u5408\u308F\u305B\u305F\u5E73\u9762\u6CE2\u306E\u7DDA\u5F62\u7D50\u5408\u3068\u898B\u306A\u3057\u307E\u3059\u3002\u3053\u306E\u65B9\u6CD5\u3067\u306F\u3001\u56DE\u6298\u30D1\u30BF\u30FC\u30F3\u304C\u767A\u9054\u3059\u308B\u306B\u3064\u308C\u3066\u3001\u6CE2\u30D1\u30BF\u30FC\u30F3\u5185\u306E\u904B\u52D5\u91CF\u5206\u5E03\u304C\u4E00\u5B9A\u306E\u307E\u307E\u306B\u306A\u308B\u3053\u3068\u304C\u308F\u304B\u308A\u307E\u3059\u3002"
+  - "\u5728\u6CE2\u7684\u50B3\u64AD\u5206\u6790\u4E2D\uFF0C\u5E72\u6D89\u539F\u7406\u53EF\u4EE5\u4EE5\u5169\u7A2E\u4E0D\u540C\u7684\u65B9\u5F0F\u61C9\u7528\u3002\r\n\r\n\u60E0\u66F4\u65AF\u539F\u7406\u5C07\u6CE2\u524D\u8996\u70BA\u767C\u5C04\u5713\u5F62\u5C0F\u6CE2\u7684\u591A\u500B\u9EDE\u6E90\u3002\u900F\u904E\u5C0D\u91CD\u758A\u5C0F\u6CE2\u7684\u8CA2\u737B\u6C42\u548C\u4F86\u8A08\u7B97\u6700\u7D42\u7684\u6A21\u5F0F\u3002\r\n\r\n\u6216\u8005\uFF0Ck
+    \u5411\u91CF\u65B9\u6CD5\u5C07\u521D\u59CB\u6CE2\u8996\u70BA\u758A\u52A0\u5E73\u9762\u6CE2\u7684\u7DDA\u6027\u7D44\u5408\u3002\u6B64\u65B9\u6CD5\u8B49\u660E\u4E86\u6CE2\u5F62\u5167\u7684\u52D5\u91CF\u5206\u4F48\u5728\u884D\u5C04\u5716\u6848\u767C\u5C55\u904E\u7A0B\u4E2D\u5982\u4F55\u4FDD\u6301\u6046\u5B9A\u3002"
+  - "\u5728\u6CE2\u4F20\u64AD\u5206\u6790\u4E2D\uFF0C\u5E72\u6D89\u539F\u7406\u53EF\u4EE5\u4EE5\u4E24\u79CD\u4E0D\u540C\u7684\u65B9\u5F0F\u5E94\u7528\u3002\r\n\r\n\u60E0\u66F4\u65AF\u539F\u7406\u5C06\u6CE2\u524D\u89C6\u4E3A\u53D1\u5C04\u5706\u5F62\u5C0F\u6CE2\u7684\u591A\u4E2A\u70B9\u6E90\u3002\u901A\u8FC7\u5BF9\u91CD\u53E0\u5C0F\u6CE2\u7684\u8D21\u732E\u6C42\u548C\u6765\u8BA1\u7B97\u6700\u7EC8\u7684\u6A21\u5F0F\u3002\r\n\r\n\u6216\u8005\uFF0Ck
+    \u77E2\u91CF\u65B9\u6CD5\u5C06\u521D\u59CB\u6CE2\u89C6\u4E3A\u53E0\u52A0\u5E73\u9762\u6CE2\u7684\u7EBF\u6027\u7EC4\u5408\u3002\u8BE5\u65B9\u6CD5\u5C55\u793A\u4E86\u968F\u7740\u884D\u5C04\u6A21\u5F0F\u7684\u53D1\u5C55\uFF0C\u6CE2\u6A21\u5F0F\u5185\u7684\u52A8\u91CF\u5206\u5E03\u5982\u4F55\u4FDD\u6301\u4E0D\u53D8\u3002"
+  - "\uD30C\uB3D9 \uC804\uD30C \uBD84\uC11D\uC5D0\uC11C \uAC04\uC12D \uC6D0\uB9AC\uB294
+    \uB450 \uAC00\uC9C0 \uB2E4\uB978 \uBC29\uC2DD\uC73C\uB85C \uC801\uC6A9\uB420
+    \uC218 \uC788\uC2B5\uB2C8\uB2E4.\r\n\r\nHuygens\uC758 \uC6D0\uB9AC\uB294 \uD30C\uBA74\uC744
+    \uC6D0\uD615 \uC6E8\uC774\uBE0C\uB81B\uC744 \uBC29\uCD9C\uD558\uB294 \uC5EC\uB7EC
+    \uC810 \uC18C\uC2A4\uB85C \uCDE8\uAE09\uD569\uB2C8\uB2E4. \uACB0\uACFC \uD328\uD134\uC740
+    \uACB9\uCE58\uB294 \uC6E8\uC774\uBE0C\uB81B\uC758 \uAE30\uC5EC\uB97C \uD569\uC0B0\uD558\uC5EC
+    \uACC4\uC0B0\uD569\uB2C8\uB2E4.\r\n\r\n\uB610\uB294 k-\uBCA1\uD130 \uC811\uADFC\uBC95\uC740
+    \uCD08\uAE30 \uD30C\uB3D9\uC744 \uC911\uCCA9\uB41C \uD3C9\uBA74\uD30C\uC758 \uC120\uD615
+    \uC870\uD569\uC73C\uB85C \uBD05\uB2C8\uB2E4. \uC774 \uBC29\uBC95\uC740 \uD68C\uC808
+    \uD328\uD134\uC774 \uBC1C\uB2EC\uD568\uC5D0 \uB530\uB77C \uD30C\uB3D9 \uD328\uD134
+    \uB0B4\uC758 \uC6B4\uB3D9\uB7C9 \uBD84\uD3EC\uAC00 \uC77C\uC815\uD558\uAC8C \uC720\uC9C0\uB418\uB294
+    \uBC29\uC2DD\uC744 \uBCF4\uC5EC\uC90D\uB2C8\uB2E4."
+  - "Na an\xE1lise de propaga\xE7\xE3o de ondas, os princ\xEDpios de interfer\xEAncia
+    podem ser aplicados de duas maneiras diferentes.\r\n\nO princ\xEDpio de Huygens
+    trata uma frente de onda como m\xFAltiplas fontes pontuais que emitem wavelets
+    circulares. O padr\xE3o resultante \xE9 calculado somando as contribui\xE7\xF5es
+    das wavelets sobrepostas.\r\n\r\nComo alternativa, a abordagem k-vector v\xEA
+    a onda inicial como uma combina\xE7\xE3o linear de ondas planas sobrepostas.
+    Este m\xE9todo demonstra como a distribui\xE7\xE3o de momento dentro do padr\xE3o
+    de onda permanece constante \xE0 medida que o padr\xE3o de difra\xE7\xE3o se
+    desenvolve."
+  languageIndex: 0
+--- !u!114 &1736901267733698683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 3
+  serializedProgramAsset: {fileID: 11400000, guid: 48d0ef6c8a3caab4db724c6856f48412,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 530112de8551329498e25f888f6d27e6, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
+--- !u!114 &4384041254277864624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8406eb5e5745df46983b24b10b717c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 4936162596129189841}
+  toggle: {fileID: 3599015315526829831}
+  toggleClient: {fileID: 0}
+  clientVariable: show
+  toggleIndex: -1
+  togState: 1
+  reportedState: 0
+--- !u!114 &4936162596129189841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833228059436464743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 3
+  serializedProgramAsset: {fileID: 11400000, guid: 945d4c88df08fa64a88f4fa94be8fd01,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 3c35840b78a23fb449375431c6832a23, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0

@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1874167876949158823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874167876949158822}
+  - component: {fileID: 1874167876949158820}
+  - component: {fileID: 1874167876949158821}
+  m_Layer: 17
+  m_Name: Checkmark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1874167876949158822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167876949158823}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1874167878389501346}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1874167876949158820
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167876949158823}
+  m_CullTransparentMesh: 0
+--- !u!114 &1874167876949158821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167876949158823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 35630e38b4e5ffb40b44ec5348b4333f, type: 2}
+  m_Color: {r: 1, g: 0.7817019, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fc08e8838b0300145a0062b8431e0c29, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1874167877741823378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874167877741823377}
+  - component: {fileID: 1874167877741823376}
+  - component: {fileID: 616234954069457075}
+  - component: {fileID: 2747719007095901375}
+  m_Layer: 17
+  m_Name: InfoPhaseSim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1874167877741823377
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167877741823378}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1874167878389501346}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -36, y: 36}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1874167877741823376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167877741823378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0, g: 0.8784314, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.73333335, b: 0, a: 1}
+    m_PressedColor: {r: 0.9433962, g: 0.16464934, b: 0.90585643, a: 1}
+    m_SelectedColor: {r: 1, g: 0.7337059, b: 0, a: 1}
+    m_DisabledColor: {r: 0.6886792, g: 0.24363652, b: 0.48558554, a: 1}
+    m_ColorMultiplier: 1.27
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1874167878389501345}
+  toggleTransition: 1
+  graphic: {fileID: 1874167876949158821}
+  m_Group: {fileID: 0}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: VRC.Udon.UdonBehaviour, VRC.Udon
+        m_MethodName: SendCustomEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onToggle
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!114 &616234954069457075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167877741823378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a0125298b98834fadb6477d8360741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 2747719007095901375}
+  pageTitles:
+  - Wave Visualisation
+  - "\u6CE2\u306E\u8996\u899A\u5316"
+  - "\u6CE2\u6D6A\u53EF\u8996\u5316"
+  - "\u6CE2\u6D6A\u53EF\u89C6\u5316"
+  - "\uD30C\uB3D9 \uC2DC\uAC01\uD654"
+  - "Visualiza\xE7\xE3o de ondas"
+  pageBodies:
+  - 'This wave visualisation simulates motion by rotating the phase angle of a field
+    of complex numbers that encode the wave''s amplitude and phase information within
+    the diffraction pattern.
+
+    
+
+    A program running on the GPU generates
+    this field of complex numbers, allowing the pattern to be recalculated in a single
+    pass.
+
+    
+
+    Recalculation takes place only when there''s a change in the
+    wavelength or aperture pattern.'
+  - "\u3053\u306E\u6CE2\u306E\u8996\u899A\u5316\u306F\u3001\u56DE\u6298\u30D1\u30BF\u30FC\u30F3\u5185\u306E\u6CE2\u306E\u632F\u5E45\u3068\u4F4D\u76F8\u60C5\u5831\u3092\u30A8\u30F3\u30B3\u30FC\u30C9\u3059\u308B\u8907\u7D20\u6570\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u4F4D\u76F8\u89D2\u3092\u56DE\u8EE2\u3055\u305B\u308B\u3053\u3068\u306B\u3088\u3063\u3066\u52D5\u304D\u3092\u30B7\u30DF\u30E5\u30EC\u30FC\u30C8\u3057\u307E\u3059\u3002\r\n\r\nGPU
+    \u3067\u5B9F\u884C\u3055\u308C\u308B\u30D7\u30ED\u30B0\u30E9\u30E0\u304C\u3053\u306E\u8907\u7D20\u6570\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u751F\u6210\u3059\u308B\u305F\u3081\u3001\u30D1\u30BF\u30FC\u30F3\u3092
+    1 \u56DE\u306E\u30D1\u30B9\u3067\u518D\u8A08\u7B97\u3067\u304D\u307E\u3059\u3002\r\n\r\n\u518D\u8A08\u7B97\u306F\u3001\u6CE2\u9577\u307E\u305F\u306F\u958B\u53E3\u30D1\u30BF\u30FC\u30F3\u304C\u5909\u66F4\u3055\u308C\u305F\u5834\u5408\u306B\u306E\u307F\u884C\u308F\u308C\u307E\u3059\u3002"
+  - "\u6B64\u6CE2\u8996\u89BA\u5316\u900F\u904E\u65CB\u8F49\u8907\u6578\u5834\u7684\u76F8\u4F4D\u89D2\u4F86\u6A21\u64EC\u904B\u52D5\uFF0C\u8A72\u8907\u6578\u5834\u5728\u884D\u5C04\u5716\u6848\u5167\u7DE8\u78BC\u6CE2\u7684\u632F\u5E45\u548C\u76F8\u4F4D\u8CC7\u8A0A\u3002\r\n\r\n\u5728
+    GPU \u4E0A\u57F7\u884C\u7684\u7A0B\u5F0F\u6703\u7522\u751F\u9019\u500B\u8907\u6578\u6578\u5B57\u6BB5\uFF0C\u5F9E\u800C\u5141\u8A31\u5728\u4E00\u6B21\u50B3\u905E\u4E2D\u91CD\u65B0\u8A08\u7B97\u6A21\u5F0F\u3002\r\n\r\n\u50C5\u7576\u6CE2\u9577\u6216\u5B54\u5F91\u6A21\u5F0F\u767C\u751F\u8B8A\u5316\u6642\u624D\u6703\u91CD\u65B0\u8A08\u7B97\u3002"
+  - "\u8FD9\u79CD\u6CE2\u53EF\u89C6\u5316\u901A\u8FC7\u65CB\u8F6C\u590D\u6570\u573A\u7684\u76F8\u4F4D\u89D2\u6765\u6A21\u62DF\u8FD0\u52A8\uFF0C\u8BE5\u590D\u6570\u573A\u5BF9\u884D\u5C04\u56FE\u6848\u5185\u7684\u6CE2\u7684\u632F\u5E45\u548C\u76F8\u4F4D\u4FE1\u606F\u8FDB\u884C\u7F16\u7801\u3002\r\n\r\n\u5728
+    GPU \u4E0A\u8FD0\u884C\u7684\u7A0B\u5E8F\u4F1A\u751F\u6210\u6B64\u590D\u6570\u573A\uFF0C\u4ECE\u800C\u5141\u8BB8\u5728\u4E00\u6B21\u4F20\u9012\u4E2D\u91CD\u65B0\u8BA1\u7B97\u56FE\u6848\u3002\r\n\r\n\u4EC5\u5F53\u6CE2\u957F\u6216\u5B54\u5F84\u56FE\u6848\u53D1\u751F\u53D8\u5316\u65F6\u624D\u4F1A\u91CD\u65B0\u8BA1\u7B97\u3002"
+  - "\uC774 \uD30C\uB3D9 \uC2DC\uAC01\uD654\uB294 \uD68C\uC808 \uD328\uD134 \uB0B4\uC5D0\uC11C
+    \uD30C\uB3D9\uC758 \uC9C4\uD3ED\uACFC \uC704\uC0C1 \uC815\uBCF4\uB97C \uC778\uCF54\uB529\uD558\uB294
+    \uBCF5\uC18C\uC218 \uD544\uB4DC\uC758 \uC704\uC0C1 \uAC01\uB3C4\uB97C \uD68C\uC804\uD558\uC5EC
+    \uB3D9\uC791\uC744 \uC2DC\uBBAC\uB808\uC774\uC158\uD569\uB2C8\uB2E4.\r\n\r\nGPU\uC5D0\uC11C
+    \uC2E4\uD589\uB418\uB294 \uD504\uB85C\uADF8\uB7A8\uC740 \uC774 \uBCF5\uC18C\uC218
+    \uD544\uB4DC\uB97C \uC0DD\uC131\uD558\uC5EC \uD328\uD134\uC744 \uB2E8\uC77C \uD328\uC2A4\uB85C
+    \uB2E4\uC2DC \uACC4\uC0B0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\r\n\r\n\uC7AC\uACC4\uC0B0\uC740
+    \uD30C\uC7A5 \uB610\uB294 \uC870\uB9AC\uAC1C \uD328\uD134\uC774 \uBCC0\uACBD\uB420
+    \uB54C\uB9CC \uBC1C\uC0DD\uD569\uB2C8\uB2E4."
+  - "Esta visualiza\xE7\xE3o de onda simula movimento girando o \xE2ngulo de fase
+    de um campo de n\xFAmeros complexos que codificam a amplitude da onda e as informa\xE7\xF5es
+    de fase dentro do padr\xE3o de difra\xE7\xE3o.\r\n\r\nUm programa em execu\xE7\xE3o
+    na GPU gera este campo de n\xFAmeros complexos, permitindo que o padr\xE3o seja
+    recalculado em uma \xFAnica passagem.\r\n\r\nO rec\xE1lculo ocorre apenas quando
+    h\xE1 uma altera\xE7\xE3o no comprimento de onda ou no padr\xE3o de abertura."
+  languageIndex: 0
+--- !u!114 &2747719007095901375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167877741823378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 1
+  serializedProgramAsset: {fileID: 11400000, guid: 0c4ebdb0d0e747c42af886ac0649096d,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 530112de8551329498e25f888f6d27e6, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
+--- !u!1 &1874167878389501347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874167878389501346}
+  - component: {fileID: 1874167878389501344}
+  - component: {fileID: 1874167878389501345}
+  m_Layer: 17
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1874167878389501346
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167878389501347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1874167876949158822}
+  m_Father: {fileID: 1874167877741823377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1874167878389501344
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167878389501347}
+  m_CullTransparentMesh: 0
+--- !u!114 &1874167878389501345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874167878389501347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 35630e38b4e5ffb40b44ec5348b4333f, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 84d3838ecee5201468330e78cbe403e7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
