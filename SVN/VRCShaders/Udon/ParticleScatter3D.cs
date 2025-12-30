@@ -14,8 +14,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
     ProbabilityScreen probabilityScreen;
     //[SerializeField]
    // HuygensDisplay huygensDisplay;
-    //[SerializeField]
-    //GratingModel slitModel;
+    [SerializeField]
+    GratingModel slitModel;
     [SerializeField]
     Transform screenModelXfrm;
    // [SerializeField]
@@ -344,8 +344,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
             float halfLength = simulationLength * 0.5f;
             gratingDistance = Mathf.Clamp(value, 0, halfLength);
             Vector3 gratingLocal = new Vector3(-halfLength + gratingDistance, 0f, 0f);
-            //if (slitModel != null)
-            //    slitModel.transform.localPosition = gratingLocal;
+            if (slitModel != null)
+                slitModel.transform.localPosition = gratingLocal;
             if (matParticleFlow != null)
                 matParticleFlow.SetFloat("_GratingDistance", gratingDistance);
             float slitsToScreen = screenDistance - gratingDistance;
@@ -793,8 +793,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
             }*/
             float slitSpacing = slitPitch / 1000f;
             float rowSpacing = rowPitch / 1000f;
-           // if (slitModel != null)
-           //     slitModel.UpdateGratingSettings(slitCount, rowCount, SlitWidthFrac * slitSpacing, slitHeightFrac * rowSpacing, slitSpacing, rowSpacing);
+            if (slitModel != null)
+                slitModel.UpdateGratingSettings(slitCount, rowCount, SlitWidthFrac * slitSpacing, slitHeightFrac * rowSpacing, slitSpacing, rowSpacing);
             if (matParticleFlow != null)
             {
                 matParticleFlow.SetInteger("_SlitCount", slitCount);
