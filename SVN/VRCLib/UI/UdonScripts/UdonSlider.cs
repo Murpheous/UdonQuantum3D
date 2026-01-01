@@ -145,10 +145,18 @@ public class UdonSlider : UdonSharpBehaviour
         {
             displayScale = value;
             UpdateLabel();
-            RequestSerialization();
         }
     }
 
+    public bool DisplayInteger
+    {
+        get => displayInteger;
+        set
+        {
+            displayInteger = value;
+            UpdateLabel();
+        }
+    }
     private void UpdateLabel()
     {
         if (sliderLabel == null || hideLabel)
