@@ -1,4 +1,5 @@
 ﻿
+using System;
 using TMPro;
 using UdonSharp;
 using UnityEngine;
@@ -171,6 +172,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 slitHeightUnitFactor = 1000f;
                 slitWidthDisplayUnits = "mm";
                 slitHeightDisplayUnits = "mm";
+                planckScale = 1;
                 break;
                 // Handle mode change
         }
@@ -522,19 +524,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
         }
     }
 
-/*    public float SlitWidthFrac
-    {
-        get => slitWidthFrac;
-        set
-        {
-            if (value != slitWidthFrac)
-            {
-                gratingUpdateRequired = true;
-            }
-            slitWidthFrac = value;
-        }
-    }
-*/
     public float SlitHeight
     {
         get => slitHeight;
@@ -548,20 +537,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
         }
     }
 
-    /*
-    public float SlitHeightFrac
-    {
-        get => slitHeightFrac;
-        set
-        {
-            if (value != slitHeightFrac)
-            {
-               
-            }
-            slitHeightFrac = value;
-        }
-    }
-    */
 
     public float PulseWidth
     {
@@ -753,6 +728,9 @@ public class ParticleScatter3D : UdonSharpBehaviour
             gratingFourierSq = new float[pointsWide];
             probIntegral = new float[pointsWide + 1];
         }
+        // Check the width of the distribution
+        float pMaxSingle = (float)((7.0d * Math.PI) / (apertureWidth * pointsWide));
+        float maxP = Mathf.Min(pMaxSingle,maxParticleP);
         float impulse;
         float prob;
         float pi_h = Mathf.PI * planckScale; // Assume h = 1 for simplicity, so pi_h = π
