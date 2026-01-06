@@ -33,8 +33,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
     [SerializeField]
     private float planckScale = 0.001f; // Planck's constant
     [Header("Simulation Dimensions")]
-    [SerializeField]
-    private float simulationLength = 8f;
     [SerializeField, Tooltip("Max distance from start to target")] float maxDisplacement = 7f;
     [SerializeField]
     private Vector3 wallLimits = new Vector3(5f, 2f, 1f);
@@ -122,20 +120,20 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private VRCPlayerApi player;
     private bool iamOwner = false;
     [SerializeField]
-    private Vector3[] slitWidthMinMaxNominal = new[] {
-        new Vector3(.001f,0.02f,.015f), new Vector3(0.0001f,0.001f,0.00063f), new Vector3(0.0050f,0.050f, 0.023f) 
+    private Vector3[] slitWidthMinMaxInitial = new[] {
+        new Vector3(.001f,0.0095f,.008f), new Vector3(0.0001f,0.00095f,0.00063f), new Vector3(0.0050f,0.050f, 0.023f) 
     };
     [SerializeField]
-    private Vector3[] slitHeightMinMaxNominal = new[] {
-        new Vector3(.001f,.02f,.015f), new Vector3(0.1f,1.0f,0.4f), new Vector3(0.1f,0.5f, 0.2f)
+    private Vector3[] slitHeightMinMaxInitial = new[] {
+        new Vector3(.001f,.0095f,.008f), new Vector3(0.01f,.1f,0.04f), new Vector3(0.1f,0.5f, 0.2f)
     };
     [SerializeField]
-    private Vector3[] slitPitchMinMaxNominal = new[] {
-        new Vector3(0.021f,0.1f,.03f), new Vector3(0.0001f,0.001f,0.00063f), new Vector3(0.07f,0.35f, 0.115f)
+    private Vector3[] slitPitchMinMaxInitial = new[] {
+        new Vector3(0.011f,0.05f,.03f), new Vector3(0.0001f,0.005f,0.00272f), new Vector3(0.07f,0.35f, 0.115f)
     }; 
     [SerializeField]
-    private Vector3[] rowPitchMinMaxNominal = new[] {
-        new Vector3(.021f,.1f,0.06f), new Vector3(1.0f,2.0f,1.0f), new Vector3(0.07f,0.35f, 0.2f)
+    private Vector3[] rowPitchMinMaxInitial = new[] {
+        new Vector3(.011f,.05f,0.03f), new Vector3(.1f,0.3f,0.2f), new Vector3(0.07f,0.35f, 0.2f)
     };
 
     /* 
@@ -181,34 +179,34 @@ public class ParticleScatter3D : UdonSharpBehaviour
         {
             slitWidthSlider.SliderUnit = slitWidthDisplayUnits;
             slitWidthSlider.DisplayScale = slitWidthUnitFactor; // Display in millimetres
-            slitWidthSlider.SetLimits(slitWidthMinMaxNominal[mode].x, slitWidthMinMaxNominal[mode].y);
-            slitWidthSlider.SetValue(slitWidthMinMaxNominal[mode].z);
+            slitWidthSlider.SetLimits(slitWidthMinMaxInitial[mode].x, slitWidthMinMaxInitial[mode].y);
+            slitWidthSlider.SetValue(slitWidthMinMaxInitial[mode].z);
         }
-        SlitWidth = slitWidthMinMaxNominal[mode].z;
+        SlitWidth = slitWidthMinMaxInitial[mode].z;
         if (slitHeightSlider != null)
         {
             slitHeightSlider.SliderUnit = "<br>" + slitHeightDisplayUnits;
             slitHeightSlider.DisplayScale = slitHeightUnitFactor; // Display in micrometres
-            slitHeightSlider.SetLimits(slitHeightMinMaxNominal[mode].x, slitHeightMinMaxNominal[mode].y);
-            slitHeightSlider.SetValue(slitHeightMinMaxNominal[mode].z);
+            slitHeightSlider.SetLimits(slitHeightMinMaxInitial[mode].x, slitHeightMinMaxInitial[mode].y);
+            slitHeightSlider.SetValue(slitHeightMinMaxInitial[mode].z);
         }
-        SlitHeight = slitHeightMinMaxNominal[mode].z;
+        SlitHeight = slitHeightMinMaxInitial[mode].z;
         if (slitPitchSlider != null)
         {
             slitPitchSlider.SliderUnit = slitWidthDisplayUnits;
             slitPitchSlider.DisplayScale = slitWidthUnitFactor; // Display in nanometres
-            slitPitchSlider.SetLimits(slitPitchMinMaxNominal[mode].x, slitPitchMinMaxNominal[mode].y);
-            slitPitchSlider.SetValue(slitPitchMinMaxNominal[mode].z);
+            slitPitchSlider.SetLimits(slitPitchMinMaxInitial[mode].x, slitPitchMinMaxInitial[mode].y);
+            slitPitchSlider.SetValue(slitPitchMinMaxInitial[mode].z);
         }
-        SlitPitch = slitPitchMinMaxNominal[mode].z;
+        SlitPitch = slitPitchMinMaxInitial[mode].z;
         if (rowPitchSlider != null)
         {
             rowPitchSlider.SliderUnit = "<br>" + slitHeightDisplayUnits;
             rowPitchSlider.DisplayScale = slitHeightUnitFactor; // Display in micrometres
-            rowPitchSlider.SetLimits(rowPitchMinMaxNominal[mode].x, rowPitchMinMaxNominal[mode].y);
-            rowPitchSlider.SetValue(rowPitchMinMaxNominal[mode].z);
+            rowPitchSlider.SetLimits(rowPitchMinMaxInitial[mode].x, rowPitchMinMaxInitial[mode].y);
+            rowPitchSlider.SetValue(rowPitchMinMaxInitial[mode].z);
         }
-        rowPitch = rowPitchMinMaxNominal[mode].z;
+        rowPitch = rowPitchMinMaxInitial[mode].z;
     }
     public int ExperimentMode
     {
@@ -414,7 +412,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             screenDistance = value;
             if (matParticleFlow != null)
                 matParticleFlow.SetFloat("_ScreenDistance", screenDistance);
-            float xOffset = screenDistance - (simulationLength * 0.5f);
+            float xOffset = screenDistance - (wallLimits.x * 0.5f);
             float slitsToScreen = screenDistance - gratingDistance;
             if (screenModelXfrm != null)
             {
@@ -441,7 +439,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         get => gratingDistance;
         set
         {
-            float halfLength = simulationLength * 0.5f;
+            float halfLength = wallLimits.x * 0.5f;
             gratingDistance = Mathf.Clamp(value, 0, halfLength);
             Vector3 gratingLocal = new Vector3(-halfLength + gratingDistance, 0f, 0f);
             if (slitModel != null)
@@ -473,8 +471,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
         beamWidthHeight = new Vector2(Mathf.Max(slitCount - 1, 0) * slitPitch + slitWidth * 1.3f, Mathf.Max(rowCount - 1, 0) * rowPitch + slitHeight * 1.3f);
         if (matParticleFlow != null)
         {
-            matParticleFlow.SetFloat("_BeamWidth", beamWidthHeight.x / 1000f);
-            matParticleFlow.SetFloat("_BeamHeight", beamWidthHeight.y / 1000f);
+            matParticleFlow.SetFloat("_BeamWidth", beamWidthHeight.x);
+            matParticleFlow.SetFloat("_BeamHeight", beamWidthHeight.y);
         }
     }
 
@@ -898,7 +896,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         {
             if (probabilityScreen != null)
             {
-                probabilityScreen.UpdateGratingSettings(slitCount, rowCount, SlitWidth, SlitHeight, slitPitch, rowPitch);
+                probabilityScreen.UpdateGratingSettings(slitCount, rowCount, slitWidth, slitHeight, slitPitch, rowPitch);
                 probabilityScreen.ParticleP = particleP;
                 probabilityScreen.LaserColour = displayColor;
             }
@@ -909,26 +907,24 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 huygensDisplay.ParticleP = particleP;
                 huygensDisplay.LaserColour = displayColor;
             }*/
-            float slitSpacing = slitPitch / 1000f;
-            float rowSpacing = rowPitch / 1000f;
             if (slitModel != null)
-                slitModel.UpdateGratingSettings(slitCount, rowCount, slitWidth, slitHeight, slitSpacing, rowSpacing);
+                slitModel.UpdateGratingSettings(slitCount, rowCount, slitWidth, slitHeight, slitPitch, rowPitch);
             if (matParticleFlow != null)
             {
                 matParticleFlow.SetInteger("_SlitCount", slitCount);
-                matParticleFlow.SetFloat("_SlitPitch", slitSpacing);
+                matParticleFlow.SetFloat("_SlitPitch", slitPitch);
                 matParticleFlow.SetFloat("_SlitWidth", slitWidth);
                 matParticleFlow.SetInteger("_RowCount", rowCount);
-                matParticleFlow.SetFloat("_RowPitch", rowSpacing);
+                matParticleFlow.SetFloat("_RowPitch", rowPitch);
                 matParticleFlow.SetFloat("_SlitHeight", slitHeight);
             }
             if (matProbCRT != null)
             {
                 matProbCRT.SetInteger("_SlitCount", slitCount);
-                matProbCRT.SetFloat("_SlitPitch", slitSpacing);
+                matProbCRT.SetFloat("_SlitPitch", slitPitch);
                 matProbCRT.SetFloat("_SlitWidth", slitWidth);
                 matProbCRT.SetInteger("_RowCount", rowCount);
-                matProbCRT.SetFloat("_RowPitch", rowSpacing);
+                matProbCRT.SetFloat("_RowPitch", rowPitch);
                 matProbCRT.SetFloat("_SlitHeight", slitHeight);
             }
             UpdateBeamDimensions();
@@ -1040,7 +1036,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             screenDistanceSlider.SliderUnit = "m";
             screenDistanceSlider.DisplayScale = 1f; // Display in metres
             screenDistanceSlider.ClientVariableName = nameof(screenDistance);
-            screenDistanceSlider.SetLimits(gratingDistance, WallLimits.x - 1);
+            screenDistanceSlider.SetLimits(gratingDistance+1, WallLimits.x - 1);
             screenDistanceSlider.SetValue(screenDistance);
             screenDistanceSlider.Interactable = true;
         }

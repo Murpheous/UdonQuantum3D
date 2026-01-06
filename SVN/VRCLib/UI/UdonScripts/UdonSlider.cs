@@ -270,8 +270,6 @@ public class UdonSlider : UdonSharpBehaviour
     {
         if (mySlider == null)
             mySlider = GetComponent<Slider>();
-        mySlider.minValue = minValue;
-        mySlider.maxValue = maxValue;
     }
 #endif
 
