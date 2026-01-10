@@ -508,7 +508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &834639633
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3240,7 +3240,7 @@ MonoBehaviour:
   texName: _MomentumMap
   particleVisibility: 1
   experimentMode: 0
-  pointsWide: 2048
+  pointsWide: 512
   planckScale: 1
   maxDisplacement: 12
   wallLimits: {x: 12, y: 2, z: 2}
