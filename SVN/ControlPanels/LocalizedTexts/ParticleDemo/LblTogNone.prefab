@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Off
-  - "\u6D88\u3059"
-  - "\u95DC"
-  - "\u5173"
-  - "\uB044\uB2E4"
+  - "<size=110%>\u6D88\u3059"
+  - "<size=110%>\u95DC"
+  - "<size=110%>\u5173"
+  - "<size=110%>\uB044\uB2E4"
   - Desligado
+  - "D\xE9sactiv\xE9"
 --- !u!114 &7376187870900536221
 MonoBehaviour:
   m_ObjectHideFlags: 0

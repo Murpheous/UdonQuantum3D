@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u6CE2\u52A8"
   - "\uD30C\uB3D9 \uC6B4\uB3D9"
   - Movimento de onda
+  - Mouvement ondulatoire
 --- !u!114 &4245678321580169634
 MonoBehaviour:
   m_ObjectHideFlags: 0

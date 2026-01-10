@@ -107,7 +107,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -162,12 +162,13 @@ MonoBehaviour:
   myText: {fileID: 5499604603914009230}
   languageIndex: 0
   texts:
-  - Slit Spacing
-  - "\u30B9\u30EA\u30C3\u30C8\u9593\u9694"
-  - "\u72F9\u7E2B\u9593\u8DDD"
-  - "\u72ED\u7F1D\u95F4\u8DDD"
-  - "\uC2AC\uB9BF \uAC04\uACA9"
-  - "Espa\xE7amento de fenda"
+  - Slit Interval
+  - "<size=110%>\u30B9\u30EA\u30C3\u30C8\u9593\u9694"
+  - "<size=110%>\u72F9\u7E2B\u9593\u8DDD"
+  - "<size=110%>\u72ED\u7F1D\u95F4\u8DDD"
+  - "<size=110%>\uC2AC\uB9BF \uAC04\uACA9"
+  - Passo da fenda
+  - Pas de fente
 --- !u!114 &3019280676395404735
 MonoBehaviour:
   m_ObjectHideFlags: 0

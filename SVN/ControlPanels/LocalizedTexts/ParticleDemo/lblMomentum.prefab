@@ -162,11 +162,13 @@ MonoBehaviour:
   myText: {fileID: 4788648193248142557}
   languageIndex: 0
   texts:
-  - Particle Momentum  (p)
-  - "\u7C92\u5B50\u904B\u52D5\u91CF  (p)"
-  - "\u7C92\u5B50\u52D5\u91CF  (p)"
-  - "\u7C92\u5B50\u52A8\u91CF  (p)"
-  - "\uC785\uC790 \uC6B4\uB3D9\uB7C9  (p)"
+  - Particle Momentum (p)
+  - "<size=110%>\u7C92\u5B50\u904B\u52D5\u91CF</size> (p)"
+  - "<size=110%>\u7C92\u5B50\u52D5\u91CF</size> (p)"
+  - "<size=110%>\u7C92\u5B50\u52A8\u91CF</size> (p)"
+  - "<size=110%>\uC785\uC790 \uC6B4\uB3D9\uB7C9</size> (p)"
+  - "Momento da part\xEDcula (p)"
+  - Impulsion des particules (p)
 --- !u!114 &7354336624964277123
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Source<br>Width
-  - "\u6E90\u306E\u5E45"
-  - "\u4F86\u6E90<br>\u5BEC\u5EA6"
-  - "\u6E90\u5BBD\u5EA6"
-  - "\uC18C\uC2A4<br>\uB108\uBE44"
+  - "<size=110%>\u6E90\u306E\u5E45"
+  - "<size=110%>\u4F86\u6E90<br>\u5BEC\u5EA6"
+  - "<size=110%>\u6E90\u5BBD\u5EA6"
+  - "<size=110%>\uC18C\uC2A4<br>\uB108\uBE44"
   - Largura<br>da fonte
+  - Largeur<br>de la fente
 --- !u!114 &8819620559883339532
 MonoBehaviour:
   m_ObjectHideFlags: 0

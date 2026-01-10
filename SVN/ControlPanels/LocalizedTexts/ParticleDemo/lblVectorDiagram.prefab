@@ -163,10 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - 'Vector Diagrams:'
-  - "\u30D9\u30AF\u30C8\u30EB\u56F3:"
-  - "\u5411\u91CF\u5716\uFF1A"
-  - "\u77E2\u91CF\u56FE\uFF1A"
-  - "\uBCA1\uD130 \uB2E4\uC774\uC5B4\uADF8\uB7A8:"
+  - "<size=110%>\u30D9\u30AF\u30C8\u30EB\u56F3:"
+  - "<size=110%>\u5411\u91CF\u5716\uFF1A"
+  - "<size=110%>\u77E2\u91CF\u56FE\uFF1A"
+  - "<size=110%>\uBCA1\uD130 \uB2E4\uC774\uC5B4\uADF8\uB7A8:"
+  - 'Diagramas Vetoriais:'
+  - 'Diagrammes Vectoriels:'
 --- !u!114 &6803616819793893495
 MonoBehaviour:
   m_ObjectHideFlags: 0

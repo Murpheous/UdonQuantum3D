@@ -163,10 +163,11 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - 'Amplitudes:'
-  - "\u632F\u5E45:"
-  - "\u632F\u5E45\uFF1A"
-  - "\u632F\u5E45\uFF1A"
-  - "\uC9C4\uD3ED:"
+  - "<size=110%>\u632F\u5E45:"
+  - "<size=110%>\u632F\u5E45\uFF1A"
+  - "<size=110%>\u632F\u5E45\uFF1A"
+  - "<size=110%>\uC9C4\uD3ED:"
+  - 'Amplitudes:'
   - 'Amplitudes:'
 --- !u!114 &412120628111285071
 MonoBehaviour:

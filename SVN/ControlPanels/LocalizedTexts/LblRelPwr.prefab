@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u4F4D\u80FD<br><size=90%>(\u5B9E\u90E8\u7684\u5E73\u65B9)"
   - "\uC7A0\uC7AC\uB825<br><size=90%>(\uC2E4\uC218 \uBD80\uBD84)\xB2"
   - "Potencial<br> (real)\xB2"
+  - "Potentiel<br><size=80%> (r\xE9el)\xB2"
 --- !u!114 &7617045984382380808
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7495768627515106378}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
+    SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -163,10 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Pulse Particles
-  - "\u30D1\u30EB\u30B9\u7C92\u5B50"
-  - "\u8108\u885D\u7C92\u5B50"
-  - "\u8109\u51B2\u7C92\u5B50"
-  - "\uD384\uC2A4 \uC785\uC790"
+  - "<size=110%>\u30D1\u30EB\u30B9\u7C92\u5B50"
+  - "<size=110%>\u8108\u885D\u7C92\u5B50"
+  - "<size=110%>\u8109\u51B2\u7C92\u5B50"
+  - "<size=110%>\uD384\uC2A4 \uC785\uC790"
+  - "Part\xEDculas de pulso"
+  - "Particules puls\xE9es"
 --- !u!114 &922053824146174087
 MonoBehaviour:
   m_ObjectHideFlags: 0

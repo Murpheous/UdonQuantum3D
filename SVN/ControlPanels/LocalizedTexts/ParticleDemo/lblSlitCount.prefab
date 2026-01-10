@@ -164,12 +164,13 @@ MonoBehaviour:
   myText: {fileID: 7880892290395014006}
   languageIndex: 0
   texts:
-  - Source<br>Count
-  - "\u6CE2\u6E90\u6570"
-  - "\u4F86\u6E90\u6578\u91CF"
-  - "\u6765\u6E90\u6570\u91CF"
-  - "\uC18C\uC2A4 \uC218"
+  - Slit<br>Count
+  - "<size=110%>\u6CE2\u6E90\u6570"
+  - "<size=110%>\u4F86\u6E90\u6578\u91CF"
+  - "<size=110%>\u6765\u6E90\u6570\u91CF"
+  - "<size=110%>\uC18C\uC2A4 \uC218"
   - "N\xFAmero<br>de fendas"
+  - Nombre de fentes
 --- !u!114 &6982441423841677734
 MonoBehaviour:
   m_ObjectHideFlags: 0

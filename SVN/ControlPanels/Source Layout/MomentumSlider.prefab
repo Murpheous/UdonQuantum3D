@@ -175,7 +175,7 @@ MonoBehaviour:
   sliderUnit: 0
   SliderClient: {fileID: 0}
   clientVariableName: particleP
-  clientPtrEvent: slidePtr
+  clientPtrEvent: 
   syncedValue: 24
   maxValue: 100
   minValue: 20
@@ -881,11 +881,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3402044920087501508}
     m_Modifications:
-    - target: {fileID: 688688882843727837, guid: c28139c9917428741a861d7770ae5c57,
-        type: 3}
-      propertyPath: texts.Array.size
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 688688882843727837, guid: c28139c9917428741a861d7770ae5c57,
         type: 3}
       propertyPath: texts.Array.data[5]

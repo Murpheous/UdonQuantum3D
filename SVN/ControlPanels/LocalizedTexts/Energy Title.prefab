@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - 'Energy Transport:'
-  - "\u30A8\u30CD\u30EB\u30AE\u30FC\u306E\u8F38\u9001:"
-  - "\u80FD\u6E90\u904B\u8F38\uFF1A"
-  - "\u80FD\u6E90\u8FD0\u8F93\uFF1A"
-  - "\uC5D0\uB108\uC9C0 \uC218\uC1A1:"
+  - "<size=110%>\u30A8\u30CD\u30EB\u30AE\u30FC\u306E\u8F38\u9001:"
+  - "<size=110%>\u80FD\u6E90\u904B\u8F38\uFF1A"
+  - "<size=110%>\u80FD\u6E90\u8FD0\u8F93\uFF1A"
+  - "<size=110%>\uC5D0\uB108\uC9C0 \uC218\uC1A1:"
   - 'Transporte de energia:'
+  - "Transport d'\xE9nergie :"
 --- !u!114 &5365880081035875551
 MonoBehaviour:
   m_ObjectHideFlags: 0

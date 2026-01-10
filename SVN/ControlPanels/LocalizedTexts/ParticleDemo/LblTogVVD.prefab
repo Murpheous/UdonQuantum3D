@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Quantizing<br>Diffraction
-  - "\u5149\u5B50/\u7C92\u5B50\u306E\u904B\u52D5\u91CF"
-  - "\u91CF\u5B50\u5316\u7E5E\u5C04"
-  - "\u91CF\u5B50\u5316\u884D\u5C04"
-  - "\uC591\uC790\uD654 \uD68C\uC808"
+  - "<size=110%>\u5149\u5B50/\u7C92\u5B50\u306E\u904B\u52D5\u91CF"
+  - "<size=110%>\u91CF\u5B50\u5316\u7E5E\u5C04"
+  - "<size=110%>\u91CF\u5B50\u5316\u884D\u5C04"
+  - "<size=110%>\uC591\uC790\uD654 \uD68C\uC808"
   - "Quantiza\xE7\xE3o<br>Difra\xE7\xE3o"
+  - Quantification<br>de la diffraction
 --- !u!114 &7882917400386312986
 MonoBehaviour:
   m_ObjectHideFlags: 0

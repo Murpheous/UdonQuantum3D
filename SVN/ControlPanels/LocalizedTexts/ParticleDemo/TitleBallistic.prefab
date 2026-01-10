@@ -107,7 +107,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -30
+  m_lineSpacing: -35
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Particle Visualization
-  - "\u7C92\u5B50\u306E\u53EF\u8996\u5316"
-  - "\u7C92\u5B50\u53EF\u8996\u5316"
-  - "\u7C92\u5B50\u53EF\u89C6\u5316"
-  - "\uC785\uC790 \uC2DC\uAC01\uD654"
+  - "<size=110%>\u7C92\u5B50\u306E\u53EF\u8996\u5316"
+  - "<size=110%>\u7C92\u5B50\u53EF\u8996\u5316"
+  - "<size=110%>\u7C92\u5B50\u53EF\u89C6\u5316"
+  - "<size=110%>\uC785\uC790 \uC2DC\uAC01\uD654"
   - "<size=90%>Visualiza\xE7\xE3o de Part\xEDculas"
+  - <size=90%>Visualisation des particules
 --- !u!114 &1617632328005284430
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -107,7 +107,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Slit Width
-  - "\u30B9\u30EA\u30C3\u30C8\u5E45"
-  - "\u72F9\u7E2B\u5BEC\u5EA6"
-  - "\u72ED\u7F1D\u5BBD\u5EA6"
-  - "\uC2AC\uB9BF \uD3ED"
+  - "<size=110%>\u30B9\u30EA\u30C3\u30C8\u5E45"
+  - "<size=110%>\u72F9\u7E2B\u5BEC\u5EA6"
+  - "<size=110%>\u72ED\u7F1D\u5BBD\u5EA6"
+  - "<size=110%>\uC2AC\uB9BF \uD3ED"
   - Largura da fenda
+  - Largeur de la fente
 --- !u!114 &7406289830081811295
 MonoBehaviour:
   m_ObjectHideFlags: 0

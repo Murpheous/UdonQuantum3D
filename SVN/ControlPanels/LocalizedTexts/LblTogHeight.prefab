@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u6CE2\u9AD8<br><size=90%>(\u5B9E\u90E8\uFF09"
   - "\uD30C\uB3C4 \uB192\uC774<br><size=80%>(\uC2E4\uC218\uBD80\uB294\uFF09"
   - Altura<br><size=80%> (parte real)
+  - "Hauteur<size=80%>(partie r\xE9elle)"
 --- !u!114 &7376187870900536221
 MonoBehaviour:
   m_ObjectHideFlags: 0

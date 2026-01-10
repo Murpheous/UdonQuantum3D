@@ -1679,7 +1679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1820,7 +1820,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1856,7 +1856,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     - target: {fileID: 5981293656576897146, guid: 53b28504fd4f3f746a7216500963a8fa,
         type: 3}
@@ -1991,7 +1991,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     - target: {fileID: 3633082651070913077, guid: d23d1f06426e3b445bade7b8f9c04c84,
         type: 3}
@@ -2228,6 +2228,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: LblTogAmp
       objectReference: {fileID: 0}
+    - target: {fileID: 5610096176756250593, guid: 88f8d81dc35b8244e8b6775bf9730747,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
+        type: 2}
     - target: {fileID: 8469836505329106107, guid: 88f8d81dc35b8244e8b6775bf9730747,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2367,8 +2373,13 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
+    - target: {fileID: 6548194594846914697, guid: 417197ec919ddb949985fd16d9bff80c,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7310155610174878004, guid: 417197ec919ddb949985fd16d9bff80c,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2514,7 +2525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2655,7 +2666,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 746011f08ca611d47982ae8716907852,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

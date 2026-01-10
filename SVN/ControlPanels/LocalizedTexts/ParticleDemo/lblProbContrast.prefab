@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
+    SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Brightness
-  - "\u8F1D\u5EA6"
-  - "\u4EAE\u5EA6"
-  - "\u4EAE\u5EA6"
-  - "\uBA85\uB3C4"
+  - "<size=110%>\u8F1D\u5EA6"
+  - "<size=110%>\u4EAE\u5EA6"
+  - "<size=110%>\u4EAE\u5EA6"
+  - "<size=110%>\uBA85\uB3C4"
   - Brilho
+  - "Luminosit\xE9"
 --- !u!114 &6758528008067539247
 MonoBehaviour:
   m_ObjectHideFlags: 0

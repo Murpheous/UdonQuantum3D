@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -16, y: -27}
+  m_AnchoredPosition: {x: -16, y: -30}
   m_SizeDelta: {x: 350, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7675645821484936830
@@ -103,11 +103,11 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -30
+  m_lineSpacing: -35
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Wave Vectors and Diffraction
-  - "\u6CE2\u30D9\u30AF\u30C8\u30EB\u3068\u56DE\u6298"
-  - "\u6CE2\u77E2\u548C\u7E5E\u5C04"
-  - "\u6CE2\u77E2\u548C\u884D\u5C04"
-  - "\uD30C\uB3D9 \uBCA1\uD130\uC640 \uD68C\uC808"
+  - "<size=110%>\u6CE2\u30D9\u30AF\u30C8\u30EB\u3068\u56DE\u6298"
+  - "<size=110%>\u6CE2\u77E2\u548C\u7E5E\u5C04"
+  - "<size=110%>\u6CE2\u77E2\u548C\u884D\u5C04"
+  - "<size=110%>\uD30C\uB3D9 \uBCA1\uD130\uC640 \uD68C\uC808"
   - "Vetores de Onda<br>e Difra\xE7\xE3o"
+  - Vecteurs d'onde et diffraction
 --- !u!114 &656312730557704816
 MonoBehaviour:
   m_ObjectHideFlags: 0

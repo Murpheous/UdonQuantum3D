@@ -107,7 +107,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -163,11 +163,12 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Primary Interference<br>Directions
-  - "\u4E00\u6B21\u30A8\u30CD\u30EB\u30AE\u30FC\u306E\u65B9\u5411"
-  - "\u4E00\u6B21\u80FD\u6E90\u65B9\u5411"
-  - "\u4E00\u6B21\u80FD\u6E90\u65B9\u5411"
-  - "1\uCC28 \uC5D0\uB108\uC9C0 \uBC29\uD5A5"
+  - "<size=110%>\u4E00\u6B21\u30A8\u30CD\u30EB\u30AE\u30FC\u306E\u65B9\u5411"
+  - "<size=110%>\u4E00\u6B21\u80FD\u6E90\u65B9\u5411"
+  - "<size=110%>\u4E00\u6B21\u80FD\u6E90\u65B9\u5411"
+  - "<size=110%>1\uCC28 \uC5D0\uB108\uC9C0 \uBC29\uD5A5"
   - "Direc\xE7\xF5es de<br>Energia Prim\xE1ria"
+  - "Directions d'interf\xE9rence primaires"
 --- !u!114 &7376187870900536221
 MonoBehaviour:
   m_ObjectHideFlags: 0

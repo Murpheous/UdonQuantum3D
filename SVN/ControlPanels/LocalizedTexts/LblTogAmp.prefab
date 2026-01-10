@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u5E45\u5EA6<br><size=90%>(\u7EDD\u5BF9\u503C)"
   - "\uC9C4\uD3ED<br><size=80%>(\uACC4\uC218)"
   - "Amplitude<br><size=80%>(m\xF3dulo)"
+  - Amplitude<br><size=80%>(module)
 --- !u!114 &5610096176756250593
 MonoBehaviour:
   m_ObjectHideFlags: 0

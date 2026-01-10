@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u4F7F\u7528\u590D\u6570\u6765\u53EF\u89C6\u5316\u6CE2\u6D6A"
   - "\uD30C\uB3D9 \uC2DC\uAC01\uD654"
   - "Visualiza\xE7\xE3o de Ondas"
+  - Visualisation des ondes
 --- !u!114 &9039218832889172105
 MonoBehaviour:
   m_ObjectHideFlags: 0

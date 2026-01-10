@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u603B\u80FD\u91CF<br><size=90%>\uFF08\u6A21\u91CF\u7684\u5E73\u65B9\uFF09"
   - "\uD65C\uB3D9\uB825<br><size=90%>\uFF08\uACC4\uC218)\xB2"
   - "Energia Total<br><size=80%> (m\xF3dulo)\xB2</size>"
+  - "\xC9nergie totale<br><size=80%> (module)\xB2</size>"
 --- !u!114 &5309908770925725902
 MonoBehaviour:
   m_ObjectHideFlags: 0

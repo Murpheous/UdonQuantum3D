@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 0
+    SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u663E\u793A/\u9690\u85CF"
   - "\uD45C\uC2DC/\uC228\uAE30\uAE30"
   - Mostrar/Ocultar
+  - Afficher/Masquer
 --- !u!114 &3116477850998138560
 MonoBehaviour:
   m_ObjectHideFlags: 0

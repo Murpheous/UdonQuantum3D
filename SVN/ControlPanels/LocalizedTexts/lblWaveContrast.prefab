@@ -168,6 +168,7 @@ MonoBehaviour:
   - "\u56FE\u50CF\u4EAE\u5EA6"
   - "\uBA85\uB3C4"
   - Ajuste de brilho
+  - "Luminosit\xE9"
 --- !u!114 &4392871234765289986
 MonoBehaviour:
   m_ObjectHideFlags: 0
