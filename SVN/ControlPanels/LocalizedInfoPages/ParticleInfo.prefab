@@ -638,11 +638,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
-    - target: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
-        type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1961719611521140592, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
       propertyPath: m_Group
@@ -728,11 +723,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5401741553400413583, guid: 05056042d4a0e344c854ff9a34abc393,
         type: 3}
-    - target: {fileID: 5401741553400413583, guid: 05056042d4a0e344c854ff9a34abc393,
-        type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7372484692814685060, guid: 05056042d4a0e344c854ff9a34abc393,
         type: 3}
       propertyPath: m_Name

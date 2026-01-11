@@ -410,7 +410,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         get => screenDistance;
         set
         {
-            value = Mathf.Clamp(value, gratingDistance + 1, maxDisplacement);
+            value = Mathf.Clamp(value, gratingDistance + 1.5f, maxDisplacement);
             screenDistance = value;
             if (matParticleFlow != null)
                 matParticleFlow.SetFloat("_ScreenDistance", screenDistance);
@@ -719,7 +719,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private float[] probIntegral;
     //[SerializeField]
     private float[] weightedLookup;
-    private void GenerateSamples(int apertureCount, float apertureWidth, float aperturePitch)
+    private void GenerateSamples(int apertureCount, float apertureWidth, float aperturePitch, float maxP)
     {
         if (apertureCount < 1)
             apertureWidth = aperturePitch;
@@ -729,15 +729,15 @@ public class ParticleScatter3D : UdonSharpBehaviour
             probIntegral = new float[pointsWide + 1];
         }
         // Check the width of the distribution
-        float pMaxSingle = (float)((7.0d * Math.PI) / (apertureWidth * pointsWide));
-        float maxP = Mathf.Min(pMaxSingle,maxParticleP);
+        //float pMaxSingle = (float)((7.0d * Math.PI) / (apertureWidth * pointsWide));
+        //float maxP = Mathf.Min(pMaxSingle,maxParticleP*0.667f);
         float impulse;
         float prob;
         float pi_h = Mathf.PI * planckScale; // Assume h = 1 for simplicity, so pi_h = π
         float probIntegralSum = 0;
         for (int i = 0; i < pointsWide; i++)
         {
-            impulse = (maxParticleP * i) / pointsWide;
+            impulse = (maxP * i) / pointsWide;
             prob = sampleDistribution(impulse * pi_h, apertureCount, apertureWidth, aperturePitch);
             gratingFourierSq[i] = prob;
             probIntegral[i] = probIntegralSum;
@@ -751,7 +751,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         //probIntegral[pointsWide] = pointsWide;
     }
 
-    private void GenerateReverseLookup()
+    private void GenerateReverseLookup(float maxP)
     {
         if (weightedLookup == null || weightedLookup.Length < pointsWide)
             weightedLookup = new float[pointsWide];
@@ -763,7 +763,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         float frac;
         float val;
         int lim = pointsWide - 1;
-        float norm = maxParticleP / lim;
+        float norm = maxP / lim;
         for (int i = 0; i <= lim; i++)
         {
             while ((vmax <= i) && (indexAbove <= lim))
@@ -789,7 +789,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         }
     }
 
-    public void CopyTexToShaders(string TexKeyword, string MaxPKeyword, string MaxIKeyWord)
+    public void CopyTexToShaders(string TexKeyword, string MaxPKeyword, string MaxIKeyWord, float maxP)
     {
         Color[] texData = new Color[pointsWide + pointsWide];
 
@@ -802,14 +802,14 @@ public class ParticleScatter3D : UdonSharpBehaviour
             float impulse;
             for (int i = 0; i < pointsWide; i++)
             {
-                impulse = (maxParticleP * i) / pointsWide;
+                impulse = (maxP * i) / pointsWide;
 
                 float sample = gratingFourierSq[i];
                 float integral = probIntegral[i];
                 texData[pointsWide + i] = new Color(sample, integral, impulse, 1f);
                 texData[pointsWide - i] = new Color(sample, -integral, -impulse, 1f);
             }
-            matProbCRT.SetFloat(MaxPKeyword, maxParticleP); // "Map max momentum", float ) = 1
+            matProbCRT.SetFloat(MaxPKeyword, maxP); // "Map max momentum", float ) = 1
             matProbCRT.SetFloat(MaxIKeyWord, probIntegral[pointsWide - 1]); // "Map max integral", float ) = 1
             texData[0] = new Color(0, -probIntegral[pointsWide - 1], -1, 1f);
             tex.SetPixels(0, 0, pointsWide * 2, 1, texData, 0);
@@ -835,7 +835,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             tex.wrapMode = TextureWrapMode.Clamp;
             tex.Apply();
             matParticleFlow.SetTexture(TexKeyword, tex);
-            matParticleFlow.SetFloat(MaxPKeyword, maxParticleP); // "Map max momentum", float ) = 1
+            matParticleFlow.SetFloat(MaxPKeyword, maxP); // "Map max momentum", float ) = 1
         }
     }
 
@@ -843,13 +843,14 @@ public class ParticleScatter3D : UdonSharpBehaviour
     {
         if (matParticleFlow != null)
         {
+            float maxP = maxParticleP * 0.5f;
             // Load X and Y scattering function lookups into shader 
-            GenerateSamples(slitCount, slitWidth, slitPitch);
-            GenerateReverseLookup();
-            CopyTexToShaders(texName, "_MapMaxP", "_MapMaxI");
-            GenerateSamples(rowCount, slitHeight, rowPitch);
-            GenerateReverseLookup();
-            CopyTexToShaders(texName + "Y", "_MapMaxPy", "_MapMaxIy");
+            GenerateSamples(slitCount, slitWidth, slitPitch,maxP);
+            GenerateReverseLookup(maxP);
+            CopyTexToShaders(texName, "_MapMaxP", "_MapMaxI",maxP);
+            GenerateSamples(rowCount, slitHeight, rowPitch,maxP);
+            GenerateReverseLookup(maxP);
+            CopyTexToShaders(texName + "Y", "_MapMaxPy", "_MapMaxIy",maxP);
         }
         return true;
     }
@@ -910,10 +911,10 @@ public class ParticleScatter3D : UdonSharpBehaviour
             if (shaderPlaying != (ParticlePlayState == 1))
                 setParticlePlay(particlePlayState);
             gratingUpdateRequired = false;
-            updateTimer += 0.05f;
+            updateTimer += 0.1f;
         }
         else
-            updateTimer += 0.01f;
+            updateTimer += 0.033f;
     }
 
     public void simHide()
@@ -1014,7 +1015,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             screenDistanceSlider.SliderUnit = "m";
             screenDistanceSlider.DisplayScale = 1f; // Display in metres
             screenDistanceSlider.ClientVariableName = nameof(screenDistance);
-            screenDistanceSlider.SetLimits(gratingDistance+1, WallLimits.x - 1);
+            screenDistanceSlider.SetLimits(gratingDistance+1.5f, WallLimits.x - 1);
             screenDistanceSlider.SetValue(screenDistance);
             screenDistanceSlider.Interactable = true;
         }
