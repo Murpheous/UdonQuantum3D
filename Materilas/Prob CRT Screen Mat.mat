@@ -93,7 +93,7 @@ Material:
     - _GratingOffset: 0
     - _Lambda: 0.0002
     - _LambdaPx: 30
-    - _MapMaxI: 1023.00006
+    - _MapMaxI: 1023
     - _MapMaxIy: 1023
     - _MapMaxP: 1000
     - _MapMaxPy: 1000
@@ -105,7 +105,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutputRaw: 1
     - _Parallax: 0.02
-    - _ParticleP: 1305.8971
+    - _ParticleP: 1600
     - _Phase: 0
     - _PlaneHeight: 1440
     - _PlaneWidth: 2560
@@ -120,22 +120,22 @@ Material:
     - _SlitCount: 2
     - _SlitHeight: 0.008
     - _SlitOffset: 0
-    - _SlitPitch: 0.01589658
+    - _SlitPitch: 0.018716346
     - _SlitPitchPx: 364.22433
     - _SlitThickness: 0
     - _SlitWidePx: 5
-    - _SlitWidth: 0.0033457717
-    - _SlitsToScreen: 10.5
+    - _SlitWidth: 0.008
+    - _SlitsToScreen: 9.5
     - _SmoothnessTextureChannel: 0
     - _SourceResolution: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Visibility: 19.845778
+    - _Visibility: 22.295101
     - _Wavelength: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.4234811, g: 1, b: 0, a: 1}
+    - _Color: {r: 0, g: 0.64, b: 1, a: 1}
     - _ColorBackground: {r: 0, g: 0, b: 0, a: 0}
     - _ColorFlow: {r: 0.38431373, g: 1, b: 0.54509807, a: 1}
     - _ColorNeg: {r: 0, g: 0, b: 0, a: 0.03529412}

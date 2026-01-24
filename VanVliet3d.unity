@@ -1177,6 +1177,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1764354641401667360, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: syncedValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764354641401667360, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: SliderClient
       value: 
       objectReference: {fileID: 8128242432604567641}
@@ -1213,6 +1218,11 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 4775951927548208749, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4799011607924373144, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3393,7 +3403,7 @@ MonoBehaviour:
   slitHeight: 0.05
   pulseParticles: 0
   pulseWidth: 1
-  speedRange: 10
+  speedRange: 5
   MAX_SLITS: 7
   displayColor: {r: 0, g: 1, b: 1, a: 1}
   maxParticleP: 2000
@@ -4213,11 +4223,11 @@ MonoBehaviour:
   _displayPixels: {x: 1024, y: 1024}
   screenPixelsAcross: 800
   particleP: 4750
-  intensity: 10
+  intensity: 30
   intensityMax: 100
   scatteringType: 1
   showProbability: 1
-  useQuantumScatter: 0
+  useQuantumScatter: 1
   togProbability: {fileID: 208515334}
   intensityControl: {fileID: 1229659803}
   laser: {fileID: 62377036}
