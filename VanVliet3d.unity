@@ -125,6 +125,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &17769565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7251319747246613796, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &49426983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 57439284242418639, guid: 66d68933adc7d574c823b247a44d5696,
@@ -203,6 +209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56d2f2573fcbbe46a1facbf13f7c442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &218455286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6596245116599401991, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &229971188 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3685996264168447651, guid: ba646700db9c678478c7d419ede04d4e,
@@ -277,6 +289,8 @@ GameObject:
   - component: {fileID: 541651506}
   - component: {fileID: 541651507}
   - component: {fileID: 541651508}
+  - component: {fileID: 541651510}
+  - component: {fileID: 541651509}
   m_Layer: 0
   m_Name: EQS_DATA
   m_TagString: EditorOnly
@@ -329,6 +343,9 @@ MonoBehaviour:
     Foldout: 1
   - Target: {fileID: 2100000, guid: f110aa16d762c7b4baaddec78cb41586, type: 2}
     Type: {fileID: 541651508}
+    Foldout: 1
+  - Target: {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
+    Type: {fileID: 541651509}
     Foldout: 1
   version: 131
   buildInfo:
@@ -411,6 +428,51 @@ MonoBehaviour:
     Quest: {r: 0.5, g: 0.20047164, b: 0.33237395, a: 0.23529412}
   GPUInstancing:
     PC: 1
+    Quest: 0
+--- !u!114 &541651509
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541651502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3386b3f1c214f4392a8072b69205e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader:
+    PC: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    Quest: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
+  MainColor:
+    PC: {r: 0.019607844, g: 0.20784314, b: 0.7529412, a: 0.6039216}
+    Quest: {r: 0.017799927, g: 0.20899619, b: 0.754717, a: 0.6039216}
+  GPUInstancing:
+    PC: 1
+    Quest: 1
+--- !u!114 &541651510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541651502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80acf45703dd3f0458b5c15f1d8a841f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active:
+    PC: 1
+    Quest: 1
+  Tag:
+    PC: Untagged
+    Quest: Untagged
+  Layer:
+    PC: 0
+    Quest: 0
+  StaticEditorFlags:
+    PC: 0
     Quest: 0
 --- !u!1 &578882615 stripped
 GameObject:
@@ -508,7 +570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &834639633
 RectTransform:
   m_ObjectHideFlags: 0
@@ -994,13 +1056,13 @@ PrefabInstance:
         the square of the Fourier transform of the aperture pattern multiplied by
         Planck''s constant.
 
-        
 
-        A key part of this simulation is
-        that, in free space, the time evolution of quantum probability distributions
-        is identical to that of a particle ensemble undergoing ballistic diffusion.
 
-        
+        A key part of this simulation is that, in
+        free space, the time evolution of quantum probability distributions is identical
+        to that of a particle ensemble undergoing ballistic diffusion.
+
+
 
         This
         then simplifies the simulation. Van Vliet''s model can be used to scatter
@@ -1789,6 +1851,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1213228580039850327, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=105%>\u30B9\u30AF\u30EA\u30FC\u30F3<br>\u8DDD\u96E2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213228580039850327, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1213228580039850327, guid: 66d68933adc7d574c823b247a44d5696,
@@ -1944,6 +2011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6141285499014399001, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 6321559317235267887, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -2838,47 +2910,26 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
-      propertyPath: texts.Array.data[0]
-      value: 'Neutrons:
-
-        1000x Scale'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[1]
-      value: "<size=110%>\u4E2D\u6027\u5B50\uFF1A\r\n1000\u500D\u30B9\u30B1\u30FC\u30EB"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[2]
-      value: "<size=110%>\u4E2D\u5B50\uFF1A\r\n\r1000 \u500D\u653E\u5927"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[3]
-      value: "<size=110%>\u4E2D\u5B50\uFF1A\r\n\r1000 \u500D\u653E\u5927"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[4]
-      value: "<size=110%>\uC911\uC131\uC790:\r\n1000\uBC30 \uD655\uB300"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[5]
-      value: "N\xEAutrons:\r\nEscala 1000x"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: texts.Array.data[6]
-      value: "Neutrons\_:\r\n\r\xC9chelle 1000x"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
+    - target: {fileID: 3258204735439686084, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 3258204735439686084, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+    - target: {fileID: 3258204735439686084, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: udonClients.Array.data[0]
+      value: 
+      objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 3258204735439686084, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: udonClients.Array.data[1]
+      value: 
+      objectReference: {fileID: 905885156209913718}
     - target: {fileID: 3586990716886012917, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2895,6 +2946,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: SelectPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 6183613809301036718, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6183613809301036718, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
     - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2912,13 +2969,6 @@ PrefabInstance:
       propertyPath: udonClients.Array.data[0]
       value: 
       objectReference: {fileID: 8128242432604567641}
-    - target: {fileID: 7696765494944825487, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
-        type: 3}
-      propertyPath: m_text
-      value: 'Neutrons:
-
-        1000x Scale'
-      objectReference: {fileID: 0}
     - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3324,8 +3374,9 @@ MonoBehaviour:
   texName: _MomentumMap
   particleVisibility: 1
   experimentMode: 0
-  pointsWide: 640
-  planckScale: 1
+  pointsWide: 1024
+  useQuantumScatter: 0
+  planckIndex: 1
   maxDisplacement: 12
   wallLimits: {x: 12, y: 2, z: 2}
   slitWidthUnitFactor: 1000
@@ -3365,20 +3416,20 @@ MonoBehaviour:
   txtRowCountDisplay: {fileID: 1328498835}
   matParticleFlow: {fileID: 0}
   matProbCRT: {fileID: 2100000, guid: eb156a606e7ff34439b90d94e34f507f, type: 2}
-  slitWidthMinMaxInitial:
-  - {x: 0.001, y: 0.0095, z: 0.008}
+  slitWidthMinMaxDefault:
+  - {x: 0.001, y: 0.0125, z: 0.008}
   - {x: 0.0001, y: 0.00095, z: 0.00063}
   - {x: 0.005, y: 0.05, z: 0.023}
-  slitHeightMinMaxInitial:
-  - {x: 0.001, y: 0.0095, z: 0.008}
+  slitHeightMinMaxDefault:
+  - {x: 0.001, y: 0.0125, z: 0.008}
   - {x: 0.01, y: 0.1, z: 0.04}
   - {x: 0.1, y: 0.5, z: 0.2}
-  slitPitchMinMaxInitial:
-  - {x: 0.011, y: 0.05, z: 0.03}
+  slitPitchMinMaxDefault:
+  - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.0001, y: 0.005, z: 0.00272}
   - {x: 0.07, y: 0.35, z: 0.115}
-  rowPitchMinMaxInitial:
-  - {x: 0.011, y: 0.05, z: 0.03}
+  rowPitchMinMaxDefault:
+  - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.1, y: 0.3, z: 0.2}
   - {x: 0.07, y: 0.35, z: 0.2}
 --- !u!1 &5229117542535007913 stripped
@@ -3632,9 +3683,9 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
+  - {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   - {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
   - {fileID: 2100000, guid: f110aa16d762c7b4baaddec78cb41586, type: 2}
-  - {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   - {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
   - {fileID: 2100000, guid: 4de799ce0493d984c9e9c18e1973696a, type: 2}
   - {fileID: 2100000, guid: 11fd257dc12e8de4ab0ea0d0d5d4d81b, type: 2}
@@ -3916,6 +3967,14 @@ MonoBehaviour:
     ID: 69
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 218455286}
+    ID: 70
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 17769565}
+    ID: 71
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   PlayerPersistence: []
@@ -4158,6 +4217,7 @@ MonoBehaviour:
   intensityMax: 100
   scatteringType: 1
   showProbability: 1
+  useQuantumScatter: 0
   togProbability: {fileID: 208515334}
   intensityControl: {fileID: 1229659803}
   laser: {fileID: 62377036}
@@ -4188,7 +4248,7 @@ PrefabInstance:
     - target: {fileID: 163754374632552962, guid: c21cad9919b09224893ddf6b2af99b3f,
         type: 3}
       propertyPath: lineWidth
-      value: 0.1
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 163754374632552962, guid: c21cad9919b09224893ddf6b2af99b3f,
         type: 3}
@@ -4222,6 +4282,11 @@ PrefabInstance:
       propertyPath: _syncMethod
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3217058531931779224, guid: c21cad9919b09224893ddf6b2af99b3f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
     - target: {fileID: 3217058533074633134, guid: c21cad9919b09224893ddf6b2af99b3f,
         type: 3}
       propertyPath: m_Name

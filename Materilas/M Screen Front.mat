@@ -21,15 +21,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M Screen Front
-  m_Shader: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
+  m_Shader: {fileID: 4800000, guid: a92a89f7e0314174a870667cce8d5884, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION
-  - _ENABLE_GEOMETRIC_SPECULAR_AA
-  - _SPECULARHIGHLIGHTS_OFF
   m_InvalidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _ENABLE_GEOMETRIC_SPECULAR_AA
   - _ENVIRONMENTREFLECTIONS_OFF
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  - _SPECULARHIGHLIGHTS_OFF
   - _SPECULAR_SETUP
   - _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 2
@@ -134,7 +136,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlbedoToEmission: 1
+    - _AlbedoToEmission: 0.269
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Bicubic: 0
@@ -146,14 +148,14 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ColorMask: 15
     - _Cull: 0
-    - _CullMode: 2
+    - _CullMode: 0
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DstBlend: 1
+    - _DstBlend: 10
     - _DstBlendAlpha: 10
-    - _EmissionParallaxDepth: 0.1
-    - _EmissionRimPower: 1
+    - _EmissionParallaxDepth: 0
+    - _EmissionRimPower: 0
     - _EnableExternalAlpha: 0
     - _EnableGeometricSpecularAA: 1
     - _EnvironmentReflections: 0
@@ -166,7 +168,7 @@ Material:
     - _LTCGI: 0
     - _LightmapType: 0
     - _Metallic: 0.084
-    - _Mode: 0
+    - _Mode: 3
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -179,12 +181,12 @@ Material:
     - _Shininess: 0
     - _Smoothness: 1
     - _SmoothnessSource: 0
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecSource: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 0
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Stencil: 0
     - _StencilComp: 8
