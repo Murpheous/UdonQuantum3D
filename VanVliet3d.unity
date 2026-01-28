@@ -1040,13 +1040,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 377114052288149932, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 377114052288149932, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407943435669029340, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_Value
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 407943435669029340, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 407943435669029340, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_MinValue
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 411976984986646282, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 607866463986654368, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_Name
+      value: MomentumAdjust
       objectReference: {fileID: 0}
     - target: {fileID: 685091567879249309, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -1193,7 +1218,17 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2972349657945834818, guid: ba646700db9c678478c7d419ede04d4e,
@@ -1231,6 +1266,11 @@ PrefabInstance:
     - target: {fileID: 4799011607924373144, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815790176182361629, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4815790176182361629, guid: ba646700db9c678478c7d419ede04d4e,
@@ -1373,9 +1413,39 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: maxValue
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: minValue
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: sliderUnit
+      value: yNs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: syncedValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: SliderClient
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: displayInteger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: clientVariableName
+      value: particleP
+      objectReference: {fileID: 0}
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1455,7 +1525,17 @@ PrefabInstance:
       objectReference: {fileID: 8128242432604567641}
     - target: {fileID: 8007344397462705917, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007344397462705917, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007344397462705917, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8601134999089690510, guid: ba646700db9c678478c7d419ede04d4e,
@@ -3385,8 +3465,11 @@ MonoBehaviour:
   particleVisibility: 1
   experimentMode: 0
   pointsWide: 1024
-  useQuantumScatter: 0
-  planckIndex: 1
+  useQuantumScatter: 1
+  h: 6.62607e-10
+  AMU_ToKg: 1.66054e-27
+  molecularWeight: 1
+  planckIndex: 0
   maxDisplacement: 12
   wallLimits: {x: 12, y: 2, z: 2}
   slitWidthUnitFactor: 1000
@@ -3406,9 +3489,11 @@ MonoBehaviour:
   speedRange: 5
   MAX_SLITS: 7
   displayColor: {r: 0, g: 1, b: 1, a: 1}
+  nominalParticleP: 13.6
   maxParticleP: 2000
   minParticleP: 500
-  particleP: 1600
+  particleAMU: 0.00054858
+  momentumAdj: 1
   togPlay: {fileID: 2143375367}
   togPause: {fileID: 1712240541}
   togStop: {fileID: 1764590370}
