@@ -1584,6 +1584,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56d2f2573fcbbe46a1facbf13f7c442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &966316953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6333413781596624883, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030216021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6232941653725421704, guid: 66d68933adc7d574c823b247a44d5696,
@@ -1710,6 +1722,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa412dc0e73a76849ad79c183efeaf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1182674956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6729903022169238349, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1200888263 stripped
@@ -3036,6 +3060,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SelectPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5704439944518945958, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 5704439944518945958, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendCustomEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704439944518945958, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: IncPlanck
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882730673674706805, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 5882730673674706805, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendCustomEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882730673674706805, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DecPlanck
+      objectReference: {fileID: 0}
     - target: {fileID: 6183613809301036718, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3466,14 +3520,13 @@ MonoBehaviour:
   experimentMode: 0
   pointsWide: 1024
   useQuantumScatter: 1
-  h: 6.62607e-10
-  AMU_ToKg: 1.66054e-27
+  h: 6.62607e-34
   molecularWeight: 1
   planckIndex: 0
   maxDisplacement: 12
   wallLimits: {x: 12, y: 2, z: 2}
-  slitWidthUnitFactor: 1000
-  slitHeightUnitFactor: 1000
+  slitWidthUnitFactor: 10000
+  slitHeightUnitFactor: 10000
   slitWidthDisplayUnits: nm
   slitHeightDisplayUnits: "\u03BCm"
   gratingDistance: 0.5
@@ -3490,10 +3543,14 @@ MonoBehaviour:
   MAX_SLITS: 7
   displayColor: {r: 0, g: 1, b: 1, a: 1}
   nominalParticleP: 13.6
+  SItoMomentum: 1e+24
+  momentumUnits: yNs
   maxParticleP: 2000
   minParticleP: 500
   particleAMU: 0.00054858
   momentumAdj: 1
+  planckLabel: {fileID: 1182674956}
+  planckScaleLabel: {fileID: 966316953}
   togPlay: {fileID: 2143375367}
   togPause: {fileID: 1712240541}
   togStop: {fileID: 1764590370}
