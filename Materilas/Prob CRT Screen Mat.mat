@@ -93,10 +93,10 @@ Material:
     - _GratingOffset: 0
     - _Lambda: 0.0002
     - _LambdaPx: 30
-    - _MapMaxI: 1023
+    - _MapMaxI: 1023.00006
     - _MapMaxIy: 1023
     - _MapMaxP: 6.8
-    - _MapMaxPy: 6.8
+    - _MapMaxPy: 2.429559
     - _MaxParticleP: 13.6
     - _Metallic: 0
     - _MinParticleP: 3.4
@@ -131,7 +131,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Visibility: 22.295101
+    - _Visibility: 15
     - _Wavelength: 1
     - _ZWrite: 1
     m_Colors:

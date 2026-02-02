@@ -3543,12 +3543,13 @@ MonoBehaviour:
   MAX_SLITS: 7
   displayColor: {r: 0, g: 1, b: 1, a: 1}
   nominalParticleP: 13.6
-  SItoMomentum: 1e+24
+  SItoSimMomentum: 1e+24
+  gameLengthToSI: 0.001
   momentumUnits: yNs
   maxParticleP: 2000
   minParticleP: 500
   particleAMU: 0.00054858
-  momentumAdj: 1
+  momentumAdj: 0.7
   planckLabel: {fileID: 1182674956}
   planckScaleLabel: {fileID: 966316953}
   togPlay: {fileID: 2143375367}
@@ -4365,7 +4366,7 @@ MonoBehaviour:
   _displayPixels: {x: 1024, y: 1024}
   screenPixelsAcross: 800
   particleP: 4750
-  intensity: 30
+  intensity: 15
   intensityMax: 100
   scatteringType: 1
   showProbability: 1
