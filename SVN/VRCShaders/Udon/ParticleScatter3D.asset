@@ -1211,13 +1211,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: slitWidthUnitFactor
+      Data: horizUnitScale
     - Name: $v
       Entry: 7
       Data: 78|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: slitWidthUnitFactor
+      Data: horizUnitScale
     - Name: <UserType>k__BackingField
       Entry: 9
       Data: 28
@@ -1274,13 +1274,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: slitHeightUnitFactor
+      Data: rowUnitScale
     - Name: $v
       Entry: 7
       Data: 82|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: slitHeightUnitFactor
+      Data: rowUnitScale
     - Name: <UserType>k__BackingField
       Entry: 9
       Data: 28
@@ -4177,13 +4177,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: slitWidthMinMaxDefault
+      Data: slitWidthMinMaxNominal
     - Name: $v
       Entry: 7
       Data: 257|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: slitWidthMinMaxDefault
+      Data: slitWidthMinMaxNominal
     - Name: <UserType>k__BackingField
       Entry: 7
       Data: 258|System.RuntimeType, mscorlib
@@ -4238,13 +4238,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: slitHeightMinMaxDefault
+      Data: slitHeightMinMaxNominal
     - Name: $v
       Entry: 7
       Data: 261|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: slitHeightMinMaxDefault
+      Data: slitHeightMinMaxNominal
     - Name: <UserType>k__BackingField
       Entry: 9
       Data: 258
@@ -4293,13 +4293,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: slitPitchMinMaxDefault
+      Data: slitPitchMinMaxNominal
     - Name: $v
       Entry: 7
       Data: 264|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: slitPitchMinMaxDefault
+      Data: slitPitchMinMaxNominal
     - Name: <UserType>k__BackingField
       Entry: 9
       Data: 258
@@ -4348,13 +4348,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: rowPitchMinMaxDefault
+      Data: rowPitchMinMaxNominal
     - Name: $v
       Entry: 7
       Data: 267|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: rowPitchMinMaxDefault
+      Data: rowPitchMinMaxNominal
     - Name: <UserType>k__BackingField
       Entry: 9
       Data: 258

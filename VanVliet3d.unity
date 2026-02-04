@@ -1544,6 +1544,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8601134999089690510, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 9072159871946784401, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: -40
+      objectReference: {fileID: 0}
     - target: {fileID: 9120477347661153322, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: SliderClient
@@ -2906,6 +2911,41 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Simulation Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3\u8A2D\u5B9A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: "<size=110%>\u6A21\u64EC\u8A2D\u5B9A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: "<size=110%>\u6A21\u62DF\u8BBE\u7F6E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: "<size=110%>\uC2DC\uBBAC\uB808\uC774\uC158 \uC124\uC815"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: "Configura\xE7\xF5es de simula\xE7\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: "Param\xE8tres de simulation"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1047164585868894265, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
@@ -3055,6 +3095,21 @@ PrefabInstance:
       propertyPath: udonClients.Array.data[0]
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 4092655079987970980, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_text
+      value: Simulation Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092655079987970980, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250003188532626989, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_text
+      value: "Electrons: Scale x10\u2076<br>Planck's Constant x1"
+      objectReference: {fileID: 0}
     - target: {fileID: 4678597630431362251, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_Name
@@ -3090,12 +3145,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: DecPlanck
       objectReference: {fileID: 0}
+    - target: {fileID: 6046485876461371640, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_text
+      value: "Electrons: Scale x10\xB3\r<br>Planck's constant x10\u2074"
+      objectReference: {fileID: 0}
     - target: {fileID: 6183613809301036718, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6183613809301036718, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: "Electrons: Scale x10\u2076<br>Planck's Constant x1"
+      objectReference: {fileID: 0}
     - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3113,6 +3178,50 @@ PrefabInstance:
       propertyPath: udonClients.Array.data[0]
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 7696765494944825487, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: m_text
+      value: "Neutrons: Scale \n1000x Scale"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: "Electrons: Scale x10\xB3\r<br>Planck's constant x10\u2074"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=110%>\u96FB\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\xB3\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+        x10\u2074"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: "<size=110%>\u96FB\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\u666E\u6717\u514B\u5E38\u6578
+        x10\u2074"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: "<size=110%>\u7535\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6570
+        x10\u2074"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: "<size=110%>\uC804\uC790: 10\xB3\uBC30 \uD655\uB300\r\n\uD50C\uB791\uD06C
+        \uC0C1\uC218 10\u2074\uBC30 \uD655\uB300"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: "El\xE9trons: Escala x10\xB3\r\nConstante de Planck x10\u2074"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: "\xC9lectrons\_: \xC9chelle x10\xB3\r\nConstante de Planck x10\u2074"
+      objectReference: {fileID: 0}
     - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3525,8 +3634,8 @@ MonoBehaviour:
   planckIndex: 0
   maxDisplacement: 12
   wallLimits: {x: 12, y: 2, z: 2}
-  slitWidthUnitFactor: 10000
-  slitHeightUnitFactor: 10000
+  horizUnitScale: 10000
+  rowUnitScale: 10000
   slitWidthDisplayUnits: nm
   slitHeightDisplayUnits: "\u03BCm"
   gratingDistance: 0.5
@@ -3569,22 +3678,22 @@ MonoBehaviour:
   txtRowCountDisplay: {fileID: 1328498835}
   matParticleFlow: {fileID: 0}
   matProbCRT: {fileID: 2100000, guid: eb156a606e7ff34439b90d94e34f507f, type: 2}
-  slitWidthMinMaxDefault:
+  slitWidthMinMaxNominal:
   - {x: 0.001, y: 0.0125, z: 0.008}
   - {x: 0.0001, y: 0.00095, z: 0.00063}
-  - {x: 0.005, y: 0.05, z: 0.023}
-  slitHeightMinMaxDefault:
+  - {x: 0.001, y: 0.003, z: 0.002}
+  slitHeightMinMaxNominal:
   - {x: 0.001, y: 0.0125, z: 0.008}
   - {x: 0.01, y: 0.1, z: 0.04}
-  - {x: 0.1, y: 0.5, z: 0.2}
-  slitPitchMinMaxDefault:
+  - {x: 0.005, y: 0.015, z: 0.01}
+  slitPitchMinMaxNominal:
   - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.0001, y: 0.005, z: 0.00272}
-  - {x: 0.07, y: 0.35, z: 0.115}
-  rowPitchMinMaxDefault:
+  - {x: 0.07, y: 0.015, z: 0.0115}
+  rowPitchMinMaxNominal:
   - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.1, y: 0.3, z: 0.2}
-  - {x: 0.07, y: 0.35, z: 0.2}
+  - {x: 0.0175, y: 0.045, z: 0.025}
 --- !u!1 &5229117542535007913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3940434731580344110, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,

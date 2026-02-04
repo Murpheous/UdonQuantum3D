@@ -31,7 +31,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private int experimentMode = 0;
     [SerializeField, Tooltip("Distribution Points")]
     private int pointsWide = 256;
-    private float[] planckSteps = { 1f, 5f, 10f, 50f, 100f, 500f, 1000f, 10000f };
+    private float[] planckSteps = { 1f, 5f, 10f, 50f, 100f, 1000f, 10000f };
     [SerializeField, FieldChangeCallback(nameof(UseQuantumScatter))] private bool useQuantumScatter;
     [Header("Fundamental Constants")]
     // [SerializeField]
@@ -57,9 +57,9 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private Vector3 wallLimits = new Vector3(5f, 2f, 1f);
     [Header("Grating Configuration & Scale")]
     [SerializeField]
-    float slitWidthUnitFactor = 10000f; // Scale factor from Unity units to experiment units (mm)
+    float horizUnitScale = 10000f; // Scale factor from Unity units to experiment units (mm)
     [SerializeField]
-    float slitHeightUnitFactor = 10000f; // Scale factor from Unity units to experiment units (mm)
+    float rowUnitScale = 10000f; // Scale factor from Unity units to experiment units (mm)
     [SerializeField]
     string slitWidthDisplayUnits = "μm";
     [SerializeField]
@@ -151,20 +151,20 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private VRCPlayerApi player;
     private bool iamOwner = false;
     [SerializeField]
-    private Vector3[] slitWidthMinMaxDefault = new[] {
-        new Vector3(.001f,0.0125f,.008f), new Vector3(0.0001f,0.00095f,0.00063f), new Vector3(0.0050f,0.050f, 0.023f) 
+    private Vector3[] slitWidthMinMaxNominal = new[] {
+        new Vector3(.001f,0.0125f,.008f), new Vector3(0.0001f,0.00095f,0.00063f), new Vector3(0.001f,0.003f, 0.002f) 
     };
     [SerializeField]
-    private Vector3[] slitHeightMinMaxDefault = new[] {
-        new Vector3(.001f,.0125f,.008f), new Vector3(0.01f,.1f,0.04f), new Vector3(0.1f,0.5f, 0.2f)
+    private Vector3[] slitHeightMinMaxNominal = new[] {
+        new Vector3(.001f,.0125f,.008f), new Vector3(0.01f,.1f,0.04f), new Vector3(0.005f,0.015f, 0.01f)
     };
     [SerializeField]
-    private Vector3[] slitPitchMinMaxDefault = new[] {
-        new Vector3(0.013f,0.065f,.03f), new Vector3(0.0001f,0.005f,0.00272f), new Vector3(0.07f,0.35f, 0.115f)
+    private Vector3[] slitPitchMinMaxNominal = new[] {
+        new Vector3(0.013f,0.065f,.03f), new Vector3(0.0001f,0.005f,0.00272f), new Vector3(0.07f,0.015f, 0.0115f)
     }; 
     [SerializeField]
-    private Vector3[] rowPitchMinMaxDefault = new[] {
-        new Vector3(.013f,.065f,0.03f), new Vector3(.1f,0.3f,0.2f), new Vector3(0.07f,0.35f, 0.2f)
+    private Vector3[] rowPitchMinMaxNominal = new[] {
+        new Vector3(.013f,.065f,0.03f), new Vector3(.1f,0.3f,0.2f), new Vector3(0.0175f,0.045f, 0.025f)
     };
 
     /* 
@@ -251,30 +251,36 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private void configureExperiment(int mode)
     {
         // Update momentum and Planck units
-
+        bool displayIntegerWidth = true;
+        bool displayIntegerHeight = true;
 
         switch (experimentMode)
         {
             case 1: // Electrons slit width is from 20nm to 100nm, height 1um to 10um
-                slitWidthUnitFactor = 100000f; // (1mm = 100nm)
-                slitHeightUnitFactor = 100f;   //  
+                gameLengthToSI = 1e-6f;
+                horizUnitScale = 1e6f; // (1mm = 1000nm)
+                rowUnitScale = 1e3f;   //  
                 slitWidthDisplayUnits = "nm";
                 slitHeightDisplayUnits = "μm";
+                PlanckIndex = 0;
                 NominalParticleP = 13.6f; // 13.6 yocto Newton-Seconds Electron 600V
                 molecularWeight = 0.00054858f; // Electron mass in AMU
                 break;
             case 2: // Neutrons
-                slitWidthUnitFactor = 1000f; // (1mm = 1μm) 0.02 -> 20
-                slitHeightUnitFactor = 1000f; //  
+                gameLengthToSI = 1e-4f;
+                horizUnitScale = 1e4f; // (1mm = 1μm) 0.02 -> 20
+                rowUnitScale = 1e4f; //
                 slitWidthDisplayUnits = "μm";
                 slitHeightDisplayUnits = "μm";
+                PlanckIndex = 0;
                 NominalParticleP = 0.442f; // 0.442 yocto Newton-Seconds Cold Neutron 15Angstrom
                 molecularWeight = 1.008664f; // Neutron mass in AMU
                 break;
             default:
             case 0:
-                slitWidthUnitFactor = 1e3f;
-                slitHeightUnitFactor = 1e3f;
+                gameLengthToSI = 1e-3f;
+                horizUnitScale = 1e3f;
+                rowUnitScale = 1e3f;
                 slitWidthDisplayUnits = "μm";
                 slitHeightDisplayUnits = "μm";
                 PlanckIndex = 7;
@@ -286,36 +292,40 @@ public class ParticleScatter3D : UdonSharpBehaviour
 
         if (slitWidthSlider != null)
         {
+            slitWidthSlider.DisplayInteger = displayIntegerWidth;
             slitWidthSlider.SliderUnit = slitWidthDisplayUnits;
-            slitWidthSlider.DisplayScale = slitWidthUnitFactor; // Display in millimetres
-            slitWidthSlider.SetLimits(slitWidthMinMaxDefault[mode].x, slitWidthMinMaxDefault[mode].y);
-            slitWidthSlider.SetValue(slitWidthMinMaxDefault[mode].z);
+            slitWidthSlider.DisplayScale = horizUnitScale; // Display in millimetres
+            slitWidthSlider.SetLimits(slitWidthMinMaxNominal[mode].x, slitWidthMinMaxNominal[mode].y);
+            slitWidthSlider.SetValue(slitWidthMinMaxNominal[mode].z);
         }
-        SlitWidth = slitWidthMinMaxDefault[mode].z;
+        SlitWidth = slitWidthMinMaxNominal[mode].z;
         if (slitHeightSlider != null)
         {
+            slitHeightSlider.DisplayInteger = displayIntegerHeight;
             slitHeightSlider.SliderUnit = "<br>" + slitHeightDisplayUnits;
-            slitHeightSlider.DisplayScale = slitHeightUnitFactor; // Display in micrometres
-            slitHeightSlider.SetLimits(slitHeightMinMaxDefault[mode].x, slitHeightMinMaxDefault[mode].y);
-            slitHeightSlider.SetValue(slitHeightMinMaxDefault[mode].z);
+            slitHeightSlider.DisplayScale = rowUnitScale; // Display in micrometres
+            slitHeightSlider.SetLimits(slitHeightMinMaxNominal[mode].x, slitHeightMinMaxNominal[mode].y);
+            slitHeightSlider.SetValue(slitHeightMinMaxNominal[mode].z);
         }
-        SlitHeight = slitHeightMinMaxDefault[mode].z;
+        SlitHeight = slitHeightMinMaxNominal[mode].z;
         if (slitPitchSlider != null)
         {
+            slitPitchSlider.DisplayInteger = displayIntegerWidth;
             slitPitchSlider.SliderUnit = slitWidthDisplayUnits;
-            slitPitchSlider.DisplayScale = slitWidthUnitFactor; // Display in nanometres
-            slitPitchSlider.SetLimits(slitPitchMinMaxDefault[mode].x, slitPitchMinMaxDefault[mode].y);
-            slitPitchSlider.SetValue(slitPitchMinMaxDefault[mode].z);
+            slitPitchSlider.DisplayScale = horizUnitScale; // Display in nanometres
+            slitPitchSlider.SetLimits(slitPitchMinMaxNominal[mode].x, slitPitchMinMaxNominal[mode].y);
+            slitPitchSlider.SetValue(slitPitchMinMaxNominal[mode].z);
         }
-        SlitPitch = slitPitchMinMaxDefault[mode].z;
+        SlitPitch = slitPitchMinMaxNominal[mode].z;
         if (rowPitchSlider != null)
         {
+            rowPitchSlider.DisplayInteger = displayIntegerHeight;
             rowPitchSlider.SliderUnit = "<br>" + slitHeightDisplayUnits;
-            rowPitchSlider.DisplayScale = slitHeightUnitFactor; // Display in micrometres
-            rowPitchSlider.SetLimits(rowPitchMinMaxDefault[mode].x, rowPitchMinMaxDefault[mode].y);
-            rowPitchSlider.SetValue(rowPitchMinMaxDefault[mode].z);
+            rowPitchSlider.DisplayScale = rowUnitScale; // Display in micrometres
+            rowPitchSlider.SetLimits(rowPitchMinMaxNominal[mode].x, rowPitchMinMaxNominal[mode].y);
+            rowPitchSlider.SetValue(rowPitchMinMaxNominal[mode].z);
         }
-        rowPitch = rowPitchMinMaxDefault[mode].z;
+        rowPitch = rowPitchMinMaxNominal[mode].z;
     }
     public int ExperimentMode
     {
