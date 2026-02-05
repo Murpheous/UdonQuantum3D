@@ -3064,6 +3064,45 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
+      propertyPath: texts.Array.data[0]
+      value: "Neutrons: Scale x10\xB3\nPlanck's Constant x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=110%>\u4E2D\u6027\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\xB3\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: "<size=110%>\u4E2D\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6578
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: "<size=110%>\u4E2D\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6570
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: "<size=110%>\uC911\uC131\uC790: 10\xB3\uBC30 \uD655\uB300\r\n\uD50C\uB791\uD06C
+        \uC0C1\uC218 x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: "N\xEAutrons: Escala x10\xB3\r\nConstante de Planck x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: "Neutrons\_: \xC9chelle x10\xB3\r\nConstante de Planck x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3225845364089711497, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
@@ -3159,7 +3198,41 @@ PrefabInstance:
     - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: "Electrons: Scale x10\u2076<br>Planck's Constant x1"
+      value: "Electrons: Scale x10\u2076\nPlanck's Constant x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=110%>\u96FB\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\u2076\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: "<size=110%>\u96FB\u5B50\uFF1A\u5C3A\u5EA6 x10\u2076\r\n\u666E\u6717\u514B\u5E38\u6578
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: "<size=110%>\u7535\u5B50\uFF1A\u5C3A\u5EA6 x10\u2076\r\n\r\u666E\u6717\u514B\u5E38\u6570
+        x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: "<size=110%>\uC804\uC790: 10\u2076\uBC30\uC728\r\n\uD50C\uB791\uD06C
+        \uC0C1\uC218 x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: "El\xE9trons: Escala x10\u2076\r\nConstante de Planck x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: "\xC9lectrons : \xC9chelle x10\u2076\r\nConstante de Planck x1"
       objectReference: {fileID: 0}
     - target: {fileID: 6202509774344866924, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
@@ -3181,7 +3254,7 @@ PrefabInstance:
     - target: {fileID: 7696765494944825487, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_text
-      value: "Neutrons: Scale \n1000x Scale"
+      value: "Neutrons: Scale x10\xB3\nPlanck's Constant x1"
       objectReference: {fileID: 0}
     - target: {fileID: 8160887947567191665, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
@@ -3640,7 +3713,7 @@ MonoBehaviour:
   slitHeightDisplayUnits: "\u03BCm"
   gratingDistance: 0.5
   screenDistance: 10
-  rowCount: 0
+  rowCount: 1
   slitCount: 2
   slitPitch: 0.0027
   rowPitch: 0.05

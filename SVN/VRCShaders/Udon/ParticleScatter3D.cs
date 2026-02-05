@@ -253,7 +253,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
         // Update momentum and Planck units
         bool displayIntegerWidth = true;
         bool displayIntegerHeight = true;
-
+        string distanceUnits = "mm";
+        float distanceScale = 1f;
         switch (experimentMode)
         {
             case 1: // Electrons slit width is from 20nm to 100nm, height 1um to 10um
@@ -272,6 +273,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 rowUnitScale = 1e4f; //
                 slitWidthDisplayUnits = "μm";
                 slitHeightDisplayUnits = "μm";
+                distanceUnits = "mm";
+                distanceScale = 0.1f;
                 PlanckIndex = 0;
                 NominalParticleP = 0.442f; // 0.442 yocto Newton-Seconds Cold Neutron 15Angstrom
                 molecularWeight = 1.008664f; // Neutron mass in AMU
@@ -289,7 +292,12 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 break;
                 // Handle mode change
         }
-
+        MomentumAdj = momentumAdj; // To update particle momentum based on new Planck scale and molecular weight
+        if (screenDistanceSlider != null)
+        {
+            screenDistanceSlider.SliderUnit = distanceUnits;
+            screenDistanceSlider.DisplayScale = distanceScale; // Display in millimetres
+        }
         if (slitWidthSlider != null)
         {
             slitWidthSlider.DisplayInteger = displayIntegerWidth;
