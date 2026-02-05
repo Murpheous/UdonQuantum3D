@@ -156,7 +156,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     };
     [SerializeField]
     private Vector3[] slitHeightMinMaxNominal = new[] {
-        new Vector3(.001f,.0125f,.008f), new Vector3(0.01f,.1f,0.04f), new Vector3(0.005f,0.015f, 0.01f)
+        new Vector3(.001f,.0125f,.008f), new Vector3(0.001f,.005f,0.003f), new Vector3(0.005f,0.015f, 0.01f)
     };
     [SerializeField]
     private Vector3[] slitPitchMinMaxNominal = new[] {
@@ -164,7 +164,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     }; 
     [SerializeField]
     private Vector3[] rowPitchMinMaxNominal = new[] {
-        new Vector3(.013f,.065f,0.03f), new Vector3(.1f,0.3f,0.2f), new Vector3(0.0175f,0.045f, 0.025f)
+        new Vector3(.013f,.065f,0.03f), new Vector3(.0051f,0.02f,0.06f), new Vector3(0.0175f,0.045f, 0.025f)
     };
 
     /* 
@@ -253,14 +253,14 @@ public class ParticleScatter3D : UdonSharpBehaviour
         // Update momentum and Planck units
         bool displayIntegerWidth = true;
         bool displayIntegerHeight = true;
-        string distanceUnits = "mm";
+        string distanceUnits = "<br>mm";
         float distanceScale = 1f;
         switch (experimentMode)
         {
             case 1: // Electrons slit width is from 20nm to 100nm, height 1um to 10um
-                gameLengthToSI = 1e-6f;
-                horizUnitScale = 1e6f; // (1mm = 1000nm)
-                rowUnitScale = 1e3f;   //  
+                gameLengthToSI = 1e-4f;
+                horizUnitScale = 1e4f; // (1mm = 1000nm)
+                rowUnitScale = 10f;   //  
                 slitWidthDisplayUnits = "nm";
                 slitHeightDisplayUnits = "μm";
                 PlanckIndex = 0;
@@ -268,19 +268,20 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 molecularWeight = 0.00054858f; // Electron mass in AMU
                 break;
             case 2: // Neutrons
-                gameLengthToSI = 1e-4f;
-                horizUnitScale = 1e4f; // (1mm = 1μm) 0.02 -> 20
-                rowUnitScale = 1e4f; //
+                gameLengthToSI = 1e-2f;
+                horizUnitScale = 1e2f; // (2mm = 20μm) 0.02 -> 20
+                rowUnitScale = 1e2f; //
                 slitWidthDisplayUnits = "μm";
                 slitHeightDisplayUnits = "μm";
-                distanceUnits = "mm";
-                distanceScale = 0.1f;
+                distanceScale = 10f;
                 PlanckIndex = 0;
                 NominalParticleP = 0.442f; // 0.442 yocto Newton-Seconds Cold Neutron 15Angstrom
                 molecularWeight = 1.008664f; // Neutron mass in AMU
                 break;
             default:
             case 0:
+                displayIntegerWidth = false;
+                displayIntegerHeight = false;
                 gameLengthToSI = 1e-3f;
                 horizUnitScale = 1e3f;
                 rowUnitScale = 1e3f;
@@ -343,8 +344,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
             if (value != experimentMode)
             {
                 experimentMode = value;
-                configureExperiment(experimentMode);
             }
+            configureExperiment(experimentMode);
         }
     }
 
@@ -1004,6 +1005,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         {
             init = true;
             initParticlePlay();
+            configureExperiment(experimentMode);
         }
         if (experimentUpdateRequired || horizUpdateRequired || vertUpdateRequired)
         {
@@ -1082,7 +1084,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
             togPulseParticles.IsBoolean = true;
             togPulseParticles.setState(pulseParticles);
             togPulseParticles.ClientVariableName = nameof(pulseParticles);
-
         }
 
         if (slitWidthSlider != null)
