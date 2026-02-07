@@ -299,8 +299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32, y: 0}
-  m_SizeDelta: {x: 64, y: 0}
+  m_AnchoredPosition: {x: -32, y: -3.5}
+  m_SizeDelta: {x: 64, y: -7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3274507527247143706
 MonoBehaviour:
@@ -538,9 +538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Experiment
-
-    Configuration'
+  m_text: Simulation Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   m_sharedMaterial: {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441,
@@ -580,7 +578,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -35
+  m_lineSpacing: -40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -635,13 +633,13 @@ MonoBehaviour:
   myText: {fileID: 4092655079987970980}
   languageIndex: 0
   texts:
-  - Experiment Configuration
-  - "<size=110%>\u5B9F\u9A13\u69CB\u6210"
-  - "<size=110%>\u5BE6\u9A57\u914D\u7F6E"
-  - "<size=110%>\u5B9E\u9A8C\u914D\u7F6E"
-  - "<size=110%>\uC2E4\uD5D8 \uAD6C\uC131"
-  - "Configura\xE7\xE3o do experimento"
-  - "Configuration de l'exp\xE9rience"
+  - Simulation Settings
+  - "\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3\u8A2D\u5B9A"
+  - "<size=110%>\u6A21\u64EC\u8A2D\u5B9A"
+  - "<size=110%>\u6A21\u62DF\u8BBE\u7F6E"
+  - "<size=110%>\uC2DC\uBBAC\uB808\uC774\uC158 \uC124\uC815"
+  - "Configura\xE7\xF5es de simula\xE7\xE3o"
+  - "Param\xE8tres de simulation"
 --- !u!114 &5927253398380839104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,9 +809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Neutrons:
-
-    1000x Scale'
+  m_text: "Neutrons: Scale x10\xB3\nPlanck's Constant x1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   m_sharedMaterial: {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441,
@@ -908,15 +904,17 @@ MonoBehaviour:
   myText: {fileID: 7696765494944825487}
   languageIndex: 0
   texts:
-  - 'Neutrons:
-
-    1000x Scale'
-  - "<size=110%>\u4E2D\u6027\u5B50\uFF1A\r\n1000\u500D\u30B9\u30B1\u30FC\u30EB"
-  - "<size=110%>\u4E2D\u5B50\uFF1A\r\n\r1000 \u500D\u653E\u5927"
-  - "<size=110%>\u4E2D\u5B50\uFF1A\r\n\r1000 \u500D\u653E\u5927"
-  - "<size=110%>\uC911\uC131\uC790:\r\n1000\uBC30 \uD655\uB300"
-  - "N\xEAutrons:\r\nEscala 1000x"
-  - "Neutrons\_:\r\n\r\xC9chelle 1000x"
+  - "Neutrons: Scale x10\xB3\nPlanck's Constant x1"
+  - "<size=110%>\u4E2D\u6027\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\xB3\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+    x1"
+  - "<size=110%>\u4E2D\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6578
+    x1"
+  - "<size=110%>\u4E2D\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6570
+    x1"
+  - "<size=110%>\uC911\uC131\uC790: 10\xB3\uBC30 \uD655\uB300\r\n\uD50C\uB791\uD06C
+    \uC0C1\uC218 x1"
+  - "N\xEAutrons: Escala x10\xB3\r\nConstante de Planck x1"
+  - "Neutrons\_: \xC9chelle x10\xB3\r\nConstante de Planck x1"
 --- !u!114 &1975507125096693081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Electrons:\r<br>10,000x Scale"
+  m_text: "Electrons: Scale x10\u2076<br>Planck's Constant x1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   m_sharedMaterial: {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441,
@@ -1105,13 +1103,17 @@ MonoBehaviour:
   myText: {fileID: 4250003188532626989}
   languageIndex: 0
   texts:
-  - "Electrons:\r<br>10,000x Scale"
-  - "<size=110%>\u96FB\u5B50\uFF1A\r\n10,000\u500D\u30B9\u30B1\u30FC\u30EB"
-  - "<size=110%>\u96FB\u5B50\uFF1A\r\n\r10,000 \u500D\u653E\u5927"
-  - "<size=110%>\u7535\u5B50\uFF1A\r\n\r10,000 \u500D\u653E\u5927"
-  - "<size=110%>\uC804\uC790:\r\n10,000\uBC30 \uD655\uB300"
-  - "El\xE9trons:\r\nEscala de 10.000x"
-  - "\xC9lectrons :\r\n\r\xC9chelle 10\_000x"
+  - "Electrons: Scale x10\u2076\nPlanck's Constant x1"
+  - "<size=110%>\u96FB\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\u2076\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+    x1"
+  - "<size=110%>\u96FB\u5B50\uFF1A\u5C3A\u5EA6 x10\u2076\r\n\u666E\u6717\u514B\u5E38\u6578
+    x1"
+  - "<size=110%>\u7535\u5B50\uFF1A\u5C3A\u5EA6 x10\u2076\r\n\r\u666E\u6717\u514B\u5E38\u6570
+    x1"
+  - "<size=110%>\uC804\uC790: 10\u2076\uBC30\uC728\r\n\uD50C\uB791\uD06C \uC0C1\uC218
+    x1"
+  - "El\xE9trons: Escala x10\u2076\r\nConstante de Planck x1"
+  - "\xC9lectrons : \xC9chelle x10\u2076\r\nConstante de Planck x1"
 --- !u!114 &7310591208511913941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,7 +1434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Basic Demonstration<br>Planck's Constant=1
+  m_text: "Electrons: Scale x10\xB3\r<br>Planck's constant x10\u2074"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   m_sharedMaterial: {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441,
@@ -1527,15 +1529,17 @@ MonoBehaviour:
   myText: {fileID: 6046485876461371640}
   languageIndex: 0
   texts:
-  - "Scaled Up:\r<br>Planck's Constant=1"
-  - "<size=110%>\u62E1\u5927\uFF1A\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570=1"
-  - "<size=110%>\u653E\u5927\uFF1A\r\n\r\u666E\u6717\u514B\u5E38\u6578=1"
-  - "<size=110%>\u653E\u5927\uFF1A\r\n\r\u666E\u6717\u514B\u5E38\u6570=1"
-  - "<size=110%>\uD655\uB300:\r\n\uD50C\uB791\uD06C \uC0C1\uC218=1"
-  - 'Ampliado:
-
-    Constante de Planck = 1'
-  - "\xC0 l'\xE9chelle sup\xE9rieure\_:\r\n\rConstante de Planck = 1"
+  - "Electrons: Scale x10\xB3\r<br>Planck's constant x10\u2074"
+  - "<size=110%>\u96FB\u5B50\uFF1A\u30B9\u30B1\u30FC\u30EB x10\xB3\r\n\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570
+    x10\u2074"
+  - "<size=110%>\u96FB\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\u666E\u6717\u514B\u5E38\u6578
+    x10\u2074"
+  - "<size=110%>\u7535\u5B50\uFF1A\u5C3A\u5EA6 x10\xB3\r\n\r\u666E\u6717\u514B\u5E38\u6570
+    x10\u2074"
+  - "<size=110%>\uC804\uC790: 10\xB3\uBC30 \uD655\uB300\r\n\uD50C\uB791\uD06C \uC0C1\uC218
+    10\u2074\uBC30 \uD655\uB300"
+  - "El\xE9trons: Escala x10\xB3\r\nConstante de Planck x10\u2074"
+  - "\xC9lectrons\_: \xC9chelle x10\xB3\r\nConstante de Planck x10\u2074"
 --- !u!114 &433828676023285401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +1822,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6447669382641485408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1829,7 +1833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 167}
+  m_AnchoredPosition: {x: -25, y: 167}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3039764211172625234
@@ -2178,7 +2182,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8909480738610570967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2187,7 +2191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32, y: -30}
+  m_AnchoredPosition: {x: -32, y: -32}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8613392584579616019
@@ -2627,12 +2631,12 @@ PrefabInstance:
     - target: {fileID: 7459171112473916367, guid: 1d14dce01b29b4d44af3740361e17cc2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -165
+      value: -185
       objectReference: {fileID: 0}
     - target: {fileID: 7459171112473916367, guid: 1d14dce01b29b4d44af3740361e17cc2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 7459171112473916367, guid: 1d14dce01b29b4d44af3740361e17cc2,
         type: 3}
@@ -2819,10 +2823,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5806110937467116325}
     m_Modifications:
+    - target: {fileID: 2419991878445291745, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419991878445291745, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419991878445291745, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 3065854889045111012, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
         type: 3}
       propertyPath: m_Name
       value: PlanckPlusMinus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266036136616307929, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DecPlanck
       objectReference: {fileID: 0}
     - target: {fileID: 3535206321081093394, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
         type: 3}
@@ -2923,6 +2947,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736544071220444938, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: IncPlanck
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008909967864853573, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008909967864853573, guid: 052c2f7ddc79d5a40a8251cc37ae5f21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

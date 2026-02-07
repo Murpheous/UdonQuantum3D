@@ -405,8 +405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 137}
-  m_SizeDelta: {x: 120, y: 60}
+  m_AnchoredPosition: {x: 0, y: 145}
+  m_SizeDelta: {x: 130, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3222902792445200083
 MeshRenderer:
@@ -576,7 +576,7 @@ MonoBehaviour:
   languageIndex: 0
   texts:
   - Screen<br>Distance
-  - "<size=110%>\u30B9\u30AF\u30EA\u30FC\u30F3<br>\u8DDD\u96E2"
+  - "<size=105%>\u30B9\u30AF\u30EA\u30FC\u30F3<br>\u8DDD\u96E2"
   - "<size=110%>\u87A2\u5E55\u8DDD\u96E2"
   - "<size=110%>\u5C4F\u5E55\u8DDD\u79BB"
   - "<size=110%>\uD654\uBA74 \uAC70\uB9AC"
@@ -708,7 +708,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.3529412, g: 1, b: 0.92156863, a: 1}
     m_HighlightedColor: {r: 1, g: 0.73333335, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 0.078431375, b: 0.64705884, a: 1}
-    m_SelectedColor: {r: 0, g: 0.96862745, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 0.6039216, b: 0, a: 1}
     m_DisabledColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 0.77254903}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5132,7 +5132,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.3529412, g: 1, b: 0.92156863, a: 1}
     m_HighlightedColor: {r: 1, g: 0.73333335, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 0.078431375, b: 0.64705884, a: 1}
-    m_SelectedColor: {r: 0, g: 0.96862745, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 0.6039216, b: 0, a: 1}
     m_DisabledColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 0.77254903}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5204,7 +5204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 79, y: 21}
   m_SizeDelta: {x: 30, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5795945104614243062

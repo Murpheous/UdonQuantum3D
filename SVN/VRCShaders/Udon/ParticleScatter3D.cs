@@ -130,6 +130,19 @@ public class ParticleScatter3D : UdonSharpBehaviour
     [SerializeField] private UdonSlider slitPitchSlider;
     [SerializeField] private UdonSlider rowPitchSlider;
     [SerializeField] private UdonSlider screenDistanceSlider;
+    [Tooltip("Exaggerate/Suppress Beam Particle Size"), SerializeField, Range(0.01f, .5f), FieldChangeCallback(nameof(ParticleSize))] float particleSize = 0.15f;
+    public UdonSlider particleSizeSlider;
+
+    private float ParticleSize
+    {
+        get => particleSize;
+        set
+        {
+            if (matParticleFlow != null)
+                matParticleFlow.SetFloat("_MarkerScale", value);
+            particleSize = value;
+        }
+    }
 
 
     [SerializeField] private TextMeshProUGUI txtSlitCountDisplay;
@@ -497,6 +510,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
             matParticleFlow.SetFloat("_BaseTime", shaderBaseTime);
             matParticleFlow.SetInteger("_Play", play);
+            matParticleFlow.SetFloat("_MarkerScale", particleSize);
         }
 
         shaderPlaying = true;
@@ -1090,6 +1104,16 @@ public class ParticleScatter3D : UdonSharpBehaviour
             togPulseParticles.IsBoolean = true;
             togPulseParticles.setState(pulseParticles);
             togPulseParticles.ClientVariableName = nameof(pulseParticles);
+        }
+        if (particleSizeSlider != null)
+        {
+            particleSizeSlider.DisplayInteger = false;
+            particleSizeSlider.SliderUnit = "x";
+            particleSizeSlider.DisplayScale = 10f; // Display in millimetres
+            particleSizeSlider.ClientVariableName = nameof(particleSize);
+            particleSize = Mathf.Clamp(particleSize, 0.01f, 0.5f);
+            particleSizeSlider.SetLimits(0.01f, 0.5f);
+            particleSizeSlider.SetValue(particleSize);
         }
 
         if (slitWidthSlider != null)
