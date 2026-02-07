@@ -302,7 +302,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 slitWidthDisplayUnits = "μm";
                 gratingDisplayUnits = "μm";
                 PlanckIndex = 5;
-                NominalParticleP = 4.36f; // 4.36 yocto Newton-Seconds Electron 600V
+                NominalParticleP = 4.36f; // 4.36 yocto Newton-Seconds Electron 64V
                 molecularWeight = 0.00054858f; // Electron mass in AMU
                 break;
                 // Handle mode change
@@ -791,7 +791,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         set
         {
             momentumAdj = value;
-            ParticleP = Mathf.Lerp(minParticleP, maxParticleP, momentumAdj);
+            ParticleP = momentumAdj*nominalParticleP;
         }
     }
 
