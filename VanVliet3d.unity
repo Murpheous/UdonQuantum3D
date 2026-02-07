@@ -818,7 +818,7 @@ PrefabInstance:
     - target: {fileID: 8252844546542712782, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -270
       objectReference: {fileID: 0}
     - target: {fileID: 8252844546542712782, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
@@ -931,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 825313698005056061, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.05
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 825313698005056061, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -1242,6 +1242,21 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 3092125100669231032, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147845719451992661, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Particle Momentum
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147845719451992661, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=110%>\u7C92\u5B50\u904B\u52D5\u91CF"
+      objectReference: {fileID: 0}
     - target: {fileID: 3147845719451992661, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1400,6 +1415,11 @@ PrefabInstance:
       propertyPath: udonClients.Array.data[0]
       value: 
       objectReference: {fileID: 905885156209913718}
+    - target: {fileID: 6277044976283735118, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 6291716961555086214, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1414,7 +1434,7 @@ PrefabInstance:
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: maxValue
-      value: 1.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -1429,7 +1449,7 @@ PrefabInstance:
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: syncedValue
-      value: 1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6886821519559096465, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -1513,6 +1533,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7800724511890908644, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 7856450353304074249, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856450353304074249, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936039594812752489, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_text
+      value: 1.0 yN-s
+      objectReference: {fileID: 0}
     - target: {fileID: 7998523524487488410, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_Colors.m_DisabledColor.a
@@ -1814,7 +1849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.7, y: 0}
+  m_AnchoredPosition: {x: -0.553, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277148785
@@ -2520,7 +2555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.7, y: 0}
+  m_AnchoredPosition: {x: -1.027, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1598764104 stripped
@@ -2596,7 +2631,7 @@ Transform:
   m_GameObject: {fileID: 1758709582}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -6.1}
+  m_LocalPosition: {x: 0, y: 1, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3028,7 +3063,7 @@ PrefabInstance:
     - target: {fileID: 2576334569337722544, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -329
       objectReference: {fileID: 0}
     - target: {fileID: 2576334569337722544, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
@@ -3498,7 +3533,7 @@ Transform:
   m_GameObject: {fileID: 3480278762663670689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.5, z: -7.5}
+  m_LocalPosition: {x: -0.3, y: 0.5, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3595,7 +3630,7 @@ Transform:
   m_GameObject: {fileID: 1553183510936088721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.025}
+  m_LocalPosition: {x: 0, y: 0, z: 0.016}
   m_LocalScale: {x: 2.02, y: 2.02, z: 0.003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3705,12 +3740,12 @@ MonoBehaviour:
   h: 6.62607e-34
   molecularWeight: 1
   planckIndex: 0
-  maxDisplacement: 12
-  wallLimits: {x: 12, y: 2, z: 2}
-  horizUnitScale: 10000
-  rowUnitScale: 10000
+  maxDisplacement: 31
+  wallLimits: {x: 32, y: 2, z: 2}
+  slitWidthUnitScale: 10000
+  rowUnitScale: 1000
   slitWidthDisplayUnits: nm
-  slitHeightDisplayUnits: "\u03BCm"
+  gratingDisplayUnits: "\u03BCm"
   gratingDistance: 0.5
   screenDistance: 10
   rowCount: 1
@@ -3724,14 +3759,14 @@ MonoBehaviour:
   speedRange: 5
   MAX_SLITS: 7
   displayColor: {r: 0, g: 1, b: 1, a: 1}
-  nominalParticleP: 13.6
+  nominalParticleP: 4.36
   SItoSimMomentum: 1e+24
   gameLengthToSI: 0.001
   momentumUnits: yNs
   maxParticleP: 2000
   minParticleP: 500
   particleAMU: 0.00054858
-  momentumAdj: 0.7
+  momentumAdj: 0.4
   planckLabel: {fileID: 1182674956}
   planckScaleLabel: {fileID: 966316953}
   togPlay: {fileID: 2143375367}
@@ -3762,7 +3797,7 @@ MonoBehaviour:
   slitPitchMinMaxNominal:
   - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.0001, y: 0.005, z: 0.00272}
-  - {x: 0.07, y: 0.015, z: 0.0115}
+  - {x: 0.009, y: 0.015, z: 0.0115}
   rowPitchMinMaxNominal:
   - {x: 0.013, y: 0.065, z: 0.03}
   - {x: 0.1, y: 0.3, z: 0.2}
@@ -3847,10 +3882,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 5585432492231690773}
-  meshDimensions: {x: 12, y: 2, z: 2}
+  meshDimensions: {x: 32, y: 2, z: 2}
   isRectangular: 1
   centerArrayOrigin: 1
-  pointsAcross: {x: 73, y: 13, z: 13}
+  pointsAcross: {x: 129, y: 9, z: 9}
   snapOrigin: 0
   useTriangles: 1
   material: {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
@@ -4630,7 +4665,7 @@ PrefabInstance:
     - target: {fileID: 3217058533074633135, guid: c21cad9919b09224893ddf6b2af99b3f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.2
+      value: -16.21
       objectReference: {fileID: 0}
     - target: {fileID: 3217058533074633135, guid: c21cad9919b09224893ddf6b2af99b3f,
         type: 3}
