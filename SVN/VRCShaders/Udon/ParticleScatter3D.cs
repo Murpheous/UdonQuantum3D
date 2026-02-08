@@ -107,8 +107,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private float minParticleP = 7.64f;
     [SerializeField]
     private float particleAMU = 0.00054858f;
-    [SerializeField, FieldChangeCallback(nameof(MomentumAdj))]
-    private float momentumAdj = 1;
+    [SerializeField, Range(0.5f,1.125f), FieldChangeCallback(nameof(MomentumAdj))]
+    private float momentumAdj = 0.75f;
     private float particleP = 10.0f;
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI planckLabel;
@@ -277,7 +277,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 slitWidthDisplayUnits = "nm";
                 gratingDisplayUnits = "μm";
                 displayIntegerHeight = false;
-                PlanckIndex = 0;
+                PlanckIndex = 2;
                 NominalParticleP = 13.6f; // 13.6 yocto Newton-Seconds Electron 600V
                 molecularWeight = 0.00054858f; // Electron mass in AMU
                 break;
@@ -288,7 +288,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 slitWidthDisplayUnits = "μm";
                 gratingDisplayUnits = "μm";
                 distanceScale = 10f;
-                PlanckIndex = 0;
+                PlanckIndex = 4;
                 NominalParticleP = 0.442f; // 0.442 yocto Newton-Seconds Cold Neutron 15Angstrom
                 molecularWeight = 1.008664f; // Neutron mass in AMU
                 break;
@@ -413,8 +413,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 vertUpdateRequired = true;
             }
             nominalParticleP = value;
-            minParticleP = value * 0.25f;
-            maxParticleP = value * 1.25f;
+            minParticleP = value * 0.5f;
+            maxParticleP = value * 1.125f;
             if (matParticleFlow != null)
             {
                 matParticleFlow.SetFloat("_MaxParticleP", maxParticleP);
@@ -1157,7 +1157,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             momentumSlider.SliderUnit = "yNs";
             momentumSlider.DisplayScale = nominalParticleP;
             momentumSlider.ClientVariableName = nameof(momentumAdj);
-            momentumSlider.SetLimits(0.25f, 1.25f);
+            momentumSlider.SetLimits(0.5f, 1.2f);
             momentumSlider.SetValue(momentumAdj);
             momentumSlider.Interactable = true;
         }
