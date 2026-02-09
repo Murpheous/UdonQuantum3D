@@ -31,7 +31,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private int experimentMode = 0;
     [SerializeField, Tooltip("Distribution Points")]
     private int pointsWide = 256;
-    private float[] planckSteps = { 1f, 5f, 10f, 50f, 100f, 1000f, 10000f };
+    private float[] planckSteps = { 1f, 5f, 10f, 50f, 100f, 500f, 1000f, 5000f };
     [SerializeField, FieldChangeCallback(nameof(UseQuantumScatter))] private bool useQuantumScatter;
     [Header("Fundamental Constants")]
     // [SerializeField]
@@ -301,7 +301,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 rowUnitScale = 1e3f;
                 slitWidthDisplayUnits = "μm";
                 gratingDisplayUnits = "μm";
-                PlanckIndex = 5;
+                PlanckIndex = 6;
                 NominalParticleP = 4.36f; // 4.36 yocto Newton-Seconds Electron 64V
                 molecularWeight = 0.00054858f; // Electron mass in AMU
                 break;
