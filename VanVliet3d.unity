@@ -260,6 +260,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 947903418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &206015478 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6333413781596624883, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206934665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2847902853564648112, guid: ba646700db9c678478c7d419ede04d4e,
@@ -790,6 +802,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8690239782411920631}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &663603081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6729903022169238349, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193563233801992067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &668912807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9025751005202771332, guid: ba646700db9c678478c7d419ede04d4e,
@@ -3943,10 +3967,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1733828503}
-  smoothTime: 7
+  smoothRate: 0.4
   baseToggle: {fileID: 448320548}
   screenToggle: {fileID: 2033708608}
-  baseToggleState: 0
+  baseToggleState: 1
   TargetTransForm: {fileID: 1271831988}
   startPositions: []
   targetOffset: {x: 0, y: 0, z: 0}
@@ -3954,16 +3978,16 @@ MonoBehaviour:
   portalPositions:
   - {x: 0, y: 0, z: 0}
   scaleIndex: 0
-  locationTween: 0
-  platformTween: 0
-  gotoBase: 1
-  gratingStop: {x: 0, y: 0, z: 0}
-  targetStop: {x: 1, y: 0, z: 0}
+  platformIsMoving: 0
+  basePostion: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 1, y: 0, z: 0}
   hasTarget: 0
   portalStop: {x: 0, y: 0, z: 0}
   portalWas: {x: 0, y: 0, z: 0}
   scaleIsChanging: 0
-  experimentScale: 10
+  experimentScale: 1000
+  vMag: 0
+  currentPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1758709582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5489,8 +5513,8 @@ MonoBehaviour:
   minParticleP: 500
   particleAMU: 0.00054858
   momentumAdj: 0.75
-  planckLabel: {fileID: 0}
-  planckScaleLabel: {fileID: 0}
+  planckLabel: {fileID: 663603081}
+  planckScaleLabel: {fileID: 206015478}
   togPlay: {fileID: 2143375367}
   togPause: {fileID: 1712240541}
   togStop: {fileID: 1764590370}
