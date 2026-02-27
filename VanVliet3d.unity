@@ -1531,7 +1531,7 @@ PrefabInstance:
     - target: {fileID: 825313698005056061, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.735
+      value: 0.714
       objectReference: {fileID: 0}
     - target: {fileID: 825313698005056061, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -1551,12 +1551,12 @@ PrefabInstance:
     - target: {fileID: 927601115461323722, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 975
+      value: 985
       objectReference: {fileID: 0}
     - target: {fileID: 927601115461323722, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 925
+      value: 880
       objectReference: {fileID: 0}
     - target: {fileID: 927601115461323722, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -1597,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 6560188550933532096, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_lineSpacing
-      value: -10
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 7232575479932482954, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -1613,6 +1613,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SendCustomEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505888908260163651, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505888908260163651, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 7912807062208830015, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -4740,6 +4750,20 @@ PrefabInstance:
         type: 3}
       propertyPath: pageTitles.Array.size
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807033376861438204, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: pageBodies.Array.data[0]
+      value: "These simulation scenarios demonstrate real-world quantum experiments
+        by setting 1 metre to 1 mm and adjusting Planck's constant to magnify the
+        scattering patterns, making them visible at a shorter distance.\r\n\r\n<b>\u29BF
+        Low-voltage electrons</b> (16-80) Volts with Planck's constant x1000.  Electron
+        Momentum 2 to 5x10<sup>-24</sup>Ns and Slit dimensions in \u03BCm.\r\n\r\n<b>\u29BF
+        Bach, Pope et al. electron diffraction (2012)</b> (150-800) Volts with Planck's
+        constant x10.  Electron Momentum 7 to 16x10<sup>-24</sup>Ns and Slit dimensions
+        in nm.\r\n\r\n<b>\u29BF Zeilinger et al. slow neutron diffraction (1988)</b>
+        With Planck's constant x10.  Neutron Momentum 2 to 5x10<sup>-25</sup>Ns and
+        Slit dimensions in \u03BCm."
       objectReference: {fileID: 0}
     - target: {fileID: 2807033376861438204, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
