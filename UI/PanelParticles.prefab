@@ -825,6 +825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1376930199693993980, guid: 2614e3d56cd561c46a767b96ec918aa5,
         type: 3}
+      propertyPath: SliderClient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376930199693993980, guid: 2614e3d56cd561c46a767b96ec918aa5,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1376930199693993980, guid: 2614e3d56cd561c46a767b96ec918aa5,
@@ -932,7 +937,7 @@ PrefabInstance:
     - target: {fileID: 3376440202982925966, guid: 2614e3d56cd561c46a767b96ec918aa5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3376440202982925966, guid: 2614e3d56cd561c46a767b96ec918aa5,
         type: 3}
@@ -1327,7 +1332,7 @@ PrefabInstance:
     - target: {fileID: 3284885607473193425, guid: 93479c5f4d90a11409adc820c323f6a7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3284885607473193425, guid: 93479c5f4d90a11409adc820c323f6a7,
         type: 3}
@@ -1684,7 +1689,7 @@ PrefabInstance:
     - target: {fileID: 1795927857915284112, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 48
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 1795927857915284112, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
         type: 3}
@@ -3279,26 +3284,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2601764917016007142, guid: f2d982c43c6741946b0d83df7fc8eb2c,
         type: 3}
-      propertyPath: pageTitles.Array.data[1]
-      value: "<size=110%>\u7C92\u5B50\u4F4D\u7F6E\u78BA\u7387\u5BC6\u5EA6"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2601764917016007142, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[2]
-      value: "<size=110%>\u7C92\u5B50\u4F4D\u7F6E\u6A5F\u7387\u5BC6\u5EA6"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2601764917016007142, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[3]
-      value: "<size=110%>\u7C92\u5B50\u4F4D\u7F6E\u6982\u7387\u5BC6\u5EA6"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2601764917016007142, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[4]
-      value: "<size=110%>\uC785\uC790 \uC704\uCE58 \uD655\uB960 \uBC00\uB3C4"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2601764917016007142, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
       propertyPath: pageTitles.Array.data[6]
       value: "Densit\xE9 de probabilit\xE9 de position"
       objectReference: {fileID: 0}
@@ -3575,26 +3560,6 @@ PrefabInstance:
         type: 3}
       propertyPath: pageTitles.Array.data[0]
       value: Quantum Scattering in 3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968076979422627899, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[1]
-      value: "<size=110%>3D\u306B\u304A\u3051\u308B\u91CF\u5B50\u6563\u4E71"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968076979422627899, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[2]
-      value: "<size=110%>\u4E09\u7DAD\u91CF\u5B50\u6563\u5C04"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968076979422627899, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[3]
-      value: "<size=110%>\u4E09\u7EF4\u91CF\u5B50\u6563\u5C04"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968076979422627899, guid: f2d982c43c6741946b0d83df7fc8eb2c,
-        type: 3}
-      propertyPath: pageTitles.Array.data[4]
-      value: "<size=110%>3\uCC28\uC6D0 \uC591\uC790 \uC0B0\uB780"
       objectReference: {fileID: 0}
     - target: {fileID: 5968076979422627899, guid: f2d982c43c6741946b0d83df7fc8eb2c,
         type: 3}
@@ -4306,6 +4271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1903917538826915937, guid: 0a8574ca471973d49b4df7b18bc76976,
         type: 3}
+      propertyPath: SliderClient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903917538826915937, guid: 0a8574ca471973d49b4df7b18bc76976,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1903917538826915937, guid: 0a8574ca471973d49b4df7b18bc76976,
@@ -4470,7 +4440,7 @@ PrefabInstance:
     - target: {fileID: 5076063524217439184, guid: 0a8574ca471973d49b4df7b18bc76976,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5076063524217439184, guid: 0a8574ca471973d49b4df7b18bc76976,
         type: 3}
@@ -4729,7 +4699,7 @@ PrefabInstance:
     - target: {fileID: 6728807690509009792, guid: 7fec1101f8bf2b6408727a92225dcf3f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 70
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6728807690509009792, guid: 7fec1101f8bf2b6408727a92225dcf3f,
         type: 3}

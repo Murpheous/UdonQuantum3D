@@ -1,0 +1,343 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &427330915925096428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9190151178636069783}
+  - component: {fileID: 2619782381422200284}
+  - component: {fileID: 5444091074867035702}
+  m_Layer: 17
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9190151178636069783
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427330915925096428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2983414005430858097}
+  m_Father: {fileID: 5181802985378637801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2619782381422200284
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427330915925096428}
+  m_CullTransparentMesh: 0
+--- !u!114 &5444091074867035702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427330915925096428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: e63289acce8192f418271a318edafc31, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 84d3838ecee5201468330e78cbe403e7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1027686861399754862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2983414005430858097}
+  - component: {fileID: 6912939211892686563}
+  - component: {fileID: 5544084703236915041}
+  m_Layer: 17
+  m_Name: Checkmark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2983414005430858097
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027686861399754862}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9190151178636069783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6912939211892686563
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027686861399754862}
+  m_CullTransparentMesh: 0
+--- !u!114 &5544084703236915041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027686861399754862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: e63289acce8192f418271a318edafc31, type: 2}
+  m_Color: {r: 1, g: 0.078431375, b: 0.64705884, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fc08e8838b0300145a0062b8431e0c29, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2970858905344415088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5181802985378637801}
+  - component: {fileID: 4624232384642483748}
+  - component: {fileID: 7758321207204509349}
+  - component: {fileID: 2186152842009761211}
+  m_Layer: 17
+  m_Name: btnQuantumOnOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5181802985378637801
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970858905344415088}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9190151178636069783}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 198}
+  m_SizeDelta: {x: 60, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4624232384642483748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970858905344415088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0.3529412, g: 1, b: 0.92156863, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.73333335, b: 0, a: 1}
+    m_PressedColor: {r: 0.9433962, g: 0.16464934, b: 0.90585643, a: 1}
+    m_SelectedColor: {r: 0, g: 0.96862745, b: 1, a: 1}
+    m_DisabledColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 0.77254903}
+    m_ColorMultiplier: 1.27
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5444091074867035702}
+  toggleTransition: 1
+  graphic: {fileID: 5544084703236915041}
+  m_Group: {fileID: 0}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: VRC.Udon.UdonBehaviour, VRC.Udon
+        m_MethodName: SendCustomEvent
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onToggle
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!114 &7758321207204509349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970858905344415088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a0125298b98834fadb6477d8360741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 2186152842009761211}
+  pageTitles:
+  - Enable Quantum Interactions
+  - "<size=110%>\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528\u3092\u53EF\u80FD\u306B\u3059\u308B"
+  - "<size=110%>\u555F\u7528\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528"
+  - "<size=110%>\u542F\u7528\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528"
+  - "<size=110%>\uC591\uC790 \uC0C1\uD638\uC791\uC6A9 \uD65C\uC131\uD654"
+  - "Habilitar intera\xE7\xF5es qu\xE2nticas"
+  - Activer les interactions quantiques
+  pageBodies:
+  - 'This feature displays an overlay of the particle probability density on the
+    detection screen.
+
+
+
+    The relative probability of a particle arriving at a
+    point on the screen is determined by a ray-tracing technique that traces rays
+    back through the apertures and sums the portions of the 2D scattering function
+    that could contribute to a particle arriving at that point.'
+  - "<size=110%>\u3053\u306E\u6A5F\u80FD\u306F\u3001\u691C\u51FA\u753B\u9762\u306B\u7C92\u5B50\u306E\u78BA\u7387\u5BC6\u5EA6\u3092\u91CD\u306D\u3066\u8868\u793A\u3057\u307E\u3059\u3002\r\n\r\n\u753B\u9762\u4E0A\u306E\u70B9\u306B\u7C92\u5B50\u304C\u5230\u9054\u3059\u308B\u76F8\u5BFE\u7684\u306A\u78BA\u7387\u306F\u3001\u5149\u7DDA\u8FFD\u8DE1\u6280\u8853\u306B\u3088\u3063\u3066\u6C7A\u5B9A\u3055\u308C\u307E\u3059\u3002\u3053\u306E\u6280\u8853\u3067\u306F\u3001\u958B\u53E3\u90E8\u3092\u901A\u904E\u3059\u308B\u5149\u7DDA\u3092\u8FFD\u8DE1\u3057\u3001\u7C92\u5B50\u304C\u305D\u306E\u70B9\u306B\u5230\u9054\u3059\u308B\u306E\u306B\u5BC4\u4E0E\u3059\u308B\u53EF\u80FD\u6027\u306E\u3042\u308B2\u6B21\u5143\u6563\u4E71\u95A2\u6570\u306E\u90E8\u5206\u3092\u5408\u8A08\u3057\u307E\u3059\u3002"
+  - "<size=110%>\u6B64\u529F\u80FD\u6703\u5728\u63A2\u6E2C\u87A2\u5E55\u4E0A\u758A\u52A0\u986F\u793A\u7C92\u5B50\u6A5F\u7387\u5BC6\u5EA6\u3002\r\n\r\n\u7C92\u5B50\u5230\u9054\u87A2\u5E55\u4E0A\u67D0\u4E00\u9EDE\u7684\u76F8\u5C0D\u6A5F\u7387\u662F\u900F\u904E\u5149\u7DDA\u8FFD\u8E64\u6280\u8853\u78BA\u5B9A\u7684\u3002\u8A72\u6280\u8853\u8FFD\u8E64\u7A7F\u904E\u5B54\u5F91\u7684\u5149\u7DDA\uFF0C\u4E26\u5C07\u4E8C\u7DAD\u6563\u5C04\u51FD\u6578\u4E2D\u53EF\u80FD\u5C0E\u81F4\u7C92\u5B50\u5230\u9054\u8A72\u9EDE\u7684\u90E8\u5206\u76F8\u52A0\u3002"
+  - "<size=110%>\u6B64\u529F\u80FD\u4F1A\u5728\u63A2\u6D4B\u5C4F\u5E55\u4E0A\u53E0\u52A0\u663E\u793A\u7C92\u5B50\u6982\u7387\u5BC6\u5EA6\u3002\r\n\r\n\u7C92\u5B50\u5230\u8FBE\u5C4F\u5E55\u4E0A\u67D0\u4E00\u70B9\u7684\u76F8\u5BF9\u6982\u7387\u662F\u901A\u8FC7\u5149\u7EBF\u8FFD\u8E2A\u6280\u672F\u786E\u5B9A\u7684\u3002\u8BE5\u6280\u672F\u8FFD\u8E2A\u7A7F\u8FC7\u5B54\u5F84\u7684\u5149\u7EBF\uFF0C\u5E76\u5C06\u4E8C\u7EF4\u6563\u5C04\u51FD\u6570\u4E2D\u53EF\u80FD\u5BFC\u81F4\u7C92\u5B50\u5230\u8FBE\u8BE5\u70B9\u7684\u90E8\u5206\u76F8\u52A0\u3002"
+  - "<size=110%>\uC774 \uAE30\uB2A5\uC740 \uAC80\uCD9C \uD654\uBA74\uC5D0 \uC785\uC790
+    \uD655\uB960 \uBC00\uB3C4 \uD568\uC218\uB97C \uACB9\uCCD0\uC11C \uD45C\uC2DC\uD569\uB2C8\uB2E4.\r\n\r\n\uD654\uBA74\uC758
+    \uD2B9\uC815 \uC9C0\uC810\uC5D0 \uC785\uC790\uAC00 \uB3C4\uB2EC\uD560 \uC0C1\uB300\uC801
+    \uD655\uB960\uC740 \uAD11\uC120 \uCD94\uC801 \uAE30\uBC95\uC744 \uD1B5\uD574
+    \uACB0\uC815\uB429\uB2C8\uB2E4. \uC774 \uAE30\uBC95\uC740 \uC870\uB9AC\uAC1C\uB97C
+    \uD1B5\uACFC\uD558\uB294 \uAD11\uC120\uC744 \uC5ED\uCD94\uC801\uD558\uACE0, \uD574\uB2F9
+    \uC9C0\uC810\uC5D0 \uC785\uC790\uAC00 \uB3C4\uB2EC\uD558\uB294 \uB370 \uAE30\uC5EC\uD560
+    \uC218 \uC788\uB294 2\uCC28\uC6D0 \uC0B0\uB780 \uD568\uC218\uC758 \uAC01 \uBD80\uBD84\uC744
+    \uD569\uC0B0\uD569\uB2C8\uB2E4."
+  - "Este recurso exibe uma sobreposi\xE7\xE3o da densidade de probabilidade de part\xEDculas
+    na tela de detec\xE7\xE3o.\r\n\r\nA probabilidade relativa de uma part\xEDcula
+    chegar a um ponto na tela \xE9 determinada por uma t\xE9cnica de tra\xE7ado de
+    raios que rastreia os raios atrav\xE9s das aberturas e soma as por\xE7\xF5es
+    da fun\xE7\xE3o de espalhamento 2D que poderiam contribuir para a chegada de
+    uma part\xEDcula naquele ponto."
+  - "Cette fonction affiche une superposition de la densit\xE9 de probabilit\xE9
+    des particules sur l'\xE9cran de d\xE9tection.\r\n\r\nLa probabilit\xE9 relative
+    qu'une particule atteigne un point donn\xE9 de l'\xE9cran est d\xE9termin\xE9e
+    par une technique de trac\xE9 de rayons qui simule la propagation des rayons
+    \xE0 travers les ouvertures et somme les contributions de la fonction de diffusion
+    2D susceptibles d'expliquer l'arriv\xE9e d'une particule \xE0 ce point."
+  languageIndex: 0
+--- !u!114 &2186152842009761211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970858905344415088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 3
+  serializedProgramAsset: {fileID: 11400000, guid: db1a9e79a4287cd4d8e931fa4d6c3abd,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 530112de8551329498e25f888f6d27e6, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0

@@ -619,11 +619,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1728037667013112743, guid: bf2971443bd086c4eb207008cebd8227,
         type: 3}
-    - target: {fileID: 1728037667013112743, guid: bf2971443bd086c4eb207008cebd8227,
-        type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4255708447914424572, guid: bf2971443bd086c4eb207008cebd8227,
         type: 3}
       propertyPath: serializedProgramAsset

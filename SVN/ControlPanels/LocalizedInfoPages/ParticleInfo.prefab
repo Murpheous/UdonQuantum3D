@@ -178,11 +178,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1948507903827483940, guid: ab3dfa854d6c4194e9703c59d0e678a2,
         type: 3}
-    - target: {fileID: 1948507903827483940, guid: ab3dfa854d6c4194e9703c59d0e678a2,
-        type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8843517417374640414, guid: ab3dfa854d6c4194e9703c59d0e678a2,
         type: 3}
       propertyPath: _syncMethod
@@ -343,11 +338,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1714936211839288020, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
-    - target: {fileID: 1714936211839288020, guid: b35325d7cd37e344c8ab453d729752e3,
-        type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4291582114452870040, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
       propertyPath: m_Pivot.x

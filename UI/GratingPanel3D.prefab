@@ -3641,10 +3641,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4623797682641613468}
   pageTitles:
   - Quantum Scattering in 3D
-  - "<size=110%>3D\u306B\u304A\u3051\u308B\u91CF\u5B50\u6563\u4E71"
-  - "<size=110%>\u4E09\u7DAD\u91CF\u5B50\u6563\u5C04"
-  - "<size=110%>\u4E09\u7EF4\u91CF\u5B50\u6563\u5C04"
-  - "<size=110%>3\uCC28\uC6D0 \uC591\uC790 \uC0B0\uB780"
+  - "3D\u306B\u304A\u3051\u308B\u91CF\u5B50\u6563\u4E71"
+  - "\u4E09\u7DAD\u91CF\u5B50\u6563\u5C04"
+  - "\u4E09\u7EF4\u91CF\u5B50\u6563\u5C04"
+  - "3\uCC28\uC6D0 \uC591\uC790 \uC0B0\uB780"
   - "Espalhamento qu\xE2ntico em 3D"
   - Diffusion quantique en 3D
   pageBodies:
