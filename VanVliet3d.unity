@@ -1653,37 +1653,37 @@ PrefabInstance:
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[0]
-      value: Quantum Scattering Without Interference
+      value: A Quantum Simulation Without Interference
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[1]
-      value: "\u5E72\u6E09\u306E\u306A\u3044\u91CF\u5B50\u6563\u4E71"
+      value: "\u5E72\u6E09\u306E\u306A\u3044\u91CF\u5B50\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[2]
-      value: "\u7121\u5E79\u64FE\u91CF\u5B50\u6563\u5C04"
+      value: "\u7121\u5E79\u64FE\u7684\u91CF\u5B50\u6A21\u64EC"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[3]
-      value: "\u65E0\u5E72\u6270\u91CF\u5B50\u6563\u5C04"
+      value: "\u65E0\u5E72\u6270\u7684\u91CF\u5B50\u6A21\u62DF"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[4]
-      value: "\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC0B0\uB780"
+      value: "\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC2DC\uBBAC\uB808\uC774\uC158"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[5]
-      value: "Dispers\xE3o Qu\xE2ntica sem Interfer\xEAncia"
+      value: "Uma simula\xE7\xE3o qu\xE2ntica sem interfer\xEAncia"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: pageTitles.Array.data[6]
-      value: "Diffusion quantique sans interf\xE9rence"
+      value: "Une simulation quantique sans interf\xE9rence"
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -1927,37 +1927,37 @@ PrefabInstance:
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[0]
-      value: <align=center>Quantum Scattering Without Interference
+      value: Quantum Scattering Without Interference
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[1]
-      value: "<align=center>\u5E72\u6E09\u306E\u306A\u3044\u91CF\u5B50\u6563\u4E71"
+      value: "\u5E72\u6E09\u306E\u306A\u3044\u91CF\u5B50\u6563\u4E71"
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[2]
-      value: "<align=center>\u7121\u5E79\u64FE\u91CF\u5B50\u6563\u5C04"
+      value: "\u7121\u5E79\u64FE\u91CF\u5B50\u6563\u5C04"
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[3]
-      value: "<align=center>\u65E0\u5E72\u6270\u91CF\u5B50\u6563\u5C04"
+      value: "\u65E0\u5E72\u6270\u91CF\u5B50\u6563\u5C04"
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[4]
-      value: "<align=center>\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC0B0\uB780"
+      value: "\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC0B0\uB780"
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[5]
-      value: "<align=center>Dispers\xE3o Qu\xE2ntica sem Interfer\xEAncia"
+      value: "Dispers\xE3o Qu\xE2ntica sem Interfer\xEAncia"
       objectReference: {fileID: 0}
     - target: {fileID: 1720789286125869259, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: defaultTexts.Array.data[6]
-      value: "<align=center>Diffusion quantique sans interf\xE9rence"
+      value: "Diffusion quantique sans interf\xE9rence"
       objectReference: {fileID: 0}
     - target: {fileID: 1764354641401667360, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -1996,6 +1996,26 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8128242432604567641}
+    - target: {fileID: 3091007906916176757, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091007906916176757, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091007906916176757, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091007906916176757, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 3147845719451992661, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2324,6 +2344,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8601134999089690510, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 9072159871946784401, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_text
+      value: 'Particle Beam:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072159871946784401, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9120477347661153322, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: SliderClient
@@ -2958,14 +2988,17 @@ PrefabInstance:
     - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_text
-      value: 'Quantum Scattering
-
-        Without Interference'
+      value: 'Slit Screen:'
       objectReference: {fileID: 0}
     - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_VerticalAlignment
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 810377217912653073, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -3017,8 +3050,38 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
       propertyPath: m_SizeDelta.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2387401323181847360, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -3246,6 +3309,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6335488400597458982, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335488400597458982, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -107
+      objectReference: {fileID: 0}
     - target: {fileID: 6561026268271207936, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3265,6 +3338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685831525260221762, guid: 66d68933adc7d574c823b247a44d5696,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: 'Slit Screen Settings:'
       objectReference: {fileID: 0}
     - target: {fileID: 6685831525260221762, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -4231,26 +4309,25 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1733828503}
-  smoothRate: 0.4
+  smoothRate: 0.2
+  rabbitRate: 1
   baseToggle: {fileID: 448320548}
   screenToggle: {fileID: 2033708608}
   baseToggleState: 1
   TargetTransForm: {fileID: 1271831988}
   startPositions: []
-  targetOffset: {x: 0, y: 0, z: 0}
   portalTransform: {fileID: 0}
   portalPositions:
   - {x: 0, y: 0, z: 0}
   scaleIndex: 0
-  platformIsMoving: 0
   basePostion: {x: 0, y: 0, z: 0}
   targetPosition: {x: 1, y: 0, z: 0}
+  rabbitPosition: {x: 0, y: 0, z: 0}
   hasTarget: 0
   portalStop: {x: 0, y: 0, z: 0}
   portalWas: {x: 0, y: 0, z: 0}
   scaleIsChanging: 0
   experimentScale: 1000
-  vMag: 0
   currentPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1758709582
 GameObject:
@@ -5565,12 +5642,12 @@ PrefabInstance:
     - target: {fileID: 5931722048008814382, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5931722048008814382, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5931722048008814382, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
@@ -5580,7 +5657,7 @@ PrefabInstance:
     - target: {fileID: 5931722048008814382, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -30
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6046485876461371640, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
