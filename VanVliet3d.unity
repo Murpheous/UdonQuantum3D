@@ -1652,41 +1652,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
-      propertyPath: pageTitles.Array.data[0]
-      value: A Quantum Simulation Without Interference
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[1]
-      value: "\u5E72\u6E09\u306E\u306A\u3044\u91CF\u5B50\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[2]
-      value: "\u7121\u5E79\u64FE\u7684\u91CF\u5B50\u6A21\u64EC"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[3]
-      value: "\u65E0\u5E72\u6270\u7684\u91CF\u5B50\u6A21\u62DF"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[4]
-      value: "\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC2DC\uBBAC\uB808\uC774\uC158"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[5]
-      value: "Uma simula\xE7\xE3o qu\xE2ntica sem interfer\xEAncia"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: pageTitles.Array.data[6]
-      value: "Une simulation quantique sans interf\xE9rence"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
@@ -1696,16 +1661,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1069902876}
-    - target: {fileID: 5760730058350057003, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -37.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5760730058350057003, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 37.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5876857610652509748, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_Group
@@ -1721,16 +1676,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1445433651}
-    - target: {fileID: 7505888908260163651, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7505888908260163651, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7912807062208830015, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_Name
