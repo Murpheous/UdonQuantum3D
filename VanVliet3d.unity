@@ -1671,6 +1671,41 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1445433651}
+    - target: {fileID: 7232575479932482956, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482956, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482956, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482956, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482957, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.92156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482957, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232575479932482957, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.3529412
+      objectReference: {fileID: 0}
     - target: {fileID: 7232575479932482957, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1915,6 +1950,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1764354641401667360, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 2562263360491981483, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 374
+      objectReference: {fileID: 0}
     - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1929,6 +1969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953682430995716611, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 404
       objectReference: {fileID: 0}
     - target: {fileID: 2972349657945834818, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -2120,6 +2165,21 @@ PrefabInstance:
       propertyPath: udonClients.Array.data[0]
       value: 
       objectReference: {fileID: 905885156209913718}
+    - target: {fileID: 5686155623282396696, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686155623282396696, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686155623282396696, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -236
+      objectReference: {fileID: 0}
     - target: {fileID: 6291716961555086214, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2201,6 +2261,41 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Particle Stream<br>Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "<size=110%>\u7C92\u5B50\u30D3\u30FC\u30E0\u8A2D\u5B9A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: "<size=110%>\u7C92\u5B50\u6D41\u8A2D\u5B9A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: "<size=110%>\u7C92\u5B50\u6D41\u8BBE\u7F6E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[4]
+      value: "<size=110%>\uD30C\uD2F0\uD074 \uC2A4\uD2B8\uB9BC \uC124\uC815"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[5]
+      value: "Configura\xE7\xF5es do<br>Particle Stream"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: texts.Array.data[6]
+      value: "Param\xE8tres du flux<br>de particules"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
@@ -2236,17 +2331,17 @@ PrefabInstance:
     - target: {fileID: 7880161508084213699, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880161508084213699, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7880161508084213699, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880161508084213699, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 7998523524487488410, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -2289,6 +2384,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8601134999089690510, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 8694320117172870769, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -84
+      objectReference: {fileID: 0}
     - target: {fileID: 9072159871946784401, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_text
