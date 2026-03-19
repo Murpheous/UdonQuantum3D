@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294961407
-  m_fontColor: {r: 1, g: 0.9098039, b: 1, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -162,7 +162,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3718331716127394533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,7 +174,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -13, y: 0}
-  m_SizeDelta: {x: 1100, y: 800}
+  m_SizeDelta: {x: 1125, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2808843623663088380
 CanvasRenderer:
@@ -444,6 +444,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
         type: 3}
+      propertyPath: pageBodies.Array.data[0]
+      value: 'This world provides an interactive quantum scattering model that replicates
+        the stochastic fringe patterns observed in quantum experiments, such as the
+        double slit experiment, without relying on wave propagation or interference.
+
+
+
+        The
+        model builds on work published by Carolyne Van Vliet, which demonstrates
+        that quantum physics predicts a spectrum of possible linear-momentum transitions
+        between matter bound within the slit screen and particles or photons passing
+        through the openings.
+
+
+
+        The model combines ballistic diffusion with
+        Van Vliet''s interaction model to create virtual-reality versions of quantum
+        experiments, demonstrating how observed stochastic fringe patterns can arise
+        without waves. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[1]
+      value: "\u3053\u306E\u4EEE\u60F3\u4E16\u754C\u306F\u3001\u6CE2\u52D5\u4F1D\u64AD\u3084\u5E72\u6E09\u306B\u983C\u308B\u3053\u3068\u306A\u304F\u3001\u4E8C\u91CD\u30B9\u30EA\u30C3\u30C8\u5B9F\u9A13\u306A\u3069\u306E\u91CF\u5B50\u5B9F\u9A13\u3067\u89B3\u6E2C\u3055\u308C\u308B\u78BA\u7387\u7684\u306A\u5E72\u6E09\u7E1E\u30D1\u30BF\u30FC\u30F3\u3092\u518D\u73FE\u3059\u308B\u3001\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u306A\u91CF\u5B50\u6563\u4E71\u30E2\u30C7\u30EB\u3092\u63D0\u4F9B\u3057\u307E\u3059\u3002\r\n\r\n\u3053\u306E\u30E2\u30C7\u30EB\u306F\u3001\u30AD\u30E3\u30ED\u30E9\u30A4\u30F3\u30FB\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u304C\u767A\u8868\u3057\u305F\u7814\u7A76\u306B\u57FA\u3065\u3044\u3066\u3044\u307E\u3059\u3002\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u306E\u7814\u7A76\u306F\u3001\u91CF\u5B50\u7269\u7406\u5B66\u304C\u3001\u30B9\u30EA\u30C3\u30C8\u30B9\u30AF\u30EA\u30FC\u30F3\u5185\u306B\u675F\u7E1B\u3055\u308C\u305F\u7269\u8CEA\u3068\u3001\u30B9\u30EA\u30C3\u30C8\u3092\u901A\u904E\u3059\u308B\u7C92\u5B50\u307E\u305F\u306F\u5149\u5B50\u3068\u306E\u9593\u306E\u3001\u69D8\u3005\u306A\u7DDA\u5F62\u904B\u52D5\u91CF\u9077\u79FB\u306E\u53EF\u80FD\u6027\u3092\u4E88\u6E2C\u3059\u308B\u3053\u3068\u3092\u793A\u3057\u3066\u3044\u307E\u3059\u3002\r\n\r\n\u3053\u306E\u30E2\u30C7\u30EB\u306F\u3001\u5F3E\u9053\u62E1\u6563\u3068\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u306E\u76F8\u4E92\u4F5C\u7528\u30E2\u30C7\u30EB\u3092\u7D44\u307F\u5408\u308F\u305B\u308B\u3053\u3068\u3067\u3001\u91CF\u5B50\u5B9F\u9A13\u306E\u4EEE\u60F3\u73FE\u5B9F\u7248\u3092\u4F5C\u6210\u3057\u3001\u6CE2\u52D5\u3092\u7528\u3044\u305A\u306B\u89B3\u6E2C\u3055\u308C\u308B\u78BA\u7387\u7684\u306A\u5E72\u6E09\u7E1E\u30D1\u30BF\u30FC\u30F3\u304C\u3069\u306E\u3088\u3046\u306B\u751F\u3058\u308B\u304B\u3092\u793A\u3057\u307E\u3059\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[2]
+      value: "\u9019\u500B\u4E16\u754C\u63D0\u4F9B\u4E86\u4E00\u500B\u4E92\u52D5\u5F0F\u91CF\u5B50\u6563\u5C04\u6A21\u578B\uFF0C\u5B83\u7121\u9700\u4F9D\u8CF4\u6CE2\u7684\u50B3\u64AD\u6216\u4E7E\u6D89\uFF0C\u5373\u53EF\u91CD\u73FE\u91CF\u5B50\u5BE6\u9A57\uFF08\u4F8B\u5982\u96D9\u7E2B\u5BE6\u9A57\uFF09\u4E2D\u89C0\u5BDF\u5230\u7684\u96A8\u6A5F\u5E72\u6D89\u689D\u7D0B\u5716\u6848\u3002\r\n\r\n\u8A72\u6A21\u578B\u57FA\u65BC\u5361\u7F85\u7433\xB7\u7BC4\xB7\u5F17\u5229\u7279\uFF08Carolyne
+        Van Vliet\uFF09\u767C\u8868\u7684\u7814\u7A76\u6210\u679C\uFF0C\u8A72\u7814\u7A76\u8868\u660E\u91CF\u5B50\u7269\u7406\u5B78\u9810\u8A00\u4E86\u72F9\u7E2B\u5C4F\u5167\u675F\u7E1B\u7269\u8CEA\u8207\u7A7F\u904E\u72F9\u7E2B\u7684\u7C92\u5B50\u6216\u5149\u5B50\u4E4B\u9593\u5B58\u5728\u4E00\u7CFB\u5217\u53EF\u80FD\u7684\u7DDA\u6027\u52D5\u91CF\u8E8D\u9077\u3002\r\n\r\n\u8A72\u6A21\u578B\u5C07\u5F48\u9053\u64F4\u6563\u8207\u7BC4\xB7\u5F17\u5229\u7279\u7684\u76F8\u4E92\u4F5C\u7528\u6A21\u578B\u76F8\u7D50\u5408\uFF0C\u5275\u5EFA\u4E86\u91CF\u5B50\u5BE6\u9A57\u7684\u865B\u64EC\u5BE6\u5883\u7248\u672C\uFF0C\u5C55\u793A\u77AD\u5982\u4F55\u5728\u6C92\u6709\u6CE2\u7684\u60C5\u6CC1\u4E0B\u7522\u751F\u89C0\u5BDF\u5230\u7684\u96A8\u6A5F\u5E72\u6D89\u689D\u7D0B\u5716\u6848\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[3]
+      value: "\u8FD9\u4E2A\u4E16\u754C\u63D0\u4F9B\u4E86\u4E00\u4E2A\u4EA4\u4E92\u5F0F\u91CF\u5B50\u6563\u5C04\u6A21\u578B\uFF0C\u5B83\u65E0\u9700\u4F9D\u8D56\u6CE2\u7684\u4F20\u64AD\u6216\u5E72\u6D89\uFF0C\u5373\u53EF\u590D\u73B0\u91CF\u5B50\u5B9E\u9A8C\uFF08\u4F8B\u5982\u53CC\u7F1D\u5B9E\u9A8C\uFF09\u4E2D\u89C2\u5BDF\u5230\u7684\u968F\u673A\u5E72\u6D89\u6761\u7EB9\u56FE\u6848\u3002\r\n\r\n\u8BE5\u6A21\u578B\u57FA\u4E8E\u5361\u7F57\u7433\xB7\u8303\xB7\u5F17\u5229\u7279\uFF08Carolyne
+        Van Vliet\uFF09\u53D1\u8868\u7684\u7814\u7A76\u6210\u679C\uFF0C\u8BE5\u7814\u7A76\u8868\u660E\u91CF\u5B50\u7269\u7406\u5B66\u9884\u8A00\u4E86\u72ED\u7F1D\u5C4F\u5185\u675F\u7F1A\u7269\u8D28\u4E0E\u7A7F\u8FC7\u72ED\u7F1D\u7684\u7C92\u5B50\u6216\u5149\u5B50\u4E4B\u95F4\u5B58\u5728\u4E00\u7CFB\u5217\u53EF\u80FD\u7684\u7EBF\u6027\u52A8\u91CF\u8DC3\u8FC1\u3002\r\n\r\n\u8BE5\u6A21\u578B\u5C06\u5F39\u9053\u6269\u6563\u4E0E\u8303\xB7\u5F17\u5229\u7279\u7684\u76F8\u4E92\u4F5C\u7528\u6A21\u578B\u76F8\u7ED3\u5408\uFF0C\u521B\u5EFA\u4E86\u91CF\u5B50\u5B9E\u9A8C\u7684\u865A\u62DF\u73B0\u5B9E\u7248\u672C\uFF0C\u5C55\u793A\u4E86\u5982\u4F55\u5728\u6CA1\u6709\u6CE2\u7684\u60C5\u51B5\u4E0B\u4EA7\u751F\u89C2\u5BDF\u5230\u7684\u968F\u673A\u5E72\u6D89\u6761\u7EB9\u56FE\u6848\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[4]
+      value: "\uC774 \uAC00\uC0C1 \uC138\uACC4\uB294 \uD30C\uB3D9 \uC804\uD30C\uB098
+        \uAC04\uC12D\uC5D0 \uC758\uC874\uD558\uC9C0 \uC54A\uACE0 \uC774\uC911 \uC2AC\uB9BF
+        \uC2E4\uD5D8\uACFC \uAC19\uC740 \uC591\uC790 \uC2E4\uD5D8\uC5D0\uC11C \uAD00\uCC30\uB418\uB294
+        \uD655\uB960\uC801 \uAC04\uC12D \uBB34\uB2AC \uD328\uD134\uC744 \uC7AC\uD604\uD558\uB294
+        \uC0C1\uD638\uC791\uC6A9\uC801\uC778 \uC591\uC790 \uC0B0\uB780 \uBAA8\uB378\uC744
+        \uC81C\uACF5\uD569\uB2C8\uB2E4.\r\n\r\n\uC774 \uBAA8\uB378\uC740 \uCE90\uB864\uB9B0
+        \uBC18 \uBE14\uB9AC\uC5E3(Carolyne Van Vliet)\uC758 \uC5F0\uAD6C\uB97C \uAE30\uBC18\uC73C\uB85C
+        \uD558\uBA70, \uADF8\uB140\uC758 \uC5F0\uAD6C\uB294 \uC591\uC790 \uBB3C\uB9AC\uD559\uC774
+        \uC2AC\uB9BF \uC2A4\uD06C\uB9B0 \uB0B4\uBD80\uC5D0 \uAC07\uD78C \uBB3C\uC9C8\uACFC
+        \uC2AC\uB9BF\uC744 \uD1B5\uACFC\uD558\uB294 \uC785\uC790 \uB610\uB294 \uAD11\uC790
+        \uC0AC\uC774\uC5D0\uC11C \uB2E4\uC591\uD55C \uC120\uD615 \uC6B4\uB3D9\uB7C9
+        \uC804\uC774\uAC00 \uC77C\uC5B4\uB0A0 \uC218 \uC788\uC74C\uC744 \uC608\uCE21\uD55C\uB2E4\uB294
+        \uAC83\uC744 \uBCF4\uC5EC\uC90D\uB2C8\uB2E4.\r\n\r\n\uC774 \uBAA8\uB378\uC740
+        \uD0C4\uB3C4 \uD655\uC0B0\uACFC \uBC18 \uBE14\uB9AC\uC5E3\uC758 \uC0C1\uD638\uC791\uC6A9
+        \uBAA8\uB378\uC744 \uACB0\uD569\uD558\uC5EC \uC591\uC790 \uC2E4\uD5D8\uC758
+        \uAC00\uC0C1 \uD604\uC2E4 \uBC84\uC804\uC744 \uAD6C\uD604\uD558\uACE0, \uD30C\uB3D9
+        \uC5C6\uC774\uB3C4 \uAD00\uCC30\uB418\uB294 \uD655\uB960\uC801 \uAC04\uC12D
+        \uBB34\uB2AC \uD328\uD134\uC774 \uC5B4\uB5BB\uAC8C \uBC1C\uC0DD\uD560 \uC218
+        \uC788\uB294\uC9C0 \uBCF4\uC5EC\uC90D\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[5]
+      value: "Este mundo virtual oferece um modelo interativo de espalhamento qu\xE2ntico
+        que replica os padr\xF5es de franjas estoc\xE1sticas observados em experimentos
+        qu\xE2nticos, como o experimento da dupla fenda, sem depender da propaga\xE7\xE3o
+        ou interfer\xEAncia de ondas.\r\n\r\nO modelo se baseia no trabalho publicado
+        por Carolyne Van Vliet, que demonstra que a f\xEDsica qu\xE2ntica prev\xEA
+        um espectro de poss\xEDveis transi\xE7\xF5es de momento linear entre a mat\xE9ria
+        confinada dentro da tela da fenda e part\xEDculas ou f\xF3tons que passam
+        pelas aberturas.\r\n\r\nO modelo combina difus\xE3o bal\xEDstica com o modelo
+        de intera\xE7\xE3o de Van Vliet para criar vers\xF5es de realidade virtual
+        de experimentos qu\xE2nticos, demonstrando como os padr\xF5es de franjas
+        estoc\xE1sticas observados podem surgir sem ondas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
+      propertyPath: pageBodies.Array.data[6]
+      value: "Ce monde virtuel propose un mod\xE8le interactif de diffusion quantique
+        qui reproduit les franges d'interf\xE9rence stochastiques observ\xE9es lors
+        d'exp\xE9riences quantiques, comme l'exp\xE9rience des fentes de Young, sans
+        recourir \xE0 la propagation d'ondes ni \xE0 l'interf\xE9rence.\r\n\r\nCe
+        mod\xE8le s'appuie sur les travaux de Carolyne Van Vliet, qui d\xE9montrent
+        que la physique quantique pr\xE9dit un spectre de transitions d'impulsion
+        lin\xE9aire possibles entre la mati\xE8re confin\xE9e \xE0 l'int\xE9rieur
+        de l'\xE9cran et les particules ou photons traversant les ouvertures.\r\n\r\nLe
+        mod\xE8le combine la diffusion balistique avec le mod\xE8le d'interaction
+        de Van Vliet pour cr\xE9er des versions en r\xE9alit\xE9 virtuelle d'exp\xE9riences
+        quantiques, illustrant ainsi comment les franges d'interf\xE9rence stochastiques
+        observ\xE9es peuvent appara\xEEtre sans ondes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 5979664785708801151, guid: 02b967d55a8b36142b370b463682731e,
@@ -482,6 +575,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CloseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037659776199600486, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.92156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037659776199600486, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037659776199600486, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.3529412
       objectReference: {fileID: 0}
     - target: {fileID: 2037659776199600486, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
@@ -526,12 +634,12 @@ PrefabInstance:
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 80
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
@@ -586,12 +694,12 @@ PrefabInstance:
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -42
+      value: -37.5
       objectReference: {fileID: 0}
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42
+      value: -37.5
       objectReference: {fileID: 0}
     - target: {fileID: 2037659776199600487, guid: 1b2d2b4764b8e71489056cfdd6a5e897,
         type: 3}
