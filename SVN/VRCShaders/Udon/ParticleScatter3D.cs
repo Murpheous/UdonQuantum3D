@@ -1,5 +1,4 @@
 ﻿
-using System;
 using TMPro;
 using UdonSharp;
 using UnityEngine;
@@ -100,13 +99,9 @@ public class ParticleScatter3D : UdonSharpBehaviour
     [SerializeField]
     float gameLengthToSI = 0.001f;
     [SerializeField]
-    string momentumUnits = "yNs";
-    [SerializeField]
     private float maxParticleP = 13.2f;
     [SerializeField]
     private float minParticleP = 7.64f;
-    [SerializeField]
-    private float particleAMU = 0.00054858f;
     [SerializeField, Range(0.5f,1.125f), FieldChangeCallback(nameof(MomentumAdj))]
     private float momentumAdj = 0.75f;
     private float particleP = 10.0f;

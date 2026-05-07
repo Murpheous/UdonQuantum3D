@@ -2035,26 +2035,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2953682430995716611, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2953682430995716611, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2953682430995716611, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2953682430995716611, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -170
-      objectReference: {fileID: 0}
     - target: {fileID: 2972349657945834818, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2651,11 +2631,6 @@ PrefabInstance:
       propertyPath: localizedTexts.Array.data[7]
       value: 
       objectReference: {fileID: 4723968141444186669}
-    - target: {fileID: 8694320117172870769, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -84
-      objectReference: {fileID: 0}
     - target: {fileID: 9072159871946784401, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_text
@@ -6778,10 +6753,8 @@ MonoBehaviour:
   nominalParticleP: 4.36
   SItoSimMomentum: 1e+24
   gameLengthToSI: 0.001
-  momentumUnits: yNs
   maxParticleP: 2000
   minParticleP: 500
-  particleAMU: 0.00054858
   momentumAdj: 0.75
   planckLabel: {fileID: 663603081}
   planckScaleLabel: {fileID: 206015478}
@@ -6902,11 +6875,12 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5585432492231690773}
   meshDimensions: {x: 16, y: 2, z: 2}
   isRectangular: 1
-  centerArrayOrigin: 1
   pointsAcross: {x: 81, y: 11, z: 11}
-  snapOrigin: 0
+  makeEvenCount: 0
   useTriangles: 1
   material: {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
+  arrayRadius: {x: 0, y: 0, z: 0}
+  numDecals: 0
 --- !u!4 &5900609019409262459
 Transform:
   m_ObjectHideFlags: 0
