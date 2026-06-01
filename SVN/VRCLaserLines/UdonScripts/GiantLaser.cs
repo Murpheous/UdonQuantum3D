@@ -1,5 +1,4 @@
-﻿
-using UdonSharp;
+﻿using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
@@ -59,7 +58,7 @@ public class GiantLaser : UdonSharpBehaviour
     //private float ViewAngle;
     private bool beamChanged = true;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (StartPoint == null)
         {
@@ -88,7 +87,7 @@ public class GiantLaser : UdonSharpBehaviour
                     foreach (Renderer rSpiral in neonSpirals)
                     {
                         if (rSpiral != null)
-                            rSpiral.material.color = LaserColor * 1.5f;
+                            rSpiral.material.color = laserColor;
                     }
                 }
                 //Flare Control
@@ -100,8 +99,8 @@ public class GiantLaser : UdonSharpBehaviour
                     if (laserOn)
                     {
                         // beamRenderer.Thickness = beamThickness;
-                        Color lineColor = LaserColor * 1.5f;
-                        lineColor.a = 0.1f;
+                        Color lineColor = laserColor;
+                        lineColor.a = 1f;
                         beamRenderer.LineColour = lineColor;
                         //Vector3 NewRay = Vector3(ray.GetPoint);
                     }

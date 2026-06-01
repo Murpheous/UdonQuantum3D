@@ -217,7 +217,7 @@ public class UdonSlider : UdonSharpBehaviour
     }
     public void onValue()
     {
-        if (!locallyOwned)
+        if (!locallyOwned && started)
             Networking.SetOwner(player, gameObject);
         if (started)
         {
@@ -232,13 +232,13 @@ public class UdonSlider : UdonSharpBehaviour
 
     public void ptrEnter()
     {
-        if (!locallyOwned)
+        if (!locallyOwned && started)
             Networking.SetOwner(player, gameObject);
     }
 
     public void ptrDn()
     {
-        if (!locallyOwned)
+        if (!locallyOwned && started)
             Networking.SetOwner(player, gameObject);
         if (pointerIsDown) 
             return;
@@ -272,19 +272,16 @@ public class UdonSlider : UdonSharpBehaviour
             mySlider = GetComponent<Slider>();
     }
 #endif
-
-    public void Start()
+    public void OnEnable()
     {
+        player = Networking.LocalPlayer;
         if (mySlider == null)
             mySlider = GetComponent<Slider>();
-        player = Networking.LocalPlayer;
-        locallyOwned = Networking.IsOwner(gameObject);
+        if (sliderLabel != null && hideLabel)
+            sliderLabel.text = "";
 
         iHaveClientVar = (SliderClient != null) && (!string.IsNullOrEmpty(clientVariableName));
         iHaveClientPtr = (SliderClient != null) && (!string.IsNullOrEmpty(clientPtrEvent));
-
-        if (sliderLabel != null && hideLabel)
-            sliderLabel.text = "";
 
         mySlider.interactable = interactable;
         mySlider.minValue = minValue;
@@ -292,6 +289,11 @@ public class UdonSlider : UdonSharpBehaviour
         mySlider.SetValueWithoutNotify(syncedValue);
         reportedValue = syncedValue;
         targetValue = syncedValue;
+    }
+
+    public void Start()
+    {
+        locallyOwned = Networking.IsOwner(gameObject);
         UpdateLabel();
         updateThreshold();
         RequestSerialization();

@@ -42,8 +42,6 @@ public class QuadMesh : UdonSharpBehaviour
     int numDecals;
     //[SerializeField]
     int numVertices;
-    //[SerializeField]
-    int numTriangles;
     private bool generateMesh()
     {
         if (mf == null)
@@ -63,10 +61,10 @@ public class QuadMesh : UdonSharpBehaviour
                                 (numGridPoints.y <= 1) ? meshDimensions.y : (meshDimensions.y / (numGridPoints.y - 1)),
                                 (numGridPoints.z <= 1) ? meshDimensions.z : (meshDimensions.z/(numGridPoints.z -1)));
         int halfGridX = numGridPoints.x / 2;
-        Debug.Log($"Grid Points: {numGridPoints}\n" +
-                  $"Half Grid X: {halfGridX}\n" +
-                  $"Array Spacing: {arraySpacing}\n" +
-                  $"Array Radius: {arrayRadius}");
+        //Debug.Log($"Grid Points: {numGridPoints}\n" +
+        //          $"Half Grid X: {halfGridX}\n" +
+        //          $"Array Spacing: {arraySpacing}\n" +
+        //          $"Array Radius: {arrayRadius}");
         radiusSq = arrayRadius.x + (arraySpacing.x * 0.1f);
         radiusSq *=radiusSq;
         arrayOrigin = Vector3.zero;
@@ -76,7 +74,6 @@ public class QuadMesh : UdonSharpBehaviour
         Vector3 decalPos = arrayOrigin;
 
         numVertices = 0;
-        numTriangles = 0;
         float decalWidth = Mathf.Min(arraySpacing.x, arraySpacing.y);
 
         Vector3 vxOffset0 = (Vector3.down + Vector3.right) * 0.5f;
@@ -104,7 +101,7 @@ public class QuadMesh : UdonSharpBehaviour
         numVertices = numDecals * (useTriangles ? 3 : 4);
         vertices = new Vector3[numVertices];
         uvs = new Vector2[numVertices];
-        Debug.Log($"Calculated {numDecals} decals, allocating {vertices.Length} vertices and {triangles.Length} triangle indices.");
+        //Debug.Log($"Calculated {numDecals} decals, allocating {vertices.Length} vertices and {triangles.Length} triangle indices.");
         bool positionInRange = true;
         int vertexIndex = 0;
         int triangleIndex = 0;
@@ -164,7 +161,7 @@ public class QuadMesh : UdonSharpBehaviour
             }
             decalPos.z += arraySpacing.z;
         }
-        Debug.Log($"Generated { vertexIndex} vertices for {triangleIndex/3} triangles.");
+        //Debug.Log($"Generated { vertexIndex} vertices for {triangleIndex/3} triangles.");
         mesh = mf.mesh;
         mesh.Clear();
         if (triangles.Length >= 32767)
@@ -187,7 +184,7 @@ public class QuadMesh : UdonSharpBehaviour
         }
         return true;
     }
-    void Start()
+    void OnEnable()
     {
         mf = GetComponent<MeshFilter>();
         mr = GetComponent<MeshRenderer>();

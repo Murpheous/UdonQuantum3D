@@ -94,7 +94,7 @@ Material:
     - _AlbedoToEmission: 0.398
     - _Bicubic: 0
     - _BumpScale: 1
-    - _CullMode: 2
+    - _CullMode: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DitheredRefraction: 0
@@ -137,7 +137,7 @@ Material:
     - _ZWrite: 0
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.003921569, g: 0.9254902, b: 1, a: 0.69803923}
+    - _Color: {r: 0, g: 0.49056596, b: 0.09840045, a: 0.4117647}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Glow: {r: 0.03773582, g: 0, b: 0.027699701, a: 0}
   m_BuildTextureStacks: []
