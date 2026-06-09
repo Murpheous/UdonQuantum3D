@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1787983410}
-  m_IndirectSpecularColor: {r: 0.024661025, g: 0.015453339, b: 0.041809827, a: 1}
+  m_IndirectSpecularColor: {r: 0.013814629, g: 0.011418425, b: 0.014149622, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -508,10 +508,9 @@ GameObject:
   - component: {fileID: 541651505}
   - component: {fileID: 541651504}
   - component: {fileID: 541651503}
-  - component: {fileID: 541651506}
-  - component: {fileID: 541651507}
   - component: {fileID: 541651510}
   - component: {fileID: 541651509}
+  - component: {fileID: 541651511}
   m_Layer: 0
   m_Name: EQS_DATA
   m_TagString: EditorOnly
@@ -556,14 +555,11 @@ MonoBehaviour:
   - Target: {fileID: 2100000, guid: 1a73e85d85bb840059e9d04fd2963980, type: 2}
     Type: {fileID: 541651503}
     Foldout: 1
-  - Target: {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
-    Type: {fileID: 541651506}
-    Foldout: 1
-  - Target: {fileID: 2100000, guid: 11fd257dc12e8de4ab0ea0d0d5d4d81b, type: 2}
-    Type: {fileID: 541651507}
-    Foldout: 1
   - Target: {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
     Type: {fileID: 541651509}
+    Foldout: 1
+  - Target: {fileID: 1787983410}
+    Type: {fileID: 541651511}
     Foldout: 1
   version: 131
   buildInfo:
@@ -584,48 +580,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &541651506
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541651502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd3386b3f1c214f4392a8072b69205e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Shader:
-    PC: {fileID: 4800000, guid: a92a89f7e0314174a870667cce8d5884, type: 3}
-    Quest: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
-  MainColor:
-    PC: {r: 0.003921569, g: 0.9254902, b: 1, a: 0.69803923}
-    Quest: {r: 0.003921569, g: 0.9254902, b: 1, a: 0.69803923}
-  GPUInstancing:
-    PC: 0
-    Quest: 0
---- !u!114 &541651507
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541651502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd3386b3f1c214f4392a8072b69205e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Shader:
-    PC: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    Quest: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
-  MainColor:
-    PC: {r: 0.041829795, g: 0.09563624, b: 0.18867919, a: 1}
-    Quest: {r: 0.041829795, g: 0.09563624, b: 0.18867919, a: 1}
-  GPUInstancing:
-    PC: 0
-    Quest: 0
 --- !u!114 &541651509
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,8 +593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shader:
-    PC: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    Quest: {fileID: 4800000, guid: 0b7113dea2069fc4e8943843eff19f70, type: 3}
+    PC: {fileID: 4800000, guid: a92a89f7e0314174a870667cce8d5884, type: 3}
+    Quest: {fileID: 4800000, guid: a92a89f7e0314174a870667cce8d5884, type: 3}
   MainColor:
     PC: {r: 0.019607844, g: 0.20784314, b: 0.7529412, a: 0.6039216}
     Quest: {r: 0.017799927, g: 0.20899619, b: 0.754717, a: 0.6039216}
@@ -669,6 +623,45 @@ MonoBehaviour:
     PC: 0
     Quest: 0
   StaticEditorFlags:
+    PC: 0
+    Quest: 0
+--- !u!114 &541651511
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541651502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015e2a1364babf8418393e8afc9b3eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enabled:
+    PC: 1
+    Quest: 1
+  LightType:
+    PC: 1
+    Quest: 1
+  Range:
+    PC: 10
+    Quest: 10
+  Color:
+    PC: {r: 0.5188679, g: 0.35978106, b: 0.3673566, a: 1}
+    Quest: {r: 0.5188679, g: 0.35978106, b: 0.3673566, a: 1}
+  Mode:
+    PC: 1
+    Quest: 2
+  Intensity:
+    PC: 1
+    Quest: 2
+  IndirectMultiplier:
+    PC: 1
+    Quest: 1
+  ShadowType:
+    PC: 2
+    Quest: 2
+  RenderMode:
     PC: 0
     Quest: 0
 --- !u!1 &569643132
@@ -1582,6 +1575,96 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[0]
+      value: 'This demonstration shows how a little-recognised quantum scattering
+        model can replicate the stochastic fringe patterns observed in quantum experiments,
+        such as the double-slit experiment, without relying on wave propagation or
+        interference.
+
+
+        The model builds on work published by Carolyne Van
+        Vliet, in which she applies quantum physics to the momentum states of the
+        scattering screen to obtain a spectrum of possible linear-momentum transitions
+        between matter within the slit screen and particles or photons passing through
+        the openings.
+
+
+        The model utilises ballistic diffusion along with
+        Van Vliet''s interaction model to simulate scaled-up versions of real-world
+        quantum experiments.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[1]
+      value: "\u3053\u306E\u30C7\u30E2\u30F3\u30B9\u30C8\u30EC\u30FC\u30B7\u30E7\u30F3\u306F\u3001\u3042\u307E\u308A\u77E5\u3089\u308C\u3066\u3044\u306A\u3044\u91CF\u5B50\u6563\u4E71\u30E2\u30C7\u30EB\u304C\u3001\u6CE2\u52D5\u4F1D\u64AD\u3084\u5E72\u6E09\u306B\u983C\u308B\u3053\u3068\u306A\u304F\u3001\u4E8C\u91CD\u30B9\u30EA\u30C3\u30C8\u5B9F\u9A13\u306A\u3069\u306E\u91CF\u5B50\u5B9F\u9A13\u3067\u89B3\u6E2C\u3055\u308C\u308B\u78BA\u7387\u7684\u306A\u5E72\u6E09\u7E1E\u30D1\u30BF\u30FC\u30F3\u3092\u518D\u73FE\u3067\u304D\u308B\u3053\u3068\u3092\u793A\u3057\u3066\u3044\u307E\u3059\u3002\n\n\u3053\u306E\u30E2\u30C7\u30EB\u306F\u3001\u30AD\u30E3\u30ED\u30E9\u30A4\u30F3\u30FB\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u6C0F\u304C\u767A\u8868\u3057\u305F\u7814\u7A76\u306B\u57FA\u3065\u3044\u3066\u3044\u307E\u3059\u3002\u5F7C\u5973\u306F\u3001\u6563\u4E71\u30B9\u30AF\u30EA\u30FC\u30F3\u306E\u904B\u52D5\u91CF\u72B6\u614B\u306B\u91CF\u5B50\u7269\u7406\u5B66\u3092\u9069\u7528\u3057\u3001\u30B9\u30EA\u30C3\u30C8\u30B9\u30AF\u30EA\u30FC\u30F3\u5185\u306E\u7269\u8CEA\u3068\u958B\u53E3\u90E8\u3092\u901A\u904E\u3059\u308B\u7C92\u5B50\u307E\u305F\u306F\u5149\u5B50\u3068\u306E\u9593\u306E\u3001\u53EF\u80FD\u306A\u7DDA\u5F62\u904B\u52D5\u91CF\u9077\u79FB\u306E\u30B9\u30DA\u30AF\u30C8\u30EB\u3092\u5C0E\u51FA\u3057\u307E\u3057\u305F\u3002\n\n\u3053\u306E\u30E2\u30C7\u30EB\u306F\u3001\u5F3E\u9053\u62E1\u6563\u3068\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u6C0F\u306E\u76F8\u4E92\u4F5C\u7528\u30E2\u30C7\u30EB\u3092\u5229\u7528\u3057\u3066\u3001\u73FE\u5B9F\u4E16\u754C\u306E\u91CF\u5B50\u5B9F\u9A13\u3092\u30B9\u30B1\u30FC\u30EB\u30A2\u30C3\u30D7\u3057\u305F\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u30B7\u30DF\u30E5\u30EC\u30FC\u30C8\u3057\u307E\u3059\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[2]
+      value: "\u672C\u6B21\u793A\u7BC4\u5C55\u793A\u4E86\u4E00\u7A2E\u9BAE\u70BA\u4EBA\u77E5\u7684\u91CF\u5B50\u6563\u5C04\u6A21\u578B\u5982\u4F55\u80FD\u5920\u5728\u4E0D\u4F9D\u8CF4\u6CE2\u50B3\u64AD\u6216\u4E7E\u6D89\u7684\u60C5\u6CC1\u4E0B\uFF0C\u5FA9\u73FE\u91CF\u5B50\u5BE6\u9A57\uFF08\u4F8B\u5982\u96D9\u7E2B\u5BE6\u9A57\uFF09\u4E2D\u89C0\u5BDF\u5230\u7684\u96A8\u6A5F\u5E72\u6D89\u689D\u7D0B\u5716\u6848\u3002\n\n\u8A72\u6A21\u578B\u57FA\u65BCCarolyne
+        Van Vliet\u767C\u8868\u7684\u5DE5\u4F5C\uFF0C\u5979\u5C07\u91CF\u5B50\u7269\u7406\u5B78\u61C9\u7528\u65BC\u6563\u5C04\u5C4F\u7684\u52D5\u91CF\u614B\uFF0C\u5F9E\u800C\u7372\u5F97\u4E86\u72F9\u7E2B\u5C4F\u5167\u7269\u8CEA\u8207\u7A7F\u904E\u72F9\u7E2B\u7684\u7C92\u5B50\u6216\u5149\u5B50\u4E4B\u9593\u53EF\u80FD\u7684\u7DDA\u6027\u52D5\u91CF\u8E8D\u9077\u8B5C\u3002\n\n\u8A72\u6A21\u578B\u5229\u7528\u5F48\u9053\u64F4\u6563\u4EE5\u53CAVan
+        Vliet\u7684\u76F8\u4E92\u4F5C\u7528\u6A21\u578B\uFF0C\u6A21\u64EC\u4E86\u73FE\u5BE6\u4E16\u754C\u91CF\u5B50\u5BE6\u9A57\u7684\u653E\u5927\u7248\u672C\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[3]
+      value: "\u672C\u6B21\u6F14\u793A\u5C55\u793A\u4E86\u4E00\u79CD\u9C9C\u4E3A\u4EBA\u77E5\u7684\u91CF\u5B50\u6563\u5C04\u6A21\u578B\u5982\u4F55\u80FD\u591F\u5728\u4E0D\u4F9D\u8D56\u6CE2\u4F20\u64AD\u6216\u5E72\u6D89\u7684\u60C5\u51B5\u4E0B\uFF0C\u590D\u73B0\u91CF\u5B50\u5B9E\u9A8C\uFF08\u4F8B\u5982\u53CC\u7F1D\u5B9E\u9A8C\uFF09\u4E2D\u89C2\u5BDF\u5230\u7684\u968F\u673A\u5E72\u6D89\u6761\u7EB9\u56FE\u6848\u3002\n\n\u8BE5\u6A21\u578B\u57FA\u4E8ECarolyne
+        Van Vliet\u53D1\u8868\u7684\u5DE5\u4F5C\uFF0C\u5979\u5C06\u91CF\u5B50\u7269\u7406\u5B66\u5E94\u7528\u4E8E\u6563\u5C04\u5C4F\u7684\u52A8\u91CF\u6001\uFF0C\u4ECE\u800C\u83B7\u5F97\u4E86\u72ED\u7F1D\u5C4F\u5185\u7269\u8D28\u4E0E\u7A7F\u8FC7\u72ED\u7F1D\u7684\u7C92\u5B50\u6216\u5149\u5B50\u4E4B\u95F4\u53EF\u80FD\u7684\u7EBF\u6027\u52A8\u91CF\u8DC3\u8FC1\u8C31\u3002\n\n\u8BE5\u6A21\u578B\u5229\u7528\u5F39\u9053\u6269\u6563\u4EE5\u53CAVan
+        Vliet\u7684\u76F8\u4E92\u4F5C\u7528\u6A21\u578B\uFF0C\u6A21\u62DF\u4E86\u73B0\u5B9E\u4E16\u754C\u91CF\u5B50\u5B9E\u9A8C\u7684\u653E\u5927\u7248\u672C\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[4]
+      value: "\uC774 \uC2DC\uC5F0\uC740 \uC798 \uC54C\uB824\uC9C0\uC9C0 \uC54A\uC740
+        \uC591\uC790 \uC0B0\uB780 \uBAA8\uB378\uC774 \uD30C\uB3D9 \uC804\uD30C\uB098
+        \uAC04\uC12D\uC5D0 \uC758\uC874\uD558\uC9C0 \uC54A\uACE0 \uC774\uC911 \uC2AC\uB9BF
+        \uC2E4\uD5D8\uACFC \uAC19\uC740 \uC591\uC790 \uC2E4\uD5D8\uC5D0\uC11C \uAD00\uCC30\uB418\uB294
+        \uD655\uB960\uC801 \uAC04\uC12D \uBB34\uB2AC \uD328\uD134\uC744 \uC5B4\uB5BB\uAC8C
+        \uC7AC\uD604\uD560 \uC218 \uC788\uB294\uC9C0 \uBCF4\uC5EC\uC90D\uB2C8\uB2E4.\n\n\uC774
+        \uBAA8\uB378\uC740 \uCE90\uB864\uB9B0 \uBC18 \uBE14\uB9AC\uC5E3(Carolyne
+        Van Vliet)\uC758 \uC5F0\uAD6C\uB97C \uAE30\uBC18\uC73C\uB85C \uD558\uBA70,
+        \uADF8\uB140\uB294 \uC591\uC790 \uBB3C\uB9AC\uD559\uC744 \uC0B0\uB780 \uC2A4\uD06C\uB9B0\uC758
+        \uC6B4\uB3D9\uB7C9 \uC0C1\uD0DC\uC5D0 \uC801\uC6A9\uD558\uC5EC \uC2AC\uB9BF
+        \uC2A4\uD06C\uB9B0 \uB0B4\uBD80\uC758 \uBB3C\uC9C8\uACFC \uC2AC\uB9BF\uC744
+        \uD1B5\uACFC\uD558\uB294 \uC785\uC790 \uB610\uB294 \uAD11\uC790 \uC0AC\uC774\uC5D0\uC11C
+        \uAC00\uB2A5\uD55C \uC120\uD615 \uC6B4\uB3D9\uB7C9 \uC804\uC774 \uC2A4\uD399\uD2B8\uB7FC\uC744
+        \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4.\n\n\uC774 \uBAA8\uB378\uC740 \uD0C4\uB3C4
+        \uD655\uC0B0\uACFC \uBC18 \uBE14\uB9AC\uC5E3\uC758 \uC0C1\uD638\uC791\uC6A9
+        \uBAA8\uB378\uC744 \uD65C\uC6A9\uD558\uC5EC \uC2E4\uC81C \uC591\uC790 \uC2E4\uD5D8\uC744
+        \uD655\uB300 \uC2DC\uBBAC\uB808\uC774\uC158\uD569\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[5]
+      value: "Esta demonstra\xE7\xE3o mostra como um modelo de espalhamento qu\xE2ntico
+        pouco conhecido pode replicar os padr\xF5es de franjas estoc\xE1sticas observados
+        em experimentos qu\xE2nticos, como o experimento da dupla fenda, sem depender
+        da propaga\xE7\xE3o de ondas ou interfer\xEAncia.\n\nO modelo se baseia no
+        trabalho publicado por Carolyne Van Vliet, no qual ela aplica a f\xEDsica
+        qu\xE2ntica aos estados de momento da tela de espalhamento para obter um
+        espectro de poss\xEDveis transi\xE7\xF5es de momento linear entre a mat\xE9ria
+        dentro da tela com fendas e part\xEDculas ou f\xF3tons que passam pelas aberturas.\n\nO
+        modelo utiliza difus\xE3o bal\xEDstica juntamente com o modelo de intera\xE7\xE3o
+        de Van Vliet para simular vers\xF5es ampliadas de experimentos qu\xE2nticos
+        reais."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
+        type: 3}
+      propertyPath: pageBodies.Array.data[6]
+      value: "Cette d\xE9monstration montre comment un mod\xE8le de diffusion quantique
+        peu connu peut reproduire les franges stochastiques observ\xE9es lors d'exp\xE9riences
+        quantiques, telles que l'exp\xE9rience des fentes de Young, sans faire appel
+        \xE0 la propagation d'ondes ni \xE0 l'interf\xE9rence.\n\nCe mod\xE8le s'appuie
+        sur les travaux de Carolyne Van Vliet, qui applique la physique quantique
+        aux \xE9tats d'impulsion de l'\xE9cran de diffusion afin d'obtenir un spectre
+        des transitions d'impulsion lin\xE9aire possibles entre la mati\xE8re contenue
+        dans l'\xE9cran et les particules ou photons traversant les fentes.\n\nLe
+        mod\xE8le utilise la diffusion balistique ainsi que le mod\xE8le d'interaction
+        de Van Vliet pour simuler des versions \xE0 grande \xE9chelle d'exp\xE9riences
+        quantiques r\xE9elles."
       objectReference: {fileID: 0}
     - target: {fileID: 1111593302389483307, guid: 3f0e34b67bf3ad648b0a4d39eab057f9,
         type: 3}
@@ -4105,8 +4188,8 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1733828503}
-  smoothRate: 0.266
-  rabbitRate: 0.914
+  smoothRate: 0.25
+  rabbitRate: 2.5
   baseToggle: {fileID: 448320548}
   screenToggle: {fileID: 2033708608}
   baseToggleState: 0
@@ -4196,7 +4279,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.5188679, g: 0.35978106, b: 0.3673566, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6161,7 +6244,7 @@ MonoBehaviour:
   h: 6.62607e-34
   molecularWeight: 1
   planckIndex: 0
-  particleMeshSize: {x: 40, y: 4, z: 1}
+  particleMeshSize: {x: 80, y: 4, z: 1}
   slitWidthUnitScale: 10000
   rowUnitScale: 1000
   slitWidthDisplayUnits: nm
@@ -6241,7 +6324,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7162764040217543332}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
   m_Name: 
@@ -6285,7 +6368,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7162764040217543332}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8748fc5c8cedd9b4c8d3992fedad7d75, type: 3}
   m_Name: 
@@ -6300,9 +6383,9 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 5585432492231690773}
-  meshDimensions: {x: 40, y: 4, z: 20}
+  meshDimensions: {x: 80, y: 4, z: 20}
   isRectangular: 1
-  pointsAcross: {x: 120, y: 12, z: 60}
+  pointsAcross: {x: 160, y: 8, z: 40}
   makeEvenCount: 0
   useTriangles: 1
   material: {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
@@ -6472,13 +6555,13 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
-  - {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
-  - {fileID: 2100000, guid: d933dd6245cde9d4eb7b145a3181de4c, type: 2}
+  - {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
   - {fileID: 2100000, guid: 4de799ce0493d984c9e9c18e1973696a, type: 2}
   - {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
   - {fileID: 2100000, guid: f110aa16d762c7b4baaddec78cb41586, type: 2}
-  - {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
+  - {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
+  - {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
+  - {fileID: 2100000, guid: d933dd6245cde9d4eb7b145a3181de4c, type: 2}
   - {fileID: 2100000, guid: 11fd257dc12e8de4ab0ea0d0d5d4d81b, type: 2}
   LightMapsNear: []
   LightMapsFar: []
@@ -6988,8 +7071,8 @@ Transform:
   m_GameObject: {fileID: 7606902903243430483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 1, z: 5}
+  m_LocalPosition: {x: 40, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7077,7 +7160,7 @@ MonoBehaviour:
   slitsToScreen: 6.7
   screenDimensions: {x: 2, y: 2}
   _displayPixels: {x: 1024, y: 1024}
-  screenPixelsAcross: 800
+  screenPixelsAcross: 1024
   particleP: 4750
   intensity: 18
   intensityMax: 100
