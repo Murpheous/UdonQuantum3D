@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3221198813479053688
+--- !u!1 &7663777189204086103
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 961373966858662794}
-  - component: {fileID: 8842932116039237474}
-  - component: {fileID: 6684861397486966840}
-  - component: {fileID: 7300642881104858233}
-  - component: {fileID: 1592860245495096953}
+  - component: {fileID: 2434123653275632311}
+  - component: {fileID: 532840328100394666}
+  - component: {fileID: 5347110734810420985}
+  - component: {fileID: 3356711899594528555}
+  - component: {fileID: 6890192969945144214}
   m_Layer: 17
-  m_Name: TitlePlayStop
+  m_Name: LblLimitSlits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &961373966858662794
+--- !u!224 &2434123653275632311
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221198813479053688}
+  m_GameObject: {fileID: 7663777189204086103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12}
-  m_SizeDelta: {x: 250, y: 25}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8842932116039237474
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 67, y: 0}
+  m_SizeDelta: {x: 100, y: 48}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &532840328100394666
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221198813479053688}
-  m_CullTransparentMesh: 0
---- !u!114 &6684861397486966840
+  m_GameObject: {fileID: 7663777189204086103}
+  m_CullTransparentMesh: 1
+--- !u!114 &5347110734810420985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221198813479053688}
+  m_GameObject: {fileID: 7663777189204086103}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -67,7 +67,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Particle Flow
+  m_text: 'Cull
+
+    Slits'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
   m_sharedMaterial: {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441,
@@ -77,8 +79,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4293656410
-  m_fontColor: {r: 0.3529412, g: 1, b: 0.92156863, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -95,19 +97,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -35
+  m_lineSpacing: -25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -137,13 +139,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7300642881104858233
+--- !u!114 &3356711899594528555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221198813479053688}
+  m_GameObject: {fileID: 7663777189204086103}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16f6e034f954ef14bacd2ec6be5b79c7, type: 3}
@@ -158,24 +160,24 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _udonSharpBackingUdonBehaviour: {fileID: 1592860245495096953}
-  myText: {fileID: 6684861397486966840}
+  _udonSharpBackingUdonBehaviour: {fileID: 6890192969945144214}
+  myText: {fileID: 5347110734810420985}
   languageIndex: 0
   texts:
-  - Particle Beam
-  - "<size=110%>\u7C92\u5B50\u306E\u6D41\u308C"
-  - "<size=110%>\u9846\u7C92\u6D41"
-  - "<size=110%>\u7C92\u5B50\u6D41"
-  - "<size=110%>\uC785\uC790 \uD750\uB984"
-  - "Fluxo de Part\xEDculas"
-  - Flux de particules
---- !u!114 &1592860245495096953
+  - Only<br>Slits
+  - "\u30B9\u30EA\u30C3\u30C8\u306E\u307F"
+  - "\u53EA\u6709\u88C2\u7E2B"
+  - "\u53EA\u6709\u88C2\u7F1D"
+  - "\uC2AC\uB9BF\uB9CC"
+  - Apenas<br>fendas
+  - Juste<br>des fentes
+--- !u!114 &6890192969945144214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221198813479053688}
+  m_GameObject: {fileID: 7663777189204086103}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}

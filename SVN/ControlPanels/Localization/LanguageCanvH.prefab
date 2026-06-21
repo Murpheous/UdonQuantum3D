@@ -431,6 +431,7 @@ MonoBehaviour:
   toggleClient: {fileID: 229674252662000830}
   clientVariable: toggleIndex
   toggleIndex: 5
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &6676186926698883521
@@ -1113,6 +1114,7 @@ MonoBehaviour:
   toggleClient: {fileID: 229674252662000830}
   clientVariable: toggleIndex
   toggleIndex: 6
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &8644652755857060632

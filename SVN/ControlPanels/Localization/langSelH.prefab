@@ -310,6 +310,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 4
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &6950424160052570269
@@ -614,6 +615,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 5
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &4145631646986113456
@@ -767,6 +769,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 6
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &3122605748436508016
@@ -996,6 +999,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 1
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &2555632328048375217
@@ -1602,6 +1606,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 0
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &2246164755134917143
@@ -1831,6 +1836,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 2
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &9142714734691521658
@@ -2060,6 +2066,7 @@ MonoBehaviour:
   toggleClient: {fileID: 7196727669928155619}
   clientVariable: toggleIndex
   toggleIndex: 3
+  toggleValue: -1
   togState: 0
   reportedState: 0
 --- !u!114 &4114288724612559855
@@ -2324,7 +2331,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 3
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1267730924004318714
 MonoBehaviour:
   m_ObjectHideFlags: 0

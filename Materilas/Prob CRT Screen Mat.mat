@@ -76,7 +76,7 @@ Material:
     m_Ints:
     - _RowCount: 1
     - _SamplesPerSlit: 16
-    - _SlitCount: 4
+    - _SlitCount: 2
     m_Floats:
     - _BeamWidth: 53.000004
     - _Brightness: 9
@@ -120,18 +120,18 @@ Material:
     - _SlitCount: 2
     - _SlitHeight: 0.008
     - _SlitOffset: 0
-    - _SlitPitch: 0.013
+    - _SlitPitch: 0.025
     - _SlitPitchPx: 364.22433
     - _SlitThickness: 0
     - _SlitWidePx: 5
     - _SlitWidth: 0.007
-    - _SlitsToScreen: 78.5
+    - _SlitsToScreen: 9.5
     - _SmoothnessTextureChannel: 0
     - _SourceResolution: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Visibility: 49.84583
+    - _Visibility: 18
     - _Wavelength: 1
     - _ZWrite: 1
     m_Colors:
