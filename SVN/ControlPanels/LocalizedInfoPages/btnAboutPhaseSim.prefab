@@ -203,6 +203,7 @@ MonoBehaviour:
   - "\u6982\u8FF0\uFF1A"
   - "\uAC1C\uC694:"
   - "Vis\xE3o geral:"
+  - "Aper\xE7u:"
   pageBodies:
   - "This simulation of classical wave behaviour aims to provide a responsive and
     flexible visualization of wave diffraction that works efficiently on PC and mobile
@@ -251,14 +252,25 @@ MonoBehaviour:
     \uB514\uC2A4\uD50C\uB808\uC774 \uC170\uC774\uB354."
   - "Esta simula\xE7\xE3o do comportamento cl\xE1ssico das ondas visa fornecer uma
     visualiza\xE7\xE3o responsiva e flex\xEDvel da difra\xE7\xE3o de ondas que funciona
-    eficientemente em plataformas de PC e m\xF3veis.\r\n\r\nA simula\xE7\xE3o consiste
-    em dois componentes principais:\r\n\r\n1) Um componente de computa\xE7\xE3o de
+    eficientemente em plataformas de PC e m\xF3veis.\r\r\nA simula\xE7\xE3o consiste
+    em dois componentes principais:\r\n\r1) Um componente de computa\xE7\xE3o de
     GPU que calcula a fase e a amplitude de um padr\xE3o de onda em uma \xFAnica
     passagem. Isso \xE9 implementado usando um recurso do Unity chamado Custom Render
     Texture (CRT), que fornece os dados de sa\xEDda como uma textura de renderiza\xE7\xE3o
     na GPU.\r\n\r\n2) Um shader de exibi\xE7\xE3o que interpreta as informa\xE7\xF5es
     de fase e amplitude da onda, transformando-as em uma imagem de rolagem que cria
-    a ilus\xE3o de ondas em movimento a partir de um mapa est\xE1tico."
+    a ilus\xE3o de ondas em movimento a partir de um mapa est\xE1tico"
+  - "Cette simulation du comportement des ondes classiques vise \xE0 fournir une
+    visualisation r\xE9active et flexible de la diffraction des ondes, fonctionnant
+    efficacement sur PC et appareils mobiles.\r\r\nLa simulation se compose de deux
+    \xE9l\xE9ments principaux\_:\r\n\r1) Un module de calcul GPU qui calcule la phase
+    et l\u2019amplitude d\u2019une onde en une seule passe. Ce module est impl\xE9ment\xE9
+    \xE0 l\u2019aide de la fonctionnalit\xE9 Unity appel\xE9e Custom Render Texture
+    (CRT), qui fournit les donn\xE9es de sortie sous forme de texture de rendu sur
+    le GPU.\r\n\r\n2) Un shader d\u2019affichage qui interpr\xE8te les informations
+    de phase et d\u2019amplitude de l\u2019onde, les transformant en une image d\xE9filante
+    cr\xE9ant l\u2019illusion d\u2019ondes en mouvement \xE0 partir d\u2019une carte
+    statique."
   languageIndex: 0
 --- !u!114 &2747719007095901375
 MonoBehaviour:
@@ -280,8 +292,7 @@ MonoBehaviour:
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
   _syncMethod: 1
-  serializedProgramAsset: {fileID: 11400000, guid: 0c4ebdb0d0e747c42af886ac0649096d,
-    type: 2}
+  serializedProgramAsset: {fileID: 0}
   programSource: {fileID: 11400000, guid: 530112de8551329498e25f888f6d27e6, type: 2}
   serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
   publicVariablesUnityEngineObjects: []

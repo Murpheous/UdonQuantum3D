@@ -129,8 +129,8 @@ MonoBehaviour:
   - "\uC9C4\uD3ED \uBC0F \uC5D0\uB108\uC9C0 \uD50C\uB7ED\uC2A4"
   - Amplitude e fluxo de energia
   pageBodies:
-  - "<b>Select:</b>\r\n<indent=4%><b>Amplitudes:</b> Show the height (real component,)
-    velocity (imaginary component,) and magnitude of the complex wave amplitude.\r\n\r\n<b>Energy
+  - "<b>Select:</b>\r\n<indent=4%><b>Amplitudes:</b> Show the height (real component),
+    velocity (imaginary component) and magnitude of the complex wave amplitude.\r\n\r\n<b>Energy
     Flux:</b> Show the potential (real)\xB2, kinetic (imaginary)\xB2, and total energy
     transport/momentum."
   - "<b>\u9078\u629E:</b>\r\n<indent=4%><b>\u632F\u5E45:</b> \u8907\u7D20\u6CE2\u632F\u5E45\u306E\u9AD8\u3055
@@ -145,10 +145,15 @@ MonoBehaviour:
     \uD06C\uAE30\uB97C \uD45C\uC2DC\uD569\uB2C8\uB2E4.\r\n\r\n<b>\uC5D0\uB108\uC9C0
     \uD50C\uB7ED\uC2A4:</b> \uC7A0\uC7AC(\uC2E4\uC218)\xB2, \uC6B4\uB3D9(\uD5C8\uC218)\xB2,
     \uCD1D \uC5D0\uB108\uC9C0 \uC218\uC1A1/\uC6B4\uB3D9\uB7C9\uC744 \uD45C\uC2DC\uD569\uB2C8\uB2E4."
-  - "<b>Selecionar:</b>\r\n<indent=4%><b>Amplitudes:</b> Mostra a altura (componente
+  - "<b>Selecione:</b>\r\n<indent=4%><b>Amplitudes:</b> Mostre a altura (componente
     real), a velocidade (componente imagin\xE1ria) e a magnitude da amplitude da
-    onda complexa.\r\n\r\n<b>Fluxo de energia:</b> Mostra o potencial (real)\xB2,
-    cin\xE9tico (imagin\xE1rio)\xB2 e o transporte/momentum de energia total."
+    onda complexa.\r\n\r\n<b>Fluxo de Energia:</b> Mostre o transporte de energia
+    potencial (real)\xB2, cin\xE9tica (imagin\xE1ria)\xB2 e total/momento."
+  - "<b>S\xE9lectionnez\_:</b>\r\n\r\n<indent=4%><b>Amplitudes\_:</b> Indiquez la
+    hauteur (composante r\xE9elle), la vitesse (composante imaginaire) et le module
+    de l\u2019amplitude complexe de l\u2019onde.\r\n\r\n<b>Flux d\u2019\xE9nergie\_:</b>
+    Indiquez le transfert d\u2019\xE9nergie/quantit\xE9 de mouvement potentiel (partie
+    r\xE9elle)\xB2, cin\xE9tique (partie imaginaire)\xB2 et total."
   languageIndex: 0
 --- !u!114 &194619488426965424
 MonoBehaviour:
@@ -170,7 +175,7 @@ MonoBehaviour:
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
   _syncMethod: 3
-  serializedProgramAsset: {fileID: 11400000, guid: 1a3e696820e4d7147a23fa711fd6ba71,
+  serializedProgramAsset: {fileID: 11400000, guid: 4943f96bb27501c4cbbe2be77169596e,
     type: 2}
   programSource: {fileID: 11400000, guid: 530112de8551329498e25f888f6d27e6, type: 2}
   serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
