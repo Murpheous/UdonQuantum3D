@@ -216,7 +216,7 @@ MonoBehaviour:
   showTip: 0
   tipLocation: 0
   isIncoming: 0
-  vertexCount: 0
+  vertexCount: 8
 --- !u!114 &4852941346058021475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27067,6 +27067,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707922578544060627, guid: 718b0739b62a77449861e3a42f176e23,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707922578544060627, guid: 718b0739b62a77449861e3a42f176e23,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3707922578544060628, guid: 718b0739b62a77449861e3a42f176e23,
         type: 3}

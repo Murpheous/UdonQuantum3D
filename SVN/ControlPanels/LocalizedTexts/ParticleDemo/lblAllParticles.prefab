@@ -162,13 +162,13 @@ MonoBehaviour:
   myText: {fileID: 2589357718608536375}
   languageIndex: 0
   texts:
-  - Random<br>Spread
-  - "\u30E9\u30F3\u30C0\u30E0<br>\u62E1\u6563"
-  - "\u96A8\u6A5F<br>\u50B3\u64AD"
-  - "\u968F\u673A<br>\u4F20\u64AD"
-  - "\uBB34\uC791\uC704<br>\uBD84\uC0B0"
-  - "Aleat\xF3ria"
-  - "Al\xE9atoire"
+  - Show<br>All
+  - "\u3059\u3079\u3066\u8868\u793A"
+  - "\u986F\u793A\u5168\u90E8"
+  - "\u663E\u793A\u5168\u90E8"
+  - "\uBAA8\uB450 \uD45C\uC2DC"
+  - Mostrar<br>tudo
+  - Afficher<br>tout
 --- !u!114 &2727048648610284053
 MonoBehaviour:
   m_ObjectHideFlags: 0
