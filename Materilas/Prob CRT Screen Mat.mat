@@ -125,7 +125,7 @@ Material:
     - _SlitThickness: 0
     - _SlitWidePx: 5
     - _SlitWidth: 0.007
-    - _SlitsToScreen: 78.5
+    - _SlitsToScreen: 14.5
     - _SmoothnessTextureChannel: 0
     - _SourceResolution: 0.5
     - _SpecularHighlights: 1
