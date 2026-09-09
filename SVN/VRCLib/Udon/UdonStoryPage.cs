@@ -10,6 +10,36 @@ public class UdonStoryPage : UdonSharpBehaviour
     [SerializeField,FieldChangeCallback(nameof(IsActive))]
     private bool isActive = false;
 
+    [SerializeField, FieldChangeCallback(nameof(LanguageIndex))]
+    private int languageIndex  = 0;
+    private int LanguageIndex
+    {
+        get => languageIndex;
+        set
+        {
+            languageIndex = value;
+            if (texts != null)
+            {
+                for (int i = 0; i < texts.Length; i++)
+                {
+                    if (texts[i] != null)
+                    {
+                        texts[i].LanguageIndex = languageIndex;
+                    }
+                }
+            }
+        }
+    }
+    [SerializeField, FieldChangeCallback(nameof(PageNumber))]
+    private int pageNumber = -1;
+    public int PageNumber
+    {
+        get => pageNumber;
+        set
+        {
+            pageNumber = value;
+        }
+    }
     [SerializeField]
     private UdonColourMaterial[] images;
     //[SerializeField]
@@ -18,6 +48,8 @@ public class UdonStoryPage : UdonSharpBehaviour
     private int[] imageStates;
     [SerializeField]
     public GameObject pageGameObject;
+    [SerializeField, Tooltip("Texts available for this page")]
+    LocalizedText[] texts;
     [SerializeField]
     private UdonBehaviour[] demoBehaviors;
     [SerializeField,Tooltip("State Variable Name")]
@@ -32,9 +64,23 @@ public class UdonStoryPage : UdonSharpBehaviour
         get => isActive;
         set 
         {
+            bool wasActive = isActive;
             isActive = value;
             if (isActive)
             {
+                for (int i=0; i < texts.Length; i++)
+                {
+                    if (texts[i] != null)
+                    {
+                        int textPage = texts[i].PageNumber;
+                        bool pageActive = texts[i].gameObject.activeSelf;
+                        bool isRequired = (pageNumber < 0) || (textPage < 0 || textPage == pageNumber);
+                        if (pageActive != isRequired)
+                        {
+                            texts[i].gameObject.SetActive(isRequired);
+                        }
+                    }
+                }
                 for (int i = 0; i < imageListLen; i++) 
                 {
                     if (images[i] != null)
@@ -74,7 +120,32 @@ public class UdonStoryPage : UdonSharpBehaviour
             }
         }
     }
-
+#if UNITY_EDITOR
+    public void OnValidate()
+    {
+        imageListLen = (images == null) ? 0 : images.Length;
+        int stateLen = (imageStates == null) ? 0 : imageStates.Length;
+        if (imageListLen > 0 && stateLen < imageListLen)
+        {
+            int[] newStates = new int[imageListLen];
+            for (int i = 0; i < stateLen && i < imageListLen; i++)
+                newStates[i] = imageStates[i];
+            imageStates = newStates;
+        }
+        if (pageGameObject != null)
+        {
+            LocalizedText[] pageTexts = pageGameObject.GetComponentsInChildren<LocalizedText>(true);
+            if (pageTexts != null && pageTexts.Length > 0)
+            {
+                if (texts == null || texts.Length != pageTexts.Length)
+                {
+                    texts = new LocalizedText[pageTexts.Length];
+                    texts = pageTexts;
+                }
+            }
+        }
+    }
+#endif
 
     public void Start()
     {

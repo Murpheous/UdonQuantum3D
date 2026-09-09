@@ -352,7 +352,7 @@ Transform:
   m_GameObject: {fileID: 310835658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -373,7 +373,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 10, y: 10, z: 10}
+  m_BoxSize: {x: 5, y: 2, z: 5}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -385,8 +385,8 @@ ReflectionProbe:
     m_Bits: 4294967295
   m_IntensityMultiplier: 1
   m_BlendDistance: 1
-  m_HDR: 1
-  m_BoxProjection: 0
+  m_HDR: 0
+  m_BoxProjection: 1
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
@@ -1907,11 +1907,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2720845007484288363, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
-    - target: {fileID: 2720845007484288363, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: toggleValues.Array.data[0]
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1944,12 +1939,6 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3519127701726711867, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-    - target: {fileID: 4161956557593495718, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 4161956557593495718, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
     - target: {fileID: 4205807764118284064, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
@@ -1988,12 +1977,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelParticles
       objectReference: {fileID: 0}
-    - target: {fileID: 5496284994422728999, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 5496284994422728999, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
     - target: {fileID: 5553512796447885580, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2166,11 +2149,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7380821028889197458, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
-    - target: {fileID: 7392314731038361479, guid: ba646700db9c678478c7d419ede04d4e,
-        type: 3}
-      propertyPath: toggleValue
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 7392314731038361479, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2860,21 +2838,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 260667668969369962, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
-    - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_text
-      value: 'Slit Screen:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 704692439220919969, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 810377217912653073, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2923,41 +2886,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1962770929258536494, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 375
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2233834071027679833, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2387401323181847360, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3038,11 +2966,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4909147549842560968, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_Name
-      value: btnInfoExperiment
-      objectReference: {fileID: 0}
     - target: {fileID: 4923489367103486965, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: SliderClient
@@ -3083,21 +3006,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6280240884988865656, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6280240884988865656, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6280240884988865656, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 193
       objectReference: {fileID: 0}
     - target: {fileID: 6321559317235267887, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -3199,16 +3107,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6335488400597458982, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6335488400597458982, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -32
-      objectReference: {fileID: 0}
     - target: {fileID: 6561026268271207936, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3231,25 +3129,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6685831525260221762, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
-      propertyPath: texts.Array.data[0]
-      value: 'Slit Screen Settings:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6685831525260221762, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6685831525260221762, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
-    - target: {fileID: 6954270640794006914, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1445433653}
-    - target: {fileID: 6954270640794006914, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1445433651}
     - target: {fileID: 7297930558473331781, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3259,98 +3142,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[0]
-      value: 'Van Vliet''s work validates a rule identified by William Duane in 1926:
-        the probability distribution of the momentum impulses exchanged between the
-        slit screen and a particle is the square of the Fourier transform of the
-        aperture pattern, multiplied by Planck''s constant.
-
-
-
-        This result
-        provides a means of optimising a scattering simulation.
-
-        The Fourier
-        transform of the screen layout yields a scattering probability map that applies
-        at the instant a particle passes through an aperture.
-
-
-
-        From this
-        single quantum interaction, the stochastic fringe patterns then develop and
-        evolve in space via ballistic diffusion, which can be readily simulated using
-        standard game-engine physics.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[1]
-      value: "\u30AD\u30E3\u30ED\u30E9\u30A4\u30F3\u30FB\u30F4\u30A1\u30F3\u30FB\u30F4\u30EA\u30FC\u30C8\u306E\u7814\u7A76\u306F\u30011926\u5E74\u306B\u30A6\u30A3\u30EA\u30A2\u30E0\u30FB\u30C7\u30E5\u30A2\u30F3\u304C\u63D0\u5531\u3057\u305F\u6CD5\u5247\u3092\u691C\u8A3C\u3059\u308B\u3082\u306E\u3067\u3059\u3002\u3059\u306A\u308F\u3061\u3001\u30B9\u30EA\u30C3\u30C8\u30B9\u30AF\u30EA\u30FC\u30F3\u3068\u7C92\u5B50\u9593\u3067\u4EA4\u63DB\u3055\u308C\u308B\u904B\u52D5\u91CF\u30A4\u30F3\u30D1\u30EB\u30B9\u306E\u78BA\u7387\u5206\u5E03\u306F\u3001\u958B\u53E3\u30D1\u30BF\u30FC\u30F3\u306E\u30D5\u30FC\u30EA\u30A8\u5909\u63DB\u306E\u4E8C\u4E57\u306B\u30D7\u30E9\u30F3\u30AF\u5B9A\u6570\u3092\u4E57\u3058\u305F\u3082\u306E\u306B\u7B49\u3057\u3044\u3068\u3044\u3046\u6CD5\u5247\u3067\u3059\u3002\r\n\r\n\u3053\u306E\u7D50\u679C\u306F\u3001\u6563\u4E71\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3\u3092\u6700\u9069\u5316\u3059\u308B\u624B\u6BB5\u3092\u63D0\u4F9B\u3057\u307E\u3059\u3002\r\n\r\n\u30B9\u30AF\u30EA\u30FC\u30F3\u306E\u30EC\u30A4\u30A2\u30A6\u30C8\u306E\u30D5\u30FC\u30EA\u30A8\u5909\u63DB\u306F\u3001\u7C92\u5B50\u304C\u958B\u53E3\u3092\u901A\u904E\u3059\u308B\u77AC\u9593\u306B\u9069\u7528\u3055\u308C\u308B\u6563\u4E71\u78BA\u7387\u30DE\u30C3\u30D7\u3092\u751F\u6210\u3057\u307E\u3059\u3002\r\n\r\n\u3053\u306E\u5358\u4E00\u306E\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528\u304B\u3089\u3001\u78BA\u7387\u7684\u306A\u5E72\u6E09\u7E1E\u30D1\u30BF\u30FC\u30F3\u304C\u5F3E\u9053\u62E1\u6563\u306B\u3088\u3063\u3066\u7A7A\u9593\u7684\u306B\u767A\u751F\u30FB\u9032\u5316\u3057\u307E\u3059\u3002\u3053\u308C\u306F\u3001\u6A19\u6E96\u7684\u306A\u30B2\u30FC\u30E0\u30A8\u30F3\u30B8\u30F3\u306E\u7269\u7406\u6F14\u7B97\u3092\u7528\u3044\u3066\u5BB9\u6613\u306B\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3\u3067\u304D\u307E\u3059\u3002"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[2]
-      value: "\u5361\u6D1B\u7433\xB7\u7BC4\xB7\u5F17\u5229\u7279\u7684\u7814\u7A76\u9A57\u8B49\u4E86\u5A01\u5EC9\xB7\u675C\u5B89\u57281926\u5E74\u63D0\u51FA\u7684\u4E00\u500B\u898F\u5F8B\uFF1A\u72F9\u7E2B\u5C4F\u8207\u7C92\u5B50\u4E4B\u9593\u4EA4\u63DB\u7684\u52D5\u91CF\u8108\u885D\u7684\u6A5F\u7387\u5206\u4F48\u7B49\u65BC\u5B54\u5F91\u5716\u6848\u5085\u7ACB\u8449\u8B8A\u63DB\u7684\u5E73\u65B9\u4E58\u4EE5\u666E\u6717\u514B\u5E38\u6578\u3002\r\n\r\n\u9019\u9805\u7D50\u679C\u70BA\u512A\u5316\u6563\u5C04\u6A21\u64EC\u63D0\u4F9B\u4E86\u4E00\u7A2E\u65B9\u6CD5\u3002\r\n\r\n\u72F9\u7E2B\u5C4F\u4F48\u5C40\u7684\u5085\u7ACB\u8449\u8B8A\u63DB\u53EF\u4EE5\u5F97\u5230\u7C92\u5B50\u7A7F\u904E\u5B54\u5F91\u77AC\u9593\u7684\u6563\u5C04\u6A5F\u7387\u5716\u3002\r\n\r\n\u5F9E\u9019\u55AE\u4E00\u7684\u91CF\u5B50\u4E92\u52D5\u51FA\u767C\uFF0C\u96A8\u6A5F\u689D\u7D0B\u5716\u6848\u6703\u900F\u904E\u5F48\u9053\u64F4\u6563\u5728\u7A7A\u9593\u4E2D\u767C\u5C55\u548C\u6F14\u5316\uFF0C\u800C\u9019\u500B\u904E\u7A0B\u53EF\u4EE5\u4F7F\u7528\u6A19\u6E96\u904A\u6232\u5F15\u64CE\u7684\u7269\u7406\u5F15\u64CE\u8F15\u9B06\u6A21\u64EC\u3002"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[3]
-      value: "\u5361\u7F57\u7433\xB7\u8303\xB7\u5F17\u5229\u7279\u7684\u7814\u7A76\u9A8C\u8BC1\u4E86\u5A01\u5EC9\xB7\u675C\u5B89\u57281926\u5E74\u63D0\u51FA\u7684\u4E00\u4E2A\u89C4\u5F8B\uFF1A\u72ED\u7F1D\u5C4F\u4E0E\u7C92\u5B50\u4E4B\u95F4\u4EA4\u6362\u7684\u52A8\u91CF\u8109\u51B2\u7684\u6982\u7387\u5206\u5E03\u7B49\u4E8E\u5B54\u5F84\u56FE\u6848\u5085\u91CC\u53F6\u53D8\u6362\u7684\u5E73\u65B9\u4E58\u4EE5\u666E\u6717\u514B\u5E38\u6570\u3002\r\n\r\n\u8FD9\u4E00\u7ED3\u679C\u4E3A\u4F18\u5316\u6563\u5C04\u6A21\u62DF\u63D0\u4F9B\u4E86\u4E00\u79CD\u65B9\u6CD5\u3002\r\n\r\n\u72ED\u7F1D\u5C4F\u5E03\u5C40\u7684\u5085\u91CC\u53F6\u53D8\u6362\u53EF\u4EE5\u5F97\u5230\u7C92\u5B50\u7A7F\u8FC7\u5B54\u5F84\u77AC\u95F4\u7684\u6563\u5C04\u6982\u7387\u56FE\u3002\r\n\r\n\u4ECE\u8FD9\u4E00\u5355\u4E00\u7684\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528\u51FA\u53D1\uFF0C\u968F\u673A\u6761\u7EB9\u56FE\u6848\u4F1A\u901A\u8FC7\u5F39\u9053\u6269\u6563\u5728\u7A7A\u95F4\u4E2D\u53D1\u5C55\u548C\u6F14\u5316\uFF0C\u800C\u8FD9\u4E00\u8FC7\u7A0B\u53EF\u4EE5\u4F7F\u7528\u6807\u51C6\u6E38\u620F\u5F15\u64CE\u7684\u7269\u7406\u5F15\u64CE\u8F7B\u677E\u6A21\u62DF\u3002"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[4]
-      value: "\uCE90\uB864\uB9B0 \uBC18 \uBE14\uB9AC\uC5E3\uC758 \uC5F0\uAD6C\uB294
-        1926\uB144 \uC70C\uB9AC\uC5C4 \uB4C0\uC548\uC774 \uBC1C\uACAC\uD55C \uADDC\uCE59,
-        \uC989 \uC2AC\uB9BF \uC2A4\uD06C\uB9B0\uACFC \uC785\uC790 \uC0AC\uC774\uC5D0\uC11C
-        \uAD50\uD658\uB418\uB294 \uC6B4\uB3D9\uB7C9 \uCDA9\uACA9\uB7C9\uC758 \uD655\uB960
-        \uBD84\uD3EC\uAC00 \uC870\uB9AC\uAC1C \uD328\uD134\uC758 \uD478\uB9AC\uC5D0
-        \uBCC0\uD658\uC758 \uC81C\uACF1\uC5D0 \uD50C\uB791\uD06C \uC0C1\uC218\uB97C
-        \uACF1\uD55C \uAC12\uACFC \uAC19\uB2E4\uB294 \uAC83\uC744 \uC785\uC99D\uD569\uB2C8\uB2E4.\r\n\r\n\uC774
-        \uACB0\uACFC\uB294 \uC0B0\uB780 \uC2DC\uBBAC\uB808\uC774\uC158\uC744 \uCD5C\uC801\uD654\uD558\uB294
-        \uBC29\uBC95\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4.\r\n\uC2A4\uD06C\uB9B0
-        \uB808\uC774\uC544\uC6C3\uC758 \uD478\uB9AC\uC5D0 \uBCC0\uD658\uC740 \uC785\uC790\uAC00
-        \uC870\uB9AC\uAC1C\uB97C \uD1B5\uACFC\uD558\uB294 \uC21C\uAC04\uC5D0 \uC801\uC6A9\uB418\uB294
-        \uC0B0\uB780 \uD655\uB960 \uBD84\uD3EC\uB97C \uC0DD\uC131\uD569\uB2C8\uB2E4.\r\n\r\n\uC774
-        \uB2E8\uC77C \uC591\uC790 \uC0C1\uD638\uC791\uC6A9\uC73C\uB85C\uBD80\uD130
-        \uD655\uB960\uC801 \uAC04\uC12D \uBB34\uB2AC \uD328\uD134\uC740 \uD0C4\uB3C4
-        \uD655\uC0B0\uC744 \uD1B5\uD574 \uACF5\uAC04\uC5D0\uC11C \uBC1C\uB2EC\uD558\uACE0
-        \uC9C4\uD654\uD558\uBA70, \uC774\uB294 \uD45C\uC900 \uAC8C\uC784 \uC5D4\uC9C4
-        \uBB3C\uB9AC \uC5D4\uC9C4\uC744 \uC0AC\uC6A9\uD558\uC5EC \uC27D\uAC8C \uC2DC\uBBAC\uB808\uC774\uC158\uD560
-        \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[5]
-      value: "O trabalho de Carolyne Van Vliet valida uma regra identificada por
-        William Duane em 1926: a distribui\xE7\xE3o de probabilidade dos impulsos
-        de momento trocados entre a tela com fenda e uma part\xEDcula \xE9 o quadrado
-        da transformada de Fourier do padr\xE3o da abertura, multiplicado pela constante
-        de Planck.\r\n\r\nEste resultado fornece um meio de otimizar uma simula\xE7\xE3o
-        de espalhamento. A transformada de Fourier do layout da tela gera um mapa
-        de probabilidade de espalhamento que se aplica no instante em que uma part\xEDcula
-        passa por uma abertura.\r\n\r\nA partir dessa \xFAnica intera\xE7\xE3o qu\xE2ntica,
-        os padr\xF5es de franjas estoc\xE1sticas se desenvolvem e evoluem no espa\xE7o
-        por meio de difus\xE3o bal\xEDstica, que pode ser facilmente simulada usando
-        a f\xEDsica padr\xE3o de motores de jogos."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: pageBodies.Array.data[6]
-      value: "Les travaux de Carolyne Van Vliet confirment une r\xE8gle identifi\xE9e
-        par William Duane en 1926\_: la distribution de probabilit\xE9 des impulsions
-        \xE9chang\xE9es entre l\u2019\xE9cran \xE0 fentes et une particule est \xE9gale
-        au carr\xE9 de la transform\xE9e de Fourier du motif d\u2019ouverture, multipli\xE9
-        par la constante de Planck.\r\n\r\nCe r\xE9sultat permet d\u2019optimiser
-        une simulation de diffusion. La transform\xE9e de Fourier de la configuration
-        de l\u2019\xE9cran fournit une carte de probabilit\xE9 de diffusion applicable
-        \xE0 l\u2019instant o\xF9 une particule traverse une ouverture.\r\n\r\n\xC0
-        partir de cette unique interaction quantique, les franges d\u2019interf\xE9rence
-        stochastiques se d\xE9veloppent et \xE9voluent spatialement par diffusion
-        balistique, un ph\xE9nom\xE8ne facilement simulable \xE0 l\u2019aide des
-        moteurs de jeu physiques standards."
       objectReference: {fileID: 0}
     - target: {fileID: 7466329994751116778, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
@@ -3385,12 +3176,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8960602527723293587, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
-    - target: {fileID: 8969588514775572800, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 8969588514775572800, guid: 66d68933adc7d574c823b247a44d5696,
-        type: 3}
     - target: {fileID: 9217454466886992987, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3398,8 +3183,7 @@ PrefabInstance:
       objectReference: {fileID: 9217454466886992987, guid: 66d68933adc7d574c823b247a44d5696,
         type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4909147549842560968, guid: 66d68933adc7d574c823b247a44d5696, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d68933adc7d574c823b247a44d5696, type: 3}
@@ -4258,7 +4042,7 @@ MonoBehaviour:
   portalStop: {x: 0, y: 0, z: 0}
   portalWas: {x: 0, y: 0, z: 0}
   scaleIsChanging: 0
-  experimentScale: 1000
+  worldScale: 10
   currentPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1758709582
 GameObject:

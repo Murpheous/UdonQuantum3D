@@ -2173,10 +2173,10 @@ MonoBehaviour:
       Data: 141|UnityEngine.RangeAttribute, UnityEngine.CoreModule
     - Name: min
       Entry: 4
-      Data: 0.01
+      Data: 0.001
     - Name: max
       Entry: 4
-      Data: 1.5
+      Data: 1
     - Name: 
       Entry: 8
       Data: 

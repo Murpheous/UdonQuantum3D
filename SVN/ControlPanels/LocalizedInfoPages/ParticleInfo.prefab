@@ -941,21 +941,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
-      propertyPath: pageTitles.Array.data[0]
-      value: Quantum Scattering in 3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
-        type: 3}
-      propertyPath: pageTitles.Array.data[5]
-      value: "Espalhamento qu\xE2ntico em 3D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
-        type: 3}
-      propertyPath: pageTitles.Array.data[6]
-      value: Diffusion quantique en 3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1119325272370250703, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
@@ -1035,12 +1020,6 @@ PrefabInstance:
       propertyPath: _syncMethod
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5709034333627877354, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
-        type: 3}
-      propertyPath: serializedProgramAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: db1a9e79a4287cd4d8e931fa4d6c3abd,
-        type: 2}
     - target: {fileID: 6730351296098891832, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
       propertyPath: m_Name

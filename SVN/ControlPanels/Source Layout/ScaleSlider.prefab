@@ -133,6 +133,7 @@ MonoBehaviour:
   hideLabel: 0
   unitsInteger: 0
   displayInteger: 1
+  displayScale: 1
   sliderUnit: ' : 1'
   SliderClient: {fileID: 0}
   clientVariableName: simScale
