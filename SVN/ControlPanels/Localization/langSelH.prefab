@@ -334,7 +334,7 @@ MonoBehaviour:
   toggleIndex: 4
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &6950424160052570269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
   toggleIndex: 5
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &4145631646986113456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   toggleIndex: 6
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &3122605748436508016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   toggleIndex: 1
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &2555632328048375217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   toggleIndex: 0
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &2246164755134917143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   toggleIndex: 2
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &9142714734691521658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2090,7 +2090,7 @@ MonoBehaviour:
   toggleIndex: 3
   toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &4114288724612559855
 MonoBehaviour:
   m_ObjectHideFlags: 0

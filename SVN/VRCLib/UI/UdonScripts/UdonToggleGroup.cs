@@ -25,7 +25,6 @@ public class UdonToggleGroup : UdonSharpBehaviour
     //private bool debug = false;
     [SerializeField]
     private bool interactable = true;
-    private bool iamOwner = false;
     [SerializeField]
     private bool showDebug = false;
     public bool ShowDebug
@@ -41,8 +40,10 @@ public class UdonToggleGroup : UdonSharpBehaviour
         } 
     }
     /* 
-* Udon Sync Stuff
-*/
+    * Udon Sync Stuff
+    */
+    private bool iamOwner = false;
+
     private void ReviewOwnerShip()
     {
         iamOwner = Networking.IsOwner(this.gameObject);

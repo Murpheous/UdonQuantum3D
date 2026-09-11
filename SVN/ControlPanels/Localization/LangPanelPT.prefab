@@ -125,8 +125,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 4
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &3826483226144386756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,8 +279,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 1
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &5988396908155701310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,8 +585,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 0
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &4846261748127242160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,8 +1582,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 3
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &7830677152746821212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,8 +1736,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 2
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &2618041232759496478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,8 +1890,9 @@ MonoBehaviour:
   toggleClient: {fileID: 2997695998255551422}
   clientVariable: toggleIndex
   toggleIndex: 5
+  toggleValue: -1
   togState: 0
-  reportedState: 0
+  showDebug: 0
 --- !u!114 &350091245831279059
 MonoBehaviour:
   m_ObjectHideFlags: 0
