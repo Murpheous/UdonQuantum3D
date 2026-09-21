@@ -77,8 +77,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294959104
-  m_fontColor: {r: 0, g: 0.8784314, b: 1, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -161,6 +161,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5309908770925725902}
   myText: {fileID: 3571391741458943960}
   languageIndex: 0
+  pageNumber: 0
   texts:
   - "Total Energy<br><size=80%> (modulus)\xB2</size>"
   - "<size=90%>\u5168\u30A8\u30CD\u30EB\u30AE\u30FC<br> (\u7D76\u5BFE\u5024\u306E\u4E8C\u4E57)</size>"

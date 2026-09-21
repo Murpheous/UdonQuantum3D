@@ -77,8 +77,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294959104
-  m_fontColor: {r: 0, g: 0.8784314, b: 1, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -161,6 +161,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8387013355322102379}
   myText: {fileID: 3589219221725473086}
   languageIndex: 0
+  pageNumber: 0
   texts:
   - "Kinetic<br><size=80%>(imaginary)\xB2"
   - "<size=90%>\u904B\u52D5\u30A8\u30CD\u30EB\u30AE\u30FC<br>(\u865A\u90E8\u306E\u4E8C\u4E57)"

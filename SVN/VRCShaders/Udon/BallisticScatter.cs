@@ -34,7 +34,7 @@ public class BallisticScatter : UdonSharpBehaviour
     [SerializeField, UdonSynced,FieldChangeCallback(nameof(GratingOffset))] 
     public float gratingOffset = 0;
     [SerializeField,Range(1,17),FieldChangeCallback(nameof(SlitCount))]
-    public int slitCount = 2;          // _SlitCount("Num Sources", float)
+    private int slitCount = 2;          // _SlitCount("Num Sources", float)
     [SerializeField, FieldChangeCallback(nameof(SlitPitch))]
     public float slitPitch = 45f;        // "Slit Pitch" millimetre
     [SerializeField]
@@ -56,8 +56,7 @@ public class BallisticScatter : UdonSharpBehaviour
     [SerializeField, Range(1, 10), FieldChangeCallback(nameof(SimScale))]
     public float simScale;
     [SerializeField, Tooltip("Exaggerate/Suppress Beam Particle Size"), Range(0.1f, 5f), FieldChangeCallback(nameof(ParticleSize))] float particleSize = 1;
-    public UdonSlider particleSizeSlider;
-
+    [SerializeField] private float maxParticleSize = 1;
     [SerializeField,FieldChangeCallback(nameof(DisplayColour))]
     public Color displayColour = Color.cyan;
     [SerializeField,FieldChangeCallback(nameof(MaxParticleP))]
@@ -105,11 +104,11 @@ public class BallisticScatter : UdonSharpBehaviour
     [SerializeField] UdonToggleGroup togPlayPauseStop;
     [SerializeField] SyncedToggle togProbability;
     [SerializeField] SyncedToggle togPulseParticles;
+    [SerializeField] UdonSlider particleSizeSlider;
     [SerializeField] UdonSlider probVizSlider;
     [SerializeField] UdonSlider pulseWidthSlider;
     [SerializeField] UdonSlider speedRangeSlider;
     [SerializeField] UdonSlider particlePslider;
-    [SerializeField] UdonSlider partcleSizeSlider;
     // Slit Configuration
     [SerializeField] SyncedIncDec slitCountIncDec;
     [SerializeField] UdonSlider slitWidthSlider;
@@ -773,23 +772,25 @@ public class BallisticScatter : UdonSharpBehaviour
         {
             togProbability.IsBoolean = true;
             togProbability.ClientVariableName = "showProbability";
-            togProbability.setState(showProbability);
+            togProbability.SetState(showProbability);
         }
         if (togPulseParticles != null)
         {
             togPulseParticles.IsBoolean = true;
             togPulseParticles.ClientVariableName = "pulseParticles";
-            togPulseParticles.setState(pulseParticles);
+            togPulseParticles.SetState(pulseParticles);
         }
         if (particlePslider != null)
         {
             particlePslider.SetLimits(minParticleP, maxParticleP);
             particlePslider.SetValue(particleP);
         }
-        if (partcleSizeSlider != null)
+        if (particleSizeSlider != null)
         {
-            partcleSizeSlider.SetLimits(0.1f, 5f);
-            partcleSizeSlider.SetValue(particleSize);
+            particleSize = Mathf.Clamp(particleSize, 0.1f, maxParticleSize);
+            particleSizeSlider.SetLimits(0.1f, maxParticleSize);
+            particleSizeSlider.SetValue(particleSize);
+            particleSizeSlider.ClientVariableName = "particleSize";
         }
         if (speedRangeSlider != null)
         {

@@ -79,8 +79,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292465152
-  m_fontColor: {r: 0, g: 0.8235294, b: 0.8509804, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -163,6 +163,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8241360482553913539}
   myText: {fileID: 5004886305978785800}
   languageIndex: 0
+  pageNumber: 0
   texts:
   - Source<br>Spacing
   - "\u6E90\u306E<br>\u9593\u9694"

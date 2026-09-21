@@ -77,8 +77,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4293656410
-  m_fontColor: {r: 0.3529412, g: 1, b: 0.92156863, a: 1}
+    rgba: 4294965664
+  m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -161,8 +161,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1592860245495096953}
   myText: {fileID: 6684861397486966840}
   languageIndex: 0
+  pageNumber: -1
   texts:
-  - Particle Beam
+  - Particle Simulation
   - "<size=110%>\u7C92\u5B50\u306E\u6D41\u308C"
   - "<size=110%>\u9846\u7C92\u6D41"
   - "<size=110%>\u7C92\u5B50\u6D41"

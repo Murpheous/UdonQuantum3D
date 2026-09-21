@@ -15,7 +15,7 @@ public class UdonToggleGroup : UdonSharpBehaviour
     [SerializeField,FieldChangeCallback(nameof(ActiveIndex))]
     public int activeIndex = -1;
     [SerializeField]
-    private string clientVariable = "activeToggle";
+    public string clientVariable = "activeToggle";
 
     [Header("Just here to see in inspector")]
     // No Fusion
@@ -92,7 +92,7 @@ public class UdonToggleGroup : UdonSharpBehaviour
                 continue;
             if (toggleValues[i] != toggleValue && tog.TogState)
             {
-                tog.setState(false);
+                tog.SetState(false);
             }
         }
         for (int i = 0; i < numToggles; i++)
@@ -102,7 +102,7 @@ public class UdonToggleGroup : UdonSharpBehaviour
                 continue;
             if (toggleValues[i] == toggleValue && !tog.TogState)
             {
-                tog.setState(true);
+                tog.SetState(true);
             }
         }
     }
@@ -167,7 +167,7 @@ public class UdonToggleGroup : UdonSharpBehaviour
                 Tog.clientVariable = "activeIndex";
                 toggleValues[i] = Tog.ToggleValue;
                 if (i==activeIndex && !Tog.TogState) 
-                    Tog.setState(true);
+                    Tog.SetState(true);
             }
         }
     }

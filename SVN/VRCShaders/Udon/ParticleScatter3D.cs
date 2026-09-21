@@ -104,8 +104,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private float maxParticleP = 13.2f;
     [SerializeField]
     private float minParticleP = 7.64f;
-    [SerializeField, Range(0.5f,1.125f), FieldChangeCallback(nameof(MomentumAdj))]
-    private float momentumAdj = 0.75f;
+    [SerializeField, Range(0.5f,1.125f), FieldChangeCallback(nameof(ParticleP))]
     private float particleP = 10.0f;
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI planckLabel;
@@ -303,7 +302,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 break;
                 // Handle mode change
         }
-        MomentumAdj = momentumAdj; // To update particle momentum based on new Planck scale and molecular weight
+        ParticleP = particleP; // To update particle momentum based on new Planck scale and molecular weight
         if (screenDistanceSlider != null)
         {
             screenDistanceSlider.SliderUnit = distanceUnits;
@@ -765,16 +764,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
     }
 
 
-    private float MomentumAdj
-    {
-        get => momentumAdj;
-        set
-        {
-            momentumAdj = value;
-            ParticleP = momentumAdj*nominalParticleP;
-        }
-    }
-
     private float ParticleP
     {
         get => particleP;
@@ -1054,7 +1043,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
         if (togPulseParticles != null)
         {
             togPulseParticles.IsBoolean = true;
-            togPulseParticles.setState(pulseParticles);
+            togPulseParticles.SetState(pulseParticles);
             togPulseParticles.ClientVariableName = nameof(pulseParticles);
         }
         if (particleSizeSlider != null)
@@ -1108,9 +1097,9 @@ public class ParticleScatter3D : UdonSharpBehaviour
         {
             momentumSlider.SliderUnit = "yNs";
             momentumSlider.DisplayScale = nominalParticleP;
-            momentumSlider.ClientVariableName = nameof(momentumAdj);
-            momentumSlider.SetLimits(0.5f, 1.2f);
-            momentumSlider.SetValue(momentumAdj);
+            momentumSlider.ClientVariableName = nameof(particleP);
+            momentumSlider.SetLimits(minParticleP, maxParticleP);
+            momentumSlider.SetValue(particleP);
             momentumSlider.Interactable = true;
         }
         if (pulseWidthSlider != null)

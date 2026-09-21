@@ -899,6 +899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1340833001255731059, guid: a4fa8d6f5747b9845860ef3f322cde94,
         type: 3}
+      propertyPath: toggleClient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340833001255731059, guid: a4fa8d6f5747b9845860ef3f322cde94,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1340833001255731059, guid: a4fa8d6f5747b9845860ef3f322cde94,
@@ -1310,6 +1315,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 165391426815410619}
     m_Modifications:
+    - target: {fileID: 64646603587560994, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 64646603587560994, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
+        type: 3}
+    - target: {fileID: 64646603587560994, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
+        type: 3}
+      propertyPath: udonClients.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 127317543760806646, guid: f8e04f8f7f9eb1d4b93f3bd6272cff51,
         type: 3}
       propertyPath: m_Name
@@ -1958,6 +1974,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 165391426815410619}
     m_Modifications:
+    - target: {fileID: 1473241648009680351, guid: d0632e402b6a4cc4395daf466d987070,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1473241648009680351, guid: d0632e402b6a4cc4395daf466d987070,
+        type: 3}
+    - target: {fileID: 1473241648009680351, guid: d0632e402b6a4cc4395daf466d987070,
+        type: 3}
+      propertyPath: udonClients.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3693644003255316877, guid: d0632e402b6a4cc4395daf466d987070,
         type: 3}
       propertyPath: m_Pivot.x

@@ -89,6 +89,14 @@ public class SyncedIncDec : UdonSharpBehaviour
         }
     }
 
+    public void onPointer()
+    {
+        if (!iamOwner)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        }
+    }
+
     public void decValue()
     {
         if (!iamOwner)

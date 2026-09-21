@@ -1807,6 +1807,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1104380331394675324, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 44df282a7e1d59a4bb3739b2605b266d,
+        type: 2}
     - target: {fileID: 1239698247711831917, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: SliderClient
@@ -2198,6 +2204,12 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192344291954102121, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 44df282a7e1d59a4bb3739b2605b266d,
+        type: 2}
     - target: {fileID: 8421453739575936473, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.x
