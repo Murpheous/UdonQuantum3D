@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.18
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.2627451, g: 0.13725491, b: 0.19256724, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: c6e26b96d85a8f6479029067f9d19a7a, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8ddf4ab0cfb264cfa8046cf086e4e898, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1787983410}
-  m_IndirectSpecularColor: {r: 0.03343762, g: 0.012560064, b: 0.007269288, a: 1}
+  m_IndirectSpecularColor: {r: 0.013891046, g: 0.011669492, b: 0.014460968, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 2e452a0f4823b8d4cbe958b6d781b7bc,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: d2d9e78951fa832438c37d92912c2a29,
     type: 2}
 --- !u!196 &4
@@ -1331,6 +1330,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: LangButtonsH
       objectReference: {fileID: 0}
+    - target: {fileID: 1934474627971686428, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111187959530849876, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2485314960460456358, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1391,6 +1400,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4301256891680796774, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
+    - target: {fileID: 5286139739448077228, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818126969372000627, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532150714990704998, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6534143193478204279, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1403,6 +1427,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7179086035310092579, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
+    - target: {fileID: 7294325387452219374, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8252844546542712782, guid: 48729b8a3797eac47a29d268db64b2c1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1502,6 +1531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489055074696337708, guid: 48729b8a3797eac47a29d268db64b2c1,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1762,6 +1796,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f0e34b67bf3ad648b0a4d39eab057f9, type: 3}
+--- !u!1 &913810259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2500971914028092872, guid: ba646700db9c678478c7d419ede04d4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 947903418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927354029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3669117386190110267, guid: 008a0295d7b55dc4188e3a5df025ab70,
@@ -1807,6 +1847,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 495255482465432328, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: db1a9e79a4287cd4d8e931fa4d6c3abd,
+        type: 2}
     - target: {fileID: 1104380331394675324, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: serializedProgramAsset
@@ -1913,6 +1959,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2720845007484288363, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
+    - target: {fileID: 2835939105102438220, guid: ba646700db9c678478c7d419ede04d4e,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2950163230890242380, guid: ba646700db9c678478c7d419ede04d4e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -4056,6 +4107,7 @@ MonoBehaviour:
   scaleIsChanging: 0
   worldScale: 10
   currentPosition: {x: 0, y: 0, z: 0}
+  relativePosition: 0
 --- !u!1 &1758709582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,6 +5363,12 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1445433651}
+    - target: {fileID: 3500044944387597554, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 38ec9b35255226f4a99b33adee259886,
+        type: 2}
     - target: {fileID: 3564174223948693827, guid: 75a6bbc7dd7fafb44a46eece7b7b0d00,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -6056,7 +6114,7 @@ MonoBehaviour:
   gameLengthToSI: 0.001
   maxParticleP: 2000
   minParticleP: 500
-  momentumAdj: 0.85
+  particleP: 10
   planckLabel: {fileID: 663603081}
   planckScaleLabel: {fileID: 206015478}
   togGroupPlayPause: {fileID: 1526612123}
@@ -6076,6 +6134,8 @@ MonoBehaviour:
   txtRowCountDisplay: {fileID: 1328498835}
   matParticleFlow: {fileID: 0}
   matProbCRT: {fileID: 2100000, guid: eb156a606e7ff34439b90d94e34f507f, type: 2}
+  shaderPauseTime: 0
+  shaderBaseTime: 0
   slitWidthMinMaxNominal:
   - {x: 0.001, y: 0.0125, z: 0.007}
   - {x: 0.0001, y: 0.00095, z: 0.00063}
@@ -6179,6 +6239,7 @@ MonoBehaviour:
   useTriangles: 1
   material: {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
   arrayRadius: {x: 0, y: 0, z: 0}
+  arrayOrigin: {x: 0, y: 0, z: 0}
   numDecals: 0
 --- !u!4 &5900609019409262459
 Transform:
@@ -6345,12 +6406,12 @@ MonoBehaviour:
   DynamicPrefabs: []
   DynamicMaterials:
   - {fileID: 4410821715232426517, guid: ddbcc27b0346e4644a45316aaf00c441, type: 2}
+  - {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
+  - {fileID: 2100000, guid: 4de799ce0493d984c9e9c18e1973696a, type: 2}
   - {fileID: 2100000, guid: d933dd6245cde9d4eb7b145a3181de4c, type: 2}
   - {fileID: 2100000, guid: 5cbed31e0d968f24eb575e97591dad1b, type: 2}
   - {fileID: 2100000, guid: f110aa16d762c7b4baaddec78cb41586, type: 2}
   - {fileID: 2100000, guid: ab5aab59ea4bdee4ebdad0df97876d9c, type: 2}
-  - {fileID: 2100000, guid: a8a7d7e0c5b5bc746b1add6d1d238585, type: 2}
-  - {fileID: 2100000, guid: 4de799ce0493d984c9e9c18e1973696a, type: 2}
   - {fileID: 2100000, guid: 11fd257dc12e8de4ab0ea0d0d5d4d81b, type: 2}
   LightMapsNear: []
   LightMapsFar: []
@@ -6550,10 +6611,6 @@ MonoBehaviour:
     ID: 50
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 947903420}
-    ID: 51
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 633669624}
     ID: 52
     SerializedTypeNames:
@@ -6572,10 +6629,6 @@ MonoBehaviour:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 7162764040217543332}
     ID: 56
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 208515330}
-    ID: 57
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 62377033}
@@ -6705,6 +6758,20 @@ MonoBehaviour:
   - gameObject: {fileID: 997343491}
     ID: 94
     SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 913810259}
+    ID: 96
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 947903420}
+    ID: 51
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 208515330}
+    ID: 57
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
     - VRC.Udon.UdonBehaviour
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}

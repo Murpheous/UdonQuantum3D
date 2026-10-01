@@ -151,10 +151,32 @@ public class ParticleScatter3D : UdonSharpBehaviour
     [SerializeField]
     Material matProbCRT;
 
-    //[SerializeField]
+    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderPauseTime))]
     private float shaderPauseTime = 0;
-    //[SerializeField]
+    private float ShaderPauseTime
+    {
+        get => shaderPauseTime;
+        set
+        {
+            shaderPauseTime = value;
+            if (matParticleFlow != null)
+                matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
+            RequestSerialization();
+        }
+    }
+    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderBaseTime))]
     private float shaderBaseTime = 0;
+    private float ShaderBaseTime
+    {
+        get => shaderBaseTime;
+        set
+        {
+            shaderBaseTime = value;
+            if (matParticleFlow != null)
+                matParticleFlow.SetFloat("_BaseTime", shaderBaseTime);
+            RequestSerialization();
+        }
+    }
     //[SerializeField]
     private bool shaderPlaying = true;
     private bool iamOwner = false;
@@ -478,7 +500,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
 
     private void initParticlePlay()
     {
-        shaderBaseTime = Time.time;
+        shaderBaseTime = Networking.GetServerTimeInMilliseconds() * 0.001f;
         shaderPauseTime = shaderBaseTime;
         shaderPlaying = particlePlayState == 1;
         int play = shaderPlaying ? 1 : 0;
@@ -503,13 +525,17 @@ public class ParticleScatter3D : UdonSharpBehaviour
         if (matParticleFlow == null)
             return;
         particleMeshRend.enabled = playState >= 0;
+        bool amOwner = togGroupPlayPause == null || togGroupPlayPause.IsOwner;
+        if (amOwner && !Networking.IsOwner(gameObject))
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+
         switch (playState)
         {
             case 1: // PlayState.Playing:
                 if (!shaderPlaying)
                 {
-                    shaderBaseTime += Time.timeSinceLevelLoad - shaderPauseTime;
-                    matParticleFlow.SetFloat("_BaseTime", shaderBaseTime);
+                    if (amOwner)    
+                        ShaderBaseTime += Networking.GetServerTimeInMilliseconds()*0.001f - shaderPauseTime;
                     matParticleFlow.SetInteger("_Play", 1);
                     shaderPlaying = true;
                     //Debug.Log("Play");
@@ -518,7 +544,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
             case 0: // PlayState.Paused:
                 if (shaderPlaying)
                 {
-                    shaderPauseTime = Time.timeSinceLevelLoad;
+                    if (amOwner)
+                        ShaderPauseTime = Networking.GetServerTimeInMilliseconds()*0.001f;
                     matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
                     matParticleFlow.SetInteger("_Play", 0);
                     shaderPlaying = false;

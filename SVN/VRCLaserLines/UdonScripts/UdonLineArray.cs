@@ -1,5 +1,4 @@
 ﻿
-using System;
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -8,10 +7,8 @@ using VRC.Udon;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
-
-public class LaserVectorLine : UdonSharpBehaviour
+public class UdonLineArray : UdonSharpBehaviour
 {
-    // Used to compute the average value of all the Vector3's components:
     private readonly Vector3 Average = new Vector3(1f / 3f, 1f / 3f, 1f / 3f);
 
     #region udon parameters
@@ -38,22 +35,6 @@ public class LaserVectorLine : UdonSharpBehaviour
         }
     }
 
-    /// <summary>
-    /// Line Length
-    /// </summary>
-    [SerializeField, FieldChangeCallback(nameof(LineLength))]
-    private float lineLength = 0.5f;
-    public float LineLength
-    {
-        get => lineLength;
-        set
-        {
-            //Debug.Log(string.Format("{0}: lineLength {1:F2}", gameObject.name, value));
-            lineLength = value;
-            SetStartAndEndPoints();
-        }
-    }
-
     [SerializeField, Range(0f, 0.25f), FieldChangeCallback(nameof(LineWidth))]
     private float lineWidth = 0.03f;
     public float LineWidth
@@ -71,37 +52,38 @@ public class LaserVectorLine : UdonSharpBehaviour
         }
     }
 
-    /// <summary>
-    /// This GameObject's specific _material
-    /// </summary>
     [SerializeField]
-    private Material _material;
-    /// <summary>
-    /// This GameObject's _mesh filter
-    /// </summary>
-    private MeshFilter _meshFilter;
-    private Mesh _mesh;
-
-    /// <summary>
-    /// Template material
-    /// </summary>
-    [SerializeField]
-    private Material templateMaterial;
-    #endregion
-
-    #region properties
-
-    [SerializeField, FieldChangeCallback(nameof(ThetaDegrees))]
-    private float thetaDegrees = 0;
-    public float ThetaDegrees
+    float lineScale = 1f;
+    public float LineScale
     {
-        get => thetaDegrees;
+        get => lineScale;
         set
         {
-            thetaDegrees = value;
-            Vector3 rot = transform.localEulerAngles;
-            rot.z = thetaDegrees;
-            transform.localRotation = Quaternion.Euler(rot);
+            lineScale = value;
+            if (_material != null)
+                _material.SetFloat("_LineScale", lineScale);
+        }
+    }
+
+    [SerializeField]
+    private Vector3[] _lineVertices;
+    /// <summary>
+    /// Gets the vertices of this line strip
+    /// </summary>
+    public Vector3[] LineVertices
+    {
+        get
+        {
+            return _lineVertices;
+        }
+        set
+        {
+            if (value != null && value.Length >= 2)
+            {
+                _lineVertices = value;
+                BuildMeshFromVertices();
+                SetMaterialProperties();
+            }
         }
     }
 
@@ -139,101 +121,59 @@ public class LaserVectorLine : UdonSharpBehaviour
         }
     }
 
-    [SerializeField]
-    Vector2 barbLengths = new Vector2(0.05f, 0.05f);
-    [SerializeField]
-    Vector2 barbAngles = new Vector2(30f, -25f);
-
-    [SerializeField, FieldChangeCallback(nameof(ShowTip))]
-    private bool showTip = true;
-    public bool ShowTip
-    {
-        get => showTip;
-        set
-        {
-            if (showTip != value)
-            {
-                showTip = value;
-            }
-        }
-    }
-
-    [SerializeField, Range(0f, 1f), Tooltip("Slide pointer position along shaft"), FieldChangeCallback(nameof(TipLocation))]
-    private float tipLocation;
-    public float TipLocation
-    {
-        get => tipLocation;
-        set
-        {
-            if (tipLocation != value)
-            {
-                tipLocation = value;
-            }
-        }
-    }
-    [SerializeField,FieldChangeCallback(nameof(IsIncoming))]
-    private bool isIncoming = false;
-
-    public bool IsIncoming
-    {
-        get => isIncoming;
-        set
-        {
-            isIncoming = value;
-            SetStartAndEndPoints();
-        }
-    }
     /// <summary>
-    /// Gets or sets the tmplate material.
-    /// Setting this will only have an impact once. 
-    /// Subsequent changes will be ignored.
+    /// This GameObject's specific _material
     /// </summary>
-    public Material TemplateMaterial
-    {
-        get { return templateMaterial; }
-        set { templateMaterial = value; }
-    }
+    [SerializeField]
+    private Material _material;
+    /// <summary>
+    /// This GameObject's _mesh filter
+    /// </summary>
+    private MeshFilter _meshFilter;
+    private Mesh _mesh;
+
+    /// <summary>
+    /// Template material
+    /// </summary>
+    [SerializeField]
+    private Material templateMaterial;
+    #endregion
     //[SerializeField]
     private Vector3[] _starts;
     //[SerializeField]
     private Vector3[] _ends;
     //[SerializeField]
-    private Vector3 _tipPos = Vector3.right;
-
-    #endregion
-    #region mesh calculations
-    private Bounds CalculateBounds()
-    {
-        var maxWidth = Mathf.Max(transform.lossyScale.x, transform.lossyScale.y, transform.lossyScale.z);
-        var scaledLineWidth = maxWidth * LineWidth * 0.5f;
-
-        var min = new Vector3(
-            Mathf.Min(_starts[0].x, _ends[0].x) - scaledLineWidth,
-            Mathf.Min(_starts[0].y, _ends[0].y) - scaledLineWidth,
-            Mathf.Min(_starts[0].z, _ends[0].z) - scaledLineWidth
-        );
-        var max = new Vector3(
-            Mathf.Max(_starts[0].x, _ends[0].x) + scaledLineWidth,
-            Mathf.Max(_starts[0].y, _ends[0].y) + scaledLineWidth,
-            Mathf.Max(_starts[0].z, _ends[0].z) + scaledLineWidth
-        );
-        Bounds bounds = new Bounds();
-        bounds.min = min;
-        bounds.max = max;
-        return bounds;
-    }
 
     /// <summary>
     /// Updates the bounds of this line according to the current properties, 
     /// which there are: start point, end point, line width, scaling of the object.
     /// </summary>
-    private void UpdateBounds()
+
+    #region mesh calculations
+    private bool UpdateBounds()
     {
-        if (_mesh != null)
+        if (_mesh == null || _lineVertices == null || _lineVertices.Length == 0)
+            return false;
+
+        Vector3 min = _lineVertices[0];
+        Vector3 max = _lineVertices[0];
+        for (int i = 1; i < _lineVertices.Length; ++i)
         {
-            _mesh.bounds = CalculateBounds();
+            min = new Vector3(
+                Mathf.Min(min.x, _lineVertices[i].x),
+                Mathf.Min(min.y, _lineVertices[i].y),
+                Mathf.Min(min.z, _lineVertices[i].z)
+            );
+            max = new Vector3(
+                Mathf.Max(max.x, _lineVertices[i].x),
+                Mathf.Max(max.y, _lineVertices[i].y),
+                Mathf.Max(max.z, _lineVertices[i].z)
+            );
         }
+        _mesh.bounds.SetMinMax(min, max);
+        return true;
     }
+
 
     /// <summary>
     /// Sets the start and end points - updates the data of the Mesh.
@@ -261,22 +201,18 @@ public class LaserVectorLine : UdonSharpBehaviour
     int prevVertexCount = -1;
     [SerializeField]
     int vertexCount = 0;
-    public void SetStartAndEndPoints()
+    public void BuildMeshFromVertices()
     {
-        int lineCount = showTip ? 3 : 1;
-        _starts = new Vector3[3];
-        _ends = new Vector3[3];
-        _starts[0] = isIncoming ? Vector3.left * lineLength : Vector3.zero;
-        _ends[0] = isIncoming ?  Vector3.zero : Vector3.right * lineLength;
-        _tipPos = (isIncoming ? (Vector3.left * (1-tipLocation)) : (Vector3.right * tipLocation)) * lineLength;
-        _starts[1] = _tipPos;
-        float radians = barbAngles[0]*Mathf.Deg2Rad;
-        Vector3 offset = new Vector2(-Mathf.Cos(radians),Mathf.Sin(radians));
-        _ends[1] = _tipPos + offset*barbLengths[0];
-        _starts[2] = _tipPos;
-        radians = barbAngles[1] * Mathf.Deg2Rad;
-        offset = new Vector2(-Mathf.Cos(radians), Mathf.Sin(radians));
-        _ends[2] = _tipPos + offset * barbLengths[1];
+        int lineCount = (_lineVertices != null) ? _lineVertices.Length / 2 : 0;
+        _starts = new Vector3[lineCount];
+        _ends = new Vector3[lineCount];
+        // Initialize the start and end points from the provided vertices
+        int vertexIndex = 0;
+        for (int i = 0; i < lineCount; i++)
+        {
+            _starts[i] = _lineVertices[vertexIndex++];
+            _ends[i] = _lineVertices[vertexIndex++];
+        }
         // float theta = thetaDegrees*Mathf.Deg2Rad;
         vertexCount = lineCount * 8;
         if (vertexCount != prevVertexCount)
@@ -286,7 +222,7 @@ public class LaserVectorLine : UdonSharpBehaviour
         }
         int vertIdx = 0;
         for (int i = 0; i < lineCount; i++)
-            vertIdx = appendVertices(vertIdx,_starts[i], _ends[i]);
+            vertIdx = appendVertices(vertIdx, _starts[i], _ends[i]);
         if (_mesh == null)
             return;
         if (prevVertexCount != vertexCount)
@@ -295,17 +231,16 @@ public class LaserVectorLine : UdonSharpBehaviour
         _mesh.normals = _otherPositions;
         UpdateBounds();
         if (prevVertexCount != vertexCount)
-            initUVs(vertexCount);
+            initUVs(vertexCount, lineCount);
         prevVertexCount = vertexCount;
     }
 
-    private bool initUVs(int numVertices)
+    private bool initUVs(int numVertices, int lineCount)
     {
         if (_mesh == null)
             return false;
         Vector2[] uvs = new Vector2[numVertices];
         Vector2[] uv2 = new Vector2[numVertices];
-        int lineCount = showTip ? 3 : 1;
         int t = 0;
         int o = 0;
         for (int i = 0; i < lineCount; i++)
@@ -346,7 +281,7 @@ public class LaserVectorLine : UdonSharpBehaviour
             // 4, 5, 6,
             indices[idx++] = offs + 4; indices[idx++] = offs + 5; indices[idx++] = offs + 6;
             // 6, 5, 7
-            indices [idx++] = offs + 6; indices[idx++] = offs + 5; indices[idx++] = offs + 7;
+            indices[idx++] = offs + 6; indices[idx++] = offs + 5; indices[idx++] = offs + 7;
         }
         _mesh.SetIndices(indices, MeshTopology.Triangles, 0);
         return true;
@@ -368,61 +303,6 @@ public class LaserVectorLine : UdonSharpBehaviour
         }
     }
 
-    /// <summary>
-    /// Sets all _material properties (color, width, light saber factor, start-, endpos)
-    /// </summary>
-    private void SetAllMaterialProperties()
-    {
-        if (_material != null)
-        {
-            _material.color = lineColour;
-            _material.SetFloat("_Intensity", alpha);
-            _material.SetFloat("_LineWidth", lineWidth);
-            if (_hasSaberEffect)
-                _material.SetFloat("_LightSaberFactor", _lightSaberEffect);
-            UpdateScale();
-        }
-    }
-    public void refreshBeam()
-    {
-        SetStartAndEndPoints();
-        SetAllMaterialProperties();
-    }
-
-
-    #endregion
-    #region events
-
-#if UNITY_EDITOR
-    private void OnValidate()
-        {
-        refreshBeam();
-    }
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-
-        Gizmos.DrawLine(gameObject.transform.TransformPoint(Vector3.zero), gameObject.transform.TransformPoint(new Vector3(lineLength, 0, 0)));
-    }
-#endif
-
-    private float updateTimer = 1;
-    private bool started = false;
-    private void Update()
-    {
-        if (!started)
-            return;
-        updateTimer -= Time.deltaTime;
-        if (updateTimer > 0)
-            return;
-        updateTimer = 2;
-        if (transform.hasChanged)
-        {
-            transform.hasChanged = false;
-            UpdateScale();
-        }
-    }
-
     private void OnEnable()
     {
         _meshFilter = GetComponent<MeshFilter>();
@@ -432,12 +312,39 @@ public class LaserVectorLine : UdonSharpBehaviour
         mr.material = templateMaterial;
         _material = mr.material;
     }
+
     private void Start()
     {
-        ThetaDegrees = thetaDegrees;
-        SetStartAndEndPoints();
-        SetAllMaterialProperties();
-        started = true;
+        if (_lineVertices != null && _lineVertices.Length >= 2)
+        {
+            BuildMeshFromVertices();
+        }
+        SetMaterialProperties();
+    }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+
+    /// <summary>
+    /// 
+    /// Sets all _material properties (color, width, light saber factor, start-, endpos)
+    /// </summary>
+    {
+        if (_meshFilter == null)
+            _meshFilter = GetComponent<MeshFilter>();
+        SetMaterialProperties();
+    }
+#endif
+    private void SetMaterialProperties()
+    {
+        if (_material == null)
+            return;
+        _material.color = lineColour;
+        _material.SetFloat("_Intensity", alpha);
+        _material.SetFloat("_LineWidth", lineWidth);
+        if (_hasSaberEffect)
+            _material.SetFloat("_LightSaberFactor", _lightSaberEffect);
+        UpdateScale();
     }
     #endregion
 }

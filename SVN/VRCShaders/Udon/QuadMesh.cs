@@ -172,13 +172,17 @@ public class QuadMesh : UdonSharpBehaviour
         uvs = null;
         if (material != null)
         {
-            material.SetVector("_ArraySpacing", arraySpacing);
-            if (material.HasProperty("_ArrayDimension"))
+            if (mr.material == null || mr.material != material)
+                mr.material = material;
+        }
+        if (mr.material != null)
+        {
+            mr.material.SetVector("_ArraySpacing", arraySpacing);
+            if (mr.material.HasProperty("_ArrayDimension"))
             {
                 Vector4 pointVec = new Vector4(numGridPoints.x, numGridPoints.y, numGridPoints.z, numGridPoints.x * numGridPoints.y * numGridPoints.z);
-                material.SetVector("_ArrayDimension", pointVec);
+                mr.material.SetVector("_ArrayDimension", pointVec);
             }
-            mr.material = material;
         }
         return true;
     }

@@ -149,6 +149,8 @@ Shader "Murpheus/Ballistic/Particle Scattering 3D"
             float _PauseTime;
             int _Play;
             int _UseQuantumScatter;
+            float _VRChatTimeNetworkMs;
+
 
             // Returns the sampled momentum direction as a normalized 3d vector
             float4 scatterDirection(float incidentP,float rnd01, float rnd02)
@@ -278,7 +280,7 @@ Shader "Murpheus/Ballistic/Particle Scattering 3D"
                 float cyclePeriod = (_ScreenDistance/particleV)*(1+_DwellPortion) + pulseMax;
 
                 // Divide time by period to get fraction of the cycle.
-                float cycles = ((_Play * _Time.y + (1-_Play)*_PauseTime)-_BaseTime)/cyclePeriod;
+                float cycles = ((_Play * (_VRChatTimeNetworkMs * 0.001) + (1-_Play)*_PauseTime)-_BaseTime)/cyclePeriod;
                 float cycleTime = frac(cycles + continuous*hsh01)*cyclePeriod - pulseMax;
                 float timeOffset =  pulseDuration * invPi * asin(hshPlusMinus);
                 // Calculate distance travelled
