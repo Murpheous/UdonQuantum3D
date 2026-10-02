@@ -104,7 +104,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
     private float maxParticleP = 13.2f;
     [SerializeField]
     private float minParticleP = 7.64f;
-    [SerializeField, Range(0.5f,1.125f), FieldChangeCallback(nameof(ParticleP))]
+    [SerializeField, FieldChangeCallback(nameof(ParticleP))]
     private float particleP = 10.0f;
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI planckLabel;
@@ -151,29 +151,35 @@ public class ParticleScatter3D : UdonSharpBehaviour
     [SerializeField]
     Material matProbCRT;
 
-    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderPauseTime))]
-    private float shaderPauseTime = 0;
-    private float ShaderPauseTime
+    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderPauseTimeNet))]
+    private float shaderPauseTimeNet = 0;
+    private float ShaderPauseTimeNet
     {
-        get => shaderPauseTime;
+        get => shaderPauseTimeNet;
         set
         {
-            shaderPauseTime = value;
+            shaderPauseTimeNet = value;
             if (matParticleFlow != null)
-                matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
+            {
+                float netTimeDelta = (float)(Networking.GetServerTimeInSeconds()) - Time.timeSinceLevelLoad;
+                matParticleFlow.SetFloat("_PauseTime", shaderPauseTimeNet - netTimeDelta);
+            }
             RequestSerialization();
         }
     }
-    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderBaseTime))]
-    private float shaderBaseTime = 0;
-    private float ShaderBaseTime
+    [SerializeField,UdonSynced,FieldChangeCallback(nameof(ShaderBaseTimeNet))]
+    private float shaderBaseTimeNet = 0;
+    private float ShaderBaseTimeNet
     {
-        get => shaderBaseTime;
+        get => shaderBaseTimeNet;
         set
         {
-            shaderBaseTime = value;
+            shaderBaseTimeNet = value;
             if (matParticleFlow != null)
-                matParticleFlow.SetFloat("_BaseTime", shaderBaseTime);
+            {
+                float netTimeDelta = (float)(Networking.GetServerTimeInSeconds()) - Time.timeSinceLevelLoad;
+                matParticleFlow.SetFloat("_BaseTime", shaderBaseTimeNet - netTimeDelta);
+            }
             RequestSerialization();
         }
     }
@@ -324,6 +330,11 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 break;
                 // Handle mode change
         }
+        if (momentumSlider != null)
+        {
+            momentumSlider.SetLimits(minParticleP, maxParticleP);
+            momentumSlider.DisplayInteger = (NominalParticleP >= 10);
+        }
         ParticleP = particleP; // To update particle momentum based on new Planck scale and molecular weight
         if (screenDistanceSlider != null)
         {
@@ -415,8 +426,17 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 vertUpdateRequired = true;
             }
             nominalParticleP = value;
+            float prevP = Mathf.InverseLerp(minParticleP, maxParticleP, particleP);
             minParticleP = value * 0.5f;
             maxParticleP = value * 1.125f;
+            particleP = Mathf.Lerp(minParticleP, maxParticleP, prevP);
+            if (momentumSlider != null)
+            {
+                momentumSlider.SetLimits(minParticleP, maxParticleP);
+                momentumSlider.SetValue(particleP);
+                momentumSlider.DisplayInteger = (value >= 10);
+                momentumSlider.DisplayScale = value;
+            }
             if (matParticleFlow != null)
             {
                 matParticleFlow.SetFloat("_MaxParticleP", maxParticleP);
@@ -426,11 +446,6 @@ public class ParticleScatter3D : UdonSharpBehaviour
             {
                 matProbCRT.SetFloat("_MaxParticleP", maxParticleP);
                 matProbCRT.SetFloat("_MinParticleP", minParticleP);
-            }
-            if (momentumSlider != null)
-            {
-                momentumSlider.DisplayInteger = (value >= 10);
-                momentumSlider.DisplayScale = value;
             }
         }
     }
@@ -500,8 +515,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
 
     private void initParticlePlay()
     {
-        shaderBaseTime = Networking.GetServerTimeInMilliseconds() * 0.001f;
-        shaderPauseTime = shaderBaseTime;
+        float netTimeDelta = (Networking.GetServerTimeInMilliseconds() * 0.001f) - Time.timeSinceLevelLoad;
         shaderPlaying = particlePlayState == 1;
         int play = shaderPlaying ? 1 : 0;
         if (matParticleFlow != null)
@@ -509,8 +523,8 @@ public class ParticleScatter3D : UdonSharpBehaviour
             matParticleFlow = particleMeshRend.material;
             particleMeshRend.enabled = (particlePlayState > 0);
 
-            matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
-            matParticleFlow.SetFloat("_BaseTime", shaderBaseTime);
+            matParticleFlow.SetFloat("_PauseTime", shaderPauseTimeNet - netTimeDelta);
+            matParticleFlow.SetFloat("_BaseTime", shaderBaseTimeNet - netTimeDelta);
             matParticleFlow.SetInteger("_Play", play);
             matParticleFlow.SetFloat("_MarkerScale", particleSize);
         }
@@ -526,7 +540,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
             return;
         particleMeshRend.enabled = playState >= 0;
         bool amOwner = togGroupPlayPause == null || togGroupPlayPause.IsOwner;
-        if (amOwner && !Networking.IsOwner(gameObject))
+        if (amOwner && !iamOwner)
             Networking.SetOwner(Networking.LocalPlayer, gameObject);
 
         switch (playState)
@@ -535,7 +549,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 if (!shaderPlaying)
                 {
                     if (amOwner)    
-                        ShaderBaseTime += Networking.GetServerTimeInMilliseconds()*0.001f - shaderPauseTime;
+                        ShaderBaseTimeNet += (float)Networking.GetServerTimeInSeconds() - shaderPauseTimeNet;
                     matParticleFlow.SetInteger("_Play", 1);
                     shaderPlaying = true;
                     //Debug.Log("Play");
@@ -545,8 +559,7 @@ public class ParticleScatter3D : UdonSharpBehaviour
                 if (shaderPlaying)
                 {
                     if (amOwner)
-                        ShaderPauseTime = Networking.GetServerTimeInMilliseconds()*0.001f;
-                    matParticleFlow.SetFloat("_PauseTime", shaderPauseTime);
+                        ShaderPauseTimeNet = (float)Networking.GetServerTimeInSeconds();
                     matParticleFlow.SetInteger("_Play", 0);
                     shaderPlaying = false;
                     //Debug.Log("Pause");
@@ -1067,6 +1080,9 @@ public class ParticleScatter3D : UdonSharpBehaviour
 
     void OnEnable()
     {
+        shaderBaseTimeNet = Networking.GetServerTimeInMilliseconds() * 0.001f;
+        shaderPauseTimeNet = shaderBaseTimeNet;
+
         if (togPulseParticles != null)
         {
             togPulseParticles.IsBoolean = true;

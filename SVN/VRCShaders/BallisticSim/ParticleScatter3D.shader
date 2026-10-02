@@ -149,7 +149,6 @@ Shader "Murpheus/Ballistic/Particle Scattering 3D"
             float _PauseTime;
             int _Play;
             int _UseQuantumScatter;
-            float _VRChatTimeNetworkMs;
 
 
             // Returns the sampled momentum direction as a normalized 3d vector
@@ -232,14 +231,12 @@ Shader "Murpheus/Ballistic/Particle Scattering 3D"
 
                 // Get hash of quad ID and also random 0-1;
                 uint idHash = pcg_hash(v.id/3);
-                float hsh01 = (float)(idHash & 0x7FFFFF);
-                float div = 0x7FFFFF;
-                hsh01 = (hsh01/div);
-                float hshPlusMinus = (hsh01*2.0)-1.0;
+                float hsh01 = RandomRange(1.0,idHash);
+                float hshPlusMinus = RandomRange(2.0,idHash ^ 0xA5A5A5A5)-0.5;
                 // Also hash for particle speed and start position
                 float startHashH = RandomRange(1.0,idHash ^ 0xAC3FFF)-0.5;
                 float startHashV = RandomRange(1.0,idHash ^ 0xCA37FF)-0.5;
-                float speedHash = RandomRange(2.0,idHash >> 3)-1.0;
+                float speedHash = RandomRange(2.0,idHash ^ 0x5A5A5A5A)-1.0;
 
                 // Shift slit centre to a randomly chosen slit number 
                 int nSlit = (idHash >> 8) % _SlitCount;
@@ -280,7 +277,7 @@ Shader "Murpheus/Ballistic/Particle Scattering 3D"
                 float cyclePeriod = (_ScreenDistance/particleV)*(1+_DwellPortion) + pulseMax;
 
                 // Divide time by period to get fraction of the cycle.
-                float cycles = ((_Play * (_VRChatTimeNetworkMs * 0.001) + (1-_Play)*_PauseTime)-_BaseTime)/cyclePeriod;
+                float cycles = ((_Play * _Time.y + (1-_Play)*_PauseTime)-_BaseTime)/cyclePeriod;
                 float cycleTime = frac(cycles + continuous*hsh01)*cyclePeriod - pulseMax;
                 float timeOffset =  pulseDuration * invPi * asin(hshPlusMinus);
                 // Calculate distance travelled

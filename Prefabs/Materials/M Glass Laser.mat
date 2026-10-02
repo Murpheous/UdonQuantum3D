@@ -146,7 +146,7 @@ Material:
     - _InteriorDiffuseStrength: 0.1
     - _LTCGI: 0
     - _LightmapType: 0
-    - _Metallic: 0.834
+    - _Metallic: 0.853
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -182,7 +182,7 @@ Material:
     - __dirty: 1
     m_Colors:
     - _BaseColor: {r: 0.5, g: 0.2004717, b: 0.332374, a: 0.23529412}
-    - _Color: {r: 0.254717, g: 0.078097194, b: 0.15659492, a: 0.23529412}
+    - _Color: {r: 0.7447253, g: 0.4000979, b: 0.764151, a: 0.9843137}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Glow: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.14195444, g: 0.21979788, b: 0.5471698, a: 0.623}
