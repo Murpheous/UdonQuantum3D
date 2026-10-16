@@ -69,37 +69,31 @@ MonoBehaviour:
   openToggle: {fileID: 0}
   languageIndex: 0
   growShrink: 0
-  panelSize: {x: 1066, y: 720}
+  panelSize: {x: 1066, y: 800}
   shrinkSize: {x: 1066, y: 76}
   alignHorizontal: 1
   showHideContentPanel: 1
   contentPanelRect: {fileID: 0}
   contentText: {fileID: 0}
   toggles:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2646795260794742508}
+  - {fileID: 5071923530588851332}
   - {fileID: 301010916638401613}
   - {fileID: 1125013402480337255}
-  - {fileID: 0}
-  - {fileID: 5071923530588851332}
-  - {fileID: 0}
   pages:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8478583097211882657}
+  - {fileID: 5968076979422627899}
   - {fileID: 1884152318781532205}
   - {fileID: 2601764917016007142}
-  - {fileID: 0}
-  - {fileID: 5968076979422627899}
-  - {fileID: 0}
   activeInfoPage: 1
   defaultTexts:
-  - <align=center>Quantum Scattering
-  - "<align=center><b>\u91CF\u5B50\u6563\u4E71"
-  - "<align=center><b>\u91CF\u5B50\u6563\u5C04"
-  - "<align=center><b>\u91CF\u5B50\u6563\u5C04"
-  - "<align=center><b>\uC591\uC790 \uC0B0\uB780"
-  - "<align=center><b>Dispers\xE3o qu\xE2ntica"
-  - <align=center><b>Diffusion quantique
+  - Quantum Scattering Without Interference
+  - "\u5E72\u6E09\u3092\u4F34\u308F\u306A\u3044\u91CF\u5B50\u6563\u4E71"
+  - "\u7121\u5E79\u64FE\u91CF\u5B50\u6563\u5C04"
+  - "\u65E0\u5E72\u6D89\u7684\u91CF\u5B50\u6563\u5C04"
+  - "\uAC04\uC12D \uC5C6\uB294 \uC591\uC790 \uC0B0\uB780"
+  - "Espalhamento Qu\xE2ntico sem Interfer\xEAncia"
+  - "Diffusion quantique sans interf\xE9rence"
   show: 0
   mode: 0
 --- !u!114 &5350181833097063420
@@ -359,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 8997309906799711870, guid: ab3dfa854d6c4194e9703c59d0e678a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7
+      value: -234
       objectReference: {fileID: 0}
     - target: {fileID: 8997309906799711870, guid: ab3dfa854d6c4194e9703c59d0e678a2,
         type: 3}
@@ -513,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 4291582114452870040, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000029802322
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4291582114452870040, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
@@ -543,7 +537,7 @@ PrefabInstance:
     - target: {fileID: 4291582114452870040, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 80
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 4291582114452870040, guid: b35325d7cd37e344c8ab453d729752e3,
         type: 3}
@@ -777,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 223981440657637720, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 154
+      value: -132
       objectReference: {fileID: 0}
     - target: {fileID: 223981440657637720, guid: f4cf7a5e1bf3556469f4e6cfb2c76f23,
         type: 3}
@@ -955,6 +949,36 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
+      propertyPath: pageTitles.Array.data[1]
+      value: "\u5DE8\u8996\u7684\u7269\u4F53\u3068\u306E\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: pageTitles.Array.data[2]
+      value: "\u91CF\u5B50\u8207\u5B8F\u89C0\u7269\u9AD4\u7684\u76F8\u4E92\u4F5C\u7528"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: pageTitles.Array.data[3]
+      value: "\u4E0E\u5B8F\u89C2\u7269\u4F53\u7684\u91CF\u5B50\u76F8\u4E92\u4F5C\u7528"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: pageTitles.Array.data[4]
+      value: "\uAC70\uC2DC\uC801 \uBB3C\uCCB4\uC640\uC758 \uC591\uC790 \uC0C1\uD638\uC791\uC6A9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: pageTitles.Array.data[5]
+      value: "Intera\xE7\xF5es Qu\xE2nticas com Objetos Macrosc\xF3picos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: pageTitles.Array.data[6]
+      value: Interactions quantiques avec des objets macroscopiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
@@ -964,6 +988,11 @@ PrefabInstance:
       propertyPath: m_Group
       value: 
       objectReference: {fileID: 7772460802066079256}
+    - target: {fileID: 5190558275611757485, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5350181833097063420}
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
       propertyPath: m_Pivot.x
@@ -982,7 +1011,7 @@ PrefabInstance:
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
@@ -992,7 +1021,7 @@ PrefabInstance:
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
@@ -1017,7 +1046,7 @@ PrefabInstance:
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
@@ -1047,7 +1076,7 @@ PrefabInstance:
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 242
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 7902509999976890415, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
         type: 3}
@@ -1080,3 +1109,27 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7832849385386290497}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2646795260794742508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5190558275611757485, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+    type: 3}
+  m_PrefabInstance: {fileID: 7832849385386290497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8478583097211882657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1808799310710841824, guid: bdfbb22e0c2ee554dac4ec30ff1d5865,
+    type: 3}
+  m_PrefabInstance: {fileID: 7832849385386290497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a0125298b98834fadb6477d8360741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
