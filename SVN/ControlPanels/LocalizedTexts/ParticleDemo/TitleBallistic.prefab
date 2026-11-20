@@ -77,7 +77,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294965664
+    rgba: 4294959264
   m_fontColor: {r: 0.627451, g: 0.9764706, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -186,6 +186,7 @@ MonoBehaviour:
   interactText: Use
   interactTextGO: {fileID: 0}
   proximity: 2
+  OutlineRenderers: []
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0

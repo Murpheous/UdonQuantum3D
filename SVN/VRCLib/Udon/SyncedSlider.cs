@@ -50,9 +50,19 @@ public class SyncedSlider : UdonSharpBehaviour
     // UdonSync stuff
     private VRCPlayerApi player;
     private bool locallyOwned = false;
-    private bool started = false;
+    private bool isEnabled = false;
 
-
+    [SerializeField]
+    private float valueOffset = 0f;
+    public float ValueOffset
+    {
+        get => valueOffset;
+        set
+        {
+            valueOffset = value;
+            UpdateLabel();
+        }
+    }
     public override void OnOwnershipTransferred(VRCPlayerApi player)
     {
         locallyOwned = Networking.IsOwner(this.gameObject);
@@ -79,7 +89,7 @@ public class SyncedSlider : UdonSharpBehaviour
     {
         minValue = min;
         maxValue = max;
-        if (!started)
+        if (!isEnabled)
         {
             if (debug)
                 Debug.Log($"SyncedSlider:{gameObject.name} \nSetValues called before Start, setting initial values: {value}, {min}, {max}");
@@ -107,14 +117,12 @@ public class SyncedSlider : UdonSharpBehaviour
 
     public void SetValue(float value)
     {
-        if (!started)
+        if (!isEnabled)
         {
             reportedValue = value;
             syncedValue = value;
             return;
         }
-        if (slider == null)
-            slider = GetComponent<Slider>();
         updateThreshold();
         if (locallyOwned)
         {
@@ -184,11 +192,11 @@ public class SyncedSlider : UdonSharpBehaviour
             return;
         if (!hideLabel)
         {
-            float displayValue = syncedValue * displayScale;
+            float displayValue = (valueOffset + syncedValue) * displayScale;
             if (displayInteger)
                 displayValue = Mathf.RoundToInt(displayValue);
             if (unitsInteger || displayInteger)
-                sliderLabel.text = string.Format("{0}{1}", (int)displayValue, sliderUnit);
+                sliderLabel.text = string.Format("{0}{1}", (int)(displayValue), sliderUnit);
             else
                 sliderLabel.text = string.Format("{0:0.0}{1}", displayValue, sliderUnit);
         }
@@ -197,7 +205,7 @@ public class SyncedSlider : UdonSharpBehaviour
         get => reportedValue;
         set
         {
-            if (!started)
+            if (!isEnabled)
             {
                 if (debug)
                     Debug.Log($"SyncedSlider:{gameObject.name} \nReport Attempt before Start, setting initial value: {value}");
@@ -244,7 +252,7 @@ public class SyncedSlider : UdonSharpBehaviour
     {
         if (!locallyOwned)
             Networking.SetOwner(player, gameObject);
-        if (started)
+        if (isEnabled)
         {
             SetSmoothingTarget(slider.value);
             RequestSerialization();
@@ -294,15 +302,32 @@ public class SyncedSlider : UdonSharpBehaviour
         else
             ReportedValue = targetValue;
     }
+
+    private void OnEnable()
+    {
+        if (isEnabled)
+            return;
+        isEnabled = true;
+        if (slider == null)
+            slider = GetComponent<Slider>();
+        player = Networking.LocalPlayer;
+        if (sliderLabel == null)
+            hideLabel = true;
+        if (slider != null)
+        {
+            slider.minValue = minValue;
+            slider.maxValue = maxValue;
+            slider.SetValueWithoutNotify(syncedValue);
+        }
+        iHaveClientVar = (SliderClient != null) && (!string.IsNullOrEmpty(clientVariableName));
+        iHaveClientPtr = (SliderClient != null) && (!string.IsNullOrEmpty(clientPointerState));
+    }
     public void Start()
     {
-        player = Networking.LocalPlayer;
         locallyOwned = Networking.IsOwner(this.gameObject);
         
         iHaveClientVar = (SliderClient != null) && (!string.IsNullOrEmpty(clientVariableName));
         iHaveClientPtr = (SliderClient != null) && (!string.IsNullOrEmpty(clientPointerState));
-        if (sliderLabel == null)
-            hideLabel = true;
         if (slider != null)
         {
             slider.minValue = minValue;
@@ -315,6 +340,5 @@ public class SyncedSlider : UdonSharpBehaviour
         DisplayScale = displayScale;
         updateThreshold();
         UpdateLabel();
-        started = true;
     }
 }

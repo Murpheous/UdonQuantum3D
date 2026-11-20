@@ -64,7 +64,7 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 2780775641068054079}
   UdonClient: {fileID: 0}
-  clientVariableName: 
+  clientVariableName: numSources
   IncButton: {fileID: 6112098013132065069}
   DecButton: {fileID: 6112098013113421451}
   ValueText: {fileID: 4234818048113174320}
@@ -87,6 +87,7 @@ MonoBehaviour:
   interactText: Use
   interactTextGO: {fileID: 0}
   proximity: 2
+  OutlineRenderers: []
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0

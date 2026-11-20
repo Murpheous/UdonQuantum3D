@@ -2,18 +2,15 @@
 using TMPro;
 using UdonSharp;
 using UnityEngine;
-using UnityEngine.InputSystem.Controls;
 using VRC.SDKBase;
 using VRC.Udon;
-using VRC.Udon.Serialization.OdinSerializer.Utilities;
 
-[RequireComponent(typeof(TextMeshProUGUI))]
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class LocalizedText : UdonSharpBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI myText;
-    [SerializeField,FieldChangeCallback(nameof(LanguageIndex))]
+    [SerializeField,Min(0),FieldChangeCallback(nameof(LanguageIndex))]
     private int languageIndex = 0;
     [SerializeField,FieldChangeCallback(nameof(PageNumber))]
     private int pageNumber = -1;
@@ -25,19 +22,39 @@ public class LocalizedText : UdonSharpBehaviour
             pageNumber = value;
         }
     }
+    [SerializeField, FieldChangeCallback(nameof(IsActive))]
+    private bool isActive = true;
+    public bool IsActive
+    {
+        get => isActive;
+        set
+        {
+            isActive = value;
+            if (isActive)
+            {
+                currentIndex = -1;
+                LanguageIndex = languageIndex;
+            }
+        }
+    }
+
+    [SerializeField]
+    private bool debug = false;
     [SerializeField,Multiline] string[] texts;
     private int currentIndex = -1;
     public int LanguageIndex
-    { 
-        get => languageIndex; 
-        set 
-        { 
-            languageIndex = value;
-            if (myText == null || texts==null)
+    {
+        get => languageIndex;
+        set
+        {
+            languageIndex = Mathf.Max(value, 0);
+            if (!isActive || myText == null || texts==null)
                 return;
             if (currentIndex != languageIndex)
             {
                 currentIndex = value;
+                if (texts == null || texts.Length <= 0)
+                    return;
                 if (value >= texts.Length)
                     currentIndex = 0;
                 if (texts[currentIndex] != null)
@@ -45,21 +62,52 @@ public class LocalizedText : UdonSharpBehaviour
             }
         } 
     }
+    
+    private void checkForText()
+    {
+        if (myText != null)
+            return;
+        myText = GetComponent<TextMeshProUGUI>();
+        if (myText == null)
+        {
+            Transform pxfrm = transform.parent;
+            if (pxfrm == null)
+                return;
+            TextMeshProUGUI[] textComponents = pxfrm.GetComponentsInChildren<TextMeshProUGUI>();
+            myText = textComponents.Length > 0 ? textComponents[0] : null;
+        }
+    }
+
+    private void OnEnable()
+    {
+        if (debug)
+            Debug.Log($"{gameObject.name}: OnEnable() called.");
+        if (!isActive)
+            return;
+        currentIndex = -1;
+        LanguageIndex = languageIndex;
+    }
+
+    private void OnDisable()
+    {
+        if (debug)
+            Debug.Log($"{gameObject.name}: OnDisable() called.");
+    }
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        if (myText==null)
-            myText=GetComponent<TextMeshProUGUI>();
+        checkForText();
     }
 #endif
     void Start()
     {
-        myText=GetComponent<TextMeshProUGUI>();
+        if (debug)
+            Debug.Log($"{gameObject.name}: Start() called.");
+        checkForText();
         if (texts == null || texts.Length <= 0)
         {
             texts = new string[1];
             texts[0] = myText != null ? myText.text : "";
         }
-        LanguageIndex = 0;
     }
 }

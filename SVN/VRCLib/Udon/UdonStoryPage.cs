@@ -1,4 +1,5 @@
 ﻿
+using Newtonsoft.Json.Linq;
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -9,27 +10,8 @@ public class UdonStoryPage : UdonSharpBehaviour
 {
     [SerializeField,FieldChangeCallback(nameof(IsActive))]
     private bool isActive = false;
-
-    [SerializeField, FieldChangeCallback(nameof(LanguageIndex))]
-    private int languageIndex  = 0;
-    private int LanguageIndex
-    {
-        get => languageIndex;
-        set
-        {
-            languageIndex = value;
-            if (texts != null)
-            {
-                for (int i = 0; i < texts.Length; i++)
-                {
-                    if (texts[i] != null)
-                    {
-                        texts[i].LanguageIndex = languageIndex;
-                    }
-                }
-            }
-        }
-    }
+    [SerializeField, Tooltip("Debugging")]
+    private bool debug = false;
     [SerializeField, FieldChangeCallback(nameof(PageNumber))]
     private int pageNumber = -1;
     public int PageNumber
@@ -58,14 +40,30 @@ public class UdonStoryPage : UdonSharpBehaviour
     private int[] demoStateVarTypes;
     [SerializeField, Tooltip("State Variable Value")]
     private float[] demoStateValues;
-
     public bool IsActive
     {
         get => isActive;
         set 
         {
+            if (debug)
+               Debug.Log($"{gameObject.name} UdonStoryPage {pageNumber} IsActive set to {value}");
             bool wasActive = isActive;
             isActive = value;
+            if (wasActive && !isActive)
+            {
+                for (int i = 0; i < texts.Length; i++)
+                {
+                    if (texts[i] != null)
+                    {
+                        int textPage = texts[i].PageNumber;
+                        if (textPage == pageNumber)
+                        {
+                            texts[i].IsActive = false;
+                            texts[i].gameObject.SetActive(false);
+                        }
+                    }
+                }
+            }
             if (isActive)
             {
                 for (int i=0; i < texts.Length; i++)
@@ -77,6 +75,7 @@ public class UdonStoryPage : UdonSharpBehaviour
                         bool isRequired = (pageNumber < 0) || (textPage < 0 || textPage == pageNumber);
                         if (pageActive != isRequired)
                         {
+                            texts[i].IsActive = isRequired;
                             texts[i].gameObject.SetActive(isRequired);
                         }
                     }
@@ -135,6 +134,8 @@ public class UdonStoryPage : UdonSharpBehaviour
         if (pageGameObject != null)
         {
             LocalizedText[] pageTexts = pageGameObject.GetComponentsInChildren<LocalizedText>(true);
+            if (debug) 
+                Debug.Log($"{gameObject.name}Page {pageNumber} has {pageTexts.Length} LocalizedText components");
             if (pageTexts != null && pageTexts.Length > 0)
             {
                 if (texts == null || texts.Length != pageTexts.Length)
@@ -146,6 +147,12 @@ public class UdonStoryPage : UdonSharpBehaviour
         }
     }
 #endif
+    private void OnEnable()
+    {
+        if (debug)
+            Debug.Log($"{gameObject.name} Enabled with IsActive set to {isActive}");
+        IsActive = isActive;
+    }
 
     public void Start()
     {

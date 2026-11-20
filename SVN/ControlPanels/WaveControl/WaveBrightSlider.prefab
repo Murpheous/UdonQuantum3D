@@ -443,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981181611244936747}
   - component: {fileID: 244342456227989375}
+  - component: {fileID: 1328094972938381734}
   - component: {fileID: 4608411341092326092}
   - component: {fileID: 8550093811731812600}
   m_Layer: 0
@@ -538,6 +539,35 @@ MonoBehaviour:
           m_StringArgument: onValue
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1328094972938381734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5416642412588086035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8550093811731812600}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: SendCustomEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: onPointer
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4608411341092326092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +621,7 @@ MonoBehaviour:
   interactText: Use
   interactTextGO: {fileID: 0}
   proximity: 2
+  OutlineRenderers: []
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0

@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 450}
+  m_SizeDelta: {x: 480, y: 475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &132513319126003461
 CanvasRenderer:
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: e63289acce8192f418271a318edafc31, type: 2}
+  m_Material: {fileID: 2100000, guid: bf00bb6a47714d6479979748b60a4a4e, type: 2}
   m_Color: {r: 0.047058824, g: 0.08235294, b: 0.16862746, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -310,6 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4711483033381846273}
   - component: {fileID: 6311747595227662885}
+  - component: {fileID: 7438246543897049614}
   m_Layer: 0
   m_Name: Q3DPortal
   m_TagString: Untagged
@@ -356,6 +357,27 @@ MonoBehaviour:
   effectPrefabName: 
   roomName: 
   updateFlag: 0
+--- !u!65 &7438246543897049614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868376201062685049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &4781791067043277159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,6 +390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477198553881469046, guid: a32e814df3ade4a4da7a246921a9b7dc,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5165143751577077480, guid: a32e814df3ade4a4da7a246921a9b7dc,
         type: 3}
@@ -473,7 +500,7 @@ PrefabInstance:
         type: 3}
       propertyPath: serializedProgramAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 1c1dabace3c87094296b96c691bf1f39,
+      objectReference: {fileID: 11400000, guid: 950399a6036d27343ad484dfae361065,
         type: 2}
     - target: {fileID: 6590067031822985451, guid: a32e814df3ade4a4da7a246921a9b7dc,
         type: 3}

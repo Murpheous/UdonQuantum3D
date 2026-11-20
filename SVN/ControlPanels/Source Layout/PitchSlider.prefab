@@ -46,6 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3472035981513721018}
   - component: {fileID: 7179628168701101645}
+  - component: {fileID: 781200161187502266}
   - component: {fileID: 1800714333880337000}
   - component: {fileID: 8350140193177366238}
   m_Layer: 17
@@ -122,8 +123,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 5768373006683588280}
   m_HandleRect: {fileID: 2343243084161525751}
   m_Direction: 2
-  m_MinValue: 250
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 500
   m_WholeNumbers: 0
   m_Value: 250
   m_OnValueChanged:
@@ -141,6 +142,35 @@ MonoBehaviour:
           m_StringArgument: onValue
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &781200161187502266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045150190576473146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8350140193177366238}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: SendCustomEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: onPointer
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1800714333880337000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +224,7 @@ MonoBehaviour:
   interactText: Use
   interactTextGO: {fileID: 0}
   proximity: 2
+  OutlineRenderers: []
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
@@ -630,11 +661,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5004886305978785800, guid: 023e2b6ae64c1da4684e9a9da8bc9a9d,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294959104
       objectReference: {fileID: 0}
     - target: {fileID: 7057969282339194430, guid: 023e2b6ae64c1da4684e9a9da8bc9a9d,
         type: 3}
